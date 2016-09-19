@@ -1,0 +1,178 @@
+<!--
+Author: Duy Lương - 12520250
+Class: SE215.H12
+-->
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+    .header {
+        margin: 10px;
+    }
+    
+    .header .menu ul {
+        list-style: none;
+        margin-bottom: 1px;
+    }
+    
+    .header .menu ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .header .menu ul li a {
+        color: #BDBDBD;
+        float: left;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 1px solid #ECECEC;
+        margin-right: 5px;
+    }
+    
+    .header .menu ul li a:hover {
+        background-color: #6fd508;
+        color: #FFF;
+    }
+    
+    .header .menu .itemactive a {
+        background-color: #6fd508;
+        color: #FFF;
+    }
+    
+    .header .logo a {
+        color: #6fd508;
+        float: left;
+        font-size: 40px;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+    
+    .header .phone {
+        text-align: right;
+    }
+    
+    .header .phone ul {
+        list-style: none;
+    }
+    
+    .header .phone ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .header .phone .caption {
+        color: #BDBDBD;
+        font-size: 10px;
+    }
+    
+    .header .phone .text_phone {
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .login_box {
+        float: right;
+    }
+    
+    .login_box a {
+        display: inline;
+        background-color: #6fd508;
+        color: #FFF;
+        float: left;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-right: 6px;
+        margin-top: 18px;
+    }
+    
+    .clearfix:after {
+        clear: both;
+        content: ".";
+        display: block;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .margin {
+        width: 6%;
+    }
+    
+    h1 {
+        display: inline;
+    }
+    
+    .menu {
+        align-content: flex-start;
+    }
+    
+    .tdlogo {
+        width: : 60%;
+    }
+    
+    .emergency-grid {
+        align-content: flex-end;
+        text-align: right;
+    }
+</style>
+
+<head>
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <table>
+            <tr>
+                <td class="margin"></td>
+                <td class="tdlogo">
+                    <div class="logo">
+                        <h1><a  href="index.html"><span>Du Lịch Việt</span></a></h1>
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="phone">
+                        <ul>
+                            <li class="caption">
+                                SDT
+                            </li>
+                            <li class="text_phone">
+                                (+84)969909893
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="margin"></td>
+            </tr>
+            <tr>
+                <td class="margin"></td>
+                <td colspan="2">
+                    <div class="menu">
+                        <ul>
+                            <li class="itemactive"><a href="index.html">Flights</a></li>
+                            <li><a href="hotels.html">Hotel</a></li>
+                            <li><a href="holidays.html">Holidays</a></li>
+                            <li><a href="flights-hotels.html">Flight+Hotel</a></li>
+                            <li><a href="bus.html">Bus</a></li>
+                            <li><a href="trains.html">Trains</a></li>
+                            <li><a href="weekend.html">Weekend Getaways</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="login_box">
+                    <a href="#">Login</a>
+                </td>
+                <td class="margin"></td>
+
+            </tr>
+        </table>
+    </div>
+    <!--//header-->
+
+</body>
+
+</html>
