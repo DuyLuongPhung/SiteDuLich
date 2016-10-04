@@ -21,6 +21,81 @@
     <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
     <script src="js/jquery-ui.js"></script>
     <style type="text/css">
+        .middle-content .droplist-accordion button {
+            border-style: none;
+            width: 100%;
+            border-radius: 0px;
+            text-align: left;
+            background-color: #FFF;
+            height: 50px;
+            color: #0099cc;
+            padding-left: 20px;
+        }
+        
+        .middle-content .droplist-accordion button:focus {
+            outline: none;
+        }
+        
+        .middle-content .droplist-accordion button span {
+            float: right;
+        }
+        
+        .middle-content .droplist-accordion .panel {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #e6e6e6;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content {
+            background-color: #f2f2f2;
+            color: #0099cc;
+            font-size: 13px;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content img {
+            width: 100%;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content a {
+            text-decoration: none;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content span {
+            color: #ffcc00;
+            font-size: 13px;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content a:hover {
+            color: #007399;
+        }
+        
+        .middle-content .droplist-accordion ul li {
+            display: inline;
+        }
+        
+        .middle-content .droplist-accordion ul li a {
+            width: 100%;
+        }
+        
+        .middle-content .droplist-accordion .destinations-images {
+            width: 100%;
+            height: auto;
+        }
+        
+        .middle-content .hot-hotel-lst {
+            padding: 5px;
+            padding-right: 15px;
+        }
+        
+        .middle-content .hot-hotel2 {
+            background-color: green;
+        }
+        
+        .middle-content .hot-hotel3 {
+            background-color: blue;
+            height: 250px;
+        }
+        
         body {
             background-color: #f4f7f9;
         }
@@ -159,8 +234,9 @@
                             <li><a href="#">Tour</a></li>
                             <li><a href="#">Địa Điểm</a></li>
                             <li><a href="#">Khách Sạn</a></li>
-                            <li><a href="#">Vận Chuyển</a></li>
+                            <li><a href="#">Phương Tiện</a></li>
                             <li><a href="#">Khuyến Mãi</a></li>
+                            <li><a href="#">Tin Tức</a></li>
                             <li><a href="#">Giới Thiệu</a></li>
                             <li><a href="#">Liên Hệ</a></li>
                         </ul>
@@ -252,7 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <h5>Điểm tham quan</h5>
+                                    <h5>Điểm đến</h5>
                                     <div class="text-input-icon">
                                         <span class="glyphicon glyphicon-map-marker"></span>
                                         <input type="text" class="place-area" id="provice-text-to" placeholder="Địa điểm tham quan" />
@@ -261,42 +337,20 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5>Ngày khởi hành</h5>
+                                    <h5>Từ ngày</h5>
                                     <div class="input-group date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
                                         <input class="form-control" size="16" type="text" value="" readonly>
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                     </div>
                                     <input type="hidden" id="dtp_input2" value="" />
                                 </div>
-                                <div class="dropdown-list col-md-2">
-                                    <h5>Người lớn</h5>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
-                                <div class="dropdown-list col-md-2">
-                                    <h5>Trẻ em</h5>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
+                                <div class="col-md-4">
+                                    <h5>Đến ngày</h5>
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
                                 </div>
                                 <script type="text/javascript">
                                     $('.form_date').datetimepicker({
@@ -335,9 +389,92 @@
         <div class="clearfix"> </div>
         <div id="middle-content" class="middle-content">
             <div class="container">
-                <h3>Collapsible Navbar</h3>
-                <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-                    <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+                <h3>Tour nổi bật</h3>
+                <div class="col-md-4 hot-hotel-lst">
+                    <div id="accordion" class="droplist-accordion">
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse2"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse2" class="panel-collapse collapse in collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a4.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">5.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse3"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse3" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a3.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">15.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse4"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse4" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a2.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">5.500.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse5"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse5" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a1.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">9.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hot-hotel2">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
             </div>
         </div>
         <div class="clearfix"> </div>

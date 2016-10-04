@@ -5,11 +5,13 @@
     <title>Du lịch Việt - Trang chủ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/write/header.css">
     <link rel="stylesheet" href="css/write/footer.css">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/write/index.css">
+
 
 
     <script src="js/jquery-1.12.4.js"></script>
@@ -19,111 +21,79 @@
     <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
     <script src="js/jquery-ui.js"></script>
     <style type="text/css">
-        .top-content {
-            margin: 0px;
-            padding-top: 20px;
-            height: 450px;
-            background-image: url(images/banner.jpg);
-        }
-        
-        .image-slider {
-            height: 410px;
-        }
-        
-        .qick-search {
-            height: 410px;
-            background-color: rgba(51, 51, 51, 0.6);
-            border-radius: 5px;
-            box-sizing: border-box;
-            color: #FFF;
-            padding-left: 40px;
-        }
-        
-        .qick-search .text-input-icon {
-            background-color: #FFF;
-            color: #000;
-            height: 32px;
-            vertical-align: middle;
-            box-sizing: border-box;
-            padding: 0px;
-        }
-        
-        .qick-search .text-input-icon span {
-            margin-top: 8px;
-            margin-left: 5px;
-        }
-        
-        .qick-search .text-input-icon input {
-            margin-right: 8px;
-            margin-top: 5px;
-            color: #000;
+        .middle-content .droplist-accordion button {
             border-style: none;
-            height: 22px;
-            padding-left: 5px;
-            padding-right: 5px;
-            font-size: 14px;
-            width: 80%;
+            width: 100%;
+            border-radius: 0px;
+            text-align: left;
+            background-color: #FFF;
+            height: 50px;
+            color: #0099cc;
+            padding-left: 20px;
         }
         
-        .qick-search .dropdown-list select {
-            color: #BDBDBD;
-            width: 60px;
-            height: 34px;
-            border: none;
-        }
-        
-        .qick-search h5 {
-            font-weight: bold;
-        }
-        
-        .qick-search .class-droplist select {
-            color: #BDBDBD;
-            width: 160px;
-            height: 34px;
-            border: none;
-        }
-        
-        input:focus,
-        select:focus,
-        textarea:focus,
-        button:focus {
+        .middle-content .droplist-accordion button:focus {
             outline: none;
         }
         
-        .qick-search input {
-            color: #000;
+        .middle-content .droplist-accordion button span {
+            float: right;
         }
         
-        .qick-search .place-row .col-md-5 {
-            padding: 10px;
-            margin-left: 10px;
+        .middle-content .droplist-accordion .panel {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #e6e6e6;
         }
         
-        .qick-search .title_header .row {
-            margin-bottom: 15px;
+        .middle-content .droplist-accordion .collapse-content {
+            background-color: #f2f2f2;
+            color: #0099cc;
+            font-size: 13px;
         }
         
-        .qick-search .search-button {
-            width: 80px;
-            height: 40px;
-            color: #FFF;
-            font-weight: bold;
-        }
-        
-        .image-item-slide img {
+        .middle-content .droplist-accordion .collapse-content img {
             width: 100%;
-            height: 410px;
-            max-height: 410px;
-            border-radius: 5px;
-            box-sizing: border-box;
         }
         
-        #myCarousel {
-            background-color: red;
-            border-radius: 5px;
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
+        .middle-content .droplist-accordion .collapse-content a {
+            text-decoration: none;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content span {
+            color: #ffcc00;
+            font-size: 13px;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content a:hover {
+            color: #007399;
+        }
+        
+        .middle-content .droplist-accordion ul li {
+            display: inline;
+        }
+        
+        .middle-content .droplist-accordion ul li a {
+            width: 100%;
+        }
+        
+        .middle-content .droplist-accordion .destinations-images {
+            width: 100%;
+            height: auto;
+        }
+        
+        .middle-content .hot-hotel-lst {
+            padding: 5px;
+            padding-right: 15px;
+        }
+        
+        .middle-content .hot-hotel2 {
+            background-color: green;
+        }
+        
+        .middle-content .hot-hotel3 {
+            background-color: blue;
+            height: 250px;
         }
         
         body {
@@ -137,46 +107,84 @@
         .clearfix {
             margin-top: 10px;
         }
-        
-        nav,
-        .navbar,
-        .navbar-inverse {
-            margin: 0px;
-        }
     </style>
 
     <script type="text/javascript">
         $(function () {
             $('#datetimepicker1').datetimepicker();
 
-            var availableTags = [
-              "ActionScript",
-              "AppleScript",
-              "Asp",
-              "BASIC",
-              "C",
-              "C++",
-              "Clojure",
-              "COBOL",
-              "ColdFusion",
-              "Erlang",
-              "Fortran",
-              "Groovy",
-              "Haskell",
-              "Java",
-              "JavaScript",
-              "Lisp",
-              "Perl",
-              "PHP",
-              "Python",
-              "Ruby",
-              "Scala",
-              "Scheme"
+            var provices = [
+              "An Giang"
+            , "Bà Rịa - Vũng Tàu"
+            , "Bắc Giang"
+            , "Bắc Kạn"
+            , "Bạc Liêu"
+            , "Bắc Ninh"
+            , "Bến Tre"
+            , "Bình Định"
+            , "Bình Dương"
+            , "Bình Phước"
+            , "Bình Thuận"
+            , "Cà Mau"
+            , "Cao Bằng"
+            , "Đắk Lắk"
+            , "Đắk Nông"
+            , "Điện Biên"
+            , "Đồng Nai"
+            , "Đồng Tháp"
+            , "Gia Lai"
+            , "Hà Giang"
+            , "Hà Nam"
+            , "Hà Tĩnh"
+            , "Hải Dương"
+            , "Hậu Giang"
+            , "Hòa Bình"
+            , "Hưng Yên"
+            , "Khánh Hòa"
+            , "Kiên Giang"
+            , "Kon Tum"
+            , "Lai Châu"
+            , "Lâm Đồng"
+            , "Lạng Sơn"
+            , "Lào Cai"
+            , "Long An"
+            , "Nam Định"
+            , "Nghệ An"
+            , "Ninh Bình"
+            , "Ninh Thuận"
+            , "Phú Thọ"
+            , "Quảng Bình"
+            , "Quảng Nam"
+            , "Quảng Ngãi"
+            , "Quảng Ninh"
+            , "Quảng Trị"
+            , "Sóc Trăng"
+            , "Sơn La"
+            , "Tây Ninh"
+            , "Thái Bình"
+            , "Thái Nguyên"
+            , "Thanh Hóa"
+            , "Thừa Thiên Huế"
+            , "Tiền Giang"
+            , "Trà Vinh"
+            , "Tuyên Quang"
+            , "Vĩnh Long"
+            , "Vĩnh Phúc"
+            , "Yên Bái"
+            , "Phú Yên"
+            , "Cần Thơ"
+            , "Đà Nẵng"
+            , "Hải Phòng"
+            , "Hà Nội"
+            , "TP HCM"
             ];
             $("#provice-text-from").autocomplete({
-                source: availableTags
+                source: provices
             });
 
+            $("#provice-text-to").autocomplete({
+                source: provices
+            });
         });
     </script>
 </head>
@@ -226,8 +234,9 @@
                             <li><a href="#">Tour</a></li>
                             <li><a href="#">Địa Điểm</a></li>
                             <li><a href="#">Khách Sạn</a></li>
-                            <li><a href="#">Vận Chuyển</a></li>
+                            <li><a href="#">Phương Tiện</a></li>
                             <li><a href="#">Khuyến Mãi</a></li>
+                            <li><a href="#">Tin Tức</a></li>
                             <li><a href="#">Giới Thiệu</a></li>
                             <li><a href="#">Liên Hệ</a></li>
                         </ul>
@@ -305,7 +314,7 @@
                 </div>
                 <div class="col-md-8 qick-search">
                     <div class="row title_header">
-                        <h2>Tra Cứu Nhanh</h2>
+                        <h2>Tra Cứu Tour</h2>
                     </div>
                     <div class="row title_header">
                         <div id="filter-content">
@@ -319,7 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <h5>Điểm tham quan</h5>
+                                    <h5>Điểm đến</h5>
                                     <div class="text-input-icon">
                                         <span class="glyphicon glyphicon-map-marker"></span>
                                         <input type="text" class="place-area" id="provice-text-to" placeholder="Địa điểm tham quan" />
@@ -328,42 +337,20 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5>Ngày khởi hành</h5>
+                                    <h5>Từ ngày</h5>
                                     <div class="input-group date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
                                         <input class="form-control" size="16" type="text" value="" readonly>
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                     </div>
                                     <input type="hidden" id="dtp_input2" value="" />
                                 </div>
-                                <div class="dropdown-list col-md-2">
-                                    <h5>Người lớn</h5>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
-                                <div class="dropdown-list col-md-2">
-                                    <h5>Trẻ em</h5>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
+                                <div class="col-md-4">
+                                    <h5>Đến ngày</h5>
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
                                 </div>
                                 <script type="text/javascript">
                                     $('.form_date').datetimepicker({
@@ -398,11 +385,103 @@
             </div>
         </div>
         <!--/TopContent-->
-        <div class="container">
-            <h3>Collapsible Navbar</h3>
-            <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-                <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+
+        <div class="clearfix"> </div>
+        <div id="middle-content" class="middle-content">
+            <div class="container">
+                <h3>Tour nổi bật</h3>
+                <div class="col-md-4 hot-hotel-lst">
+                    <div id="accordion" class="droplist-accordion">
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse2"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse2" class="panel-collapse collapse in collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a4.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">5.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse3"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse3" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a3.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">15.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse4"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse4" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a2.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">5.500.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapse5"> Doan hoi thoai 1
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </button>
+                            <div id="collapse5" class="panel-collapse collapse collapse-content">
+                                <a href="products.html">
+                                    <div class="">
+                                        <img src="images/a1.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="col-md-6">Lorem ipsum dolor sit amet , Bangalore</div>
+                                        <div class="col-md-3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-3">9.000.000đ</div>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hot-hotel2">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+                <div class="col-md-4 hot-hotel3">asdasd</div>
+            </div>
         </div>
+        <div class="clearfix"> </div>
+        <div id="bottom-content" class="bottom-content">
+
+        </div>
+
     </div>
     <!--/Content-->
 
@@ -483,7 +562,7 @@
                 <div class="col-md-4">
                     <form>
                         <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                        <input class="f-submit" type="submit" value="Đăng ký nhận tin mới">
+                        <input class="f-submit" type="submit" value="Đăng ký nhận tin">
                     </form>
                 </div>
             </div>
