@@ -1,0 +1,106 @@
+.cotent-body .top-content {
+    margin: 0px;
+    padding-top: 20px;
+    height: 450px;
+    background-image: url(../../images/banner.jpg);
+}
+
+.cotent-body .top-content .image-slider {
+    height: 410px;
+}
+
+.cotent-body .top-content .qick-search {
+    height: 410px;
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFF;
+    padding-left: 40px;
+}
+
+.cotent-body .top-content .qick-search .text-input-icon {
+    background-color: #FFF;
+    color: #000;
+    height: 32px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.cotent-body .top-content .qick-search .text-input-icon span {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.cotent-body .top-content .qick-search .text-input-icon input {
+    margin-right: 8px;
+    margin-top: 5px;
+    color: #000;
+    border-style: none;
+    height: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    width: 80%;
+}
+
+.cotent-body .top-content .qick-search .dropdown-list select {
+    color: #737373;
+    width: 60px;
+    height: 34px;
+    border: none;
+}
+
+.cotent-body .top-content .qick-search h5 {
+    font-weight: bold;
+}
+
+.cotent-body .top-content .qick-search .class-droplist select {
+    color: #737373;
+    width: 160px;
+    height: 34px;
+    border: none;
+}
+
+.cotent-body .top-content .qick-search input:focus,
+.cotent-body .top-content .qick-search select:focus,
+.cotent-body .top-content .qick-search textarea:focus,
+.cotent-body .top-content .qick-search button:focus {
+    outline: none;
+}
+
+.cotent-body .top-content .qick-search input {
+    color: #000;
+}
+
+.cotent-body .top-content .qick-search .place-row .col-md-5 {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.cotent-body .top-content .qick-search .title_header .row {
+    margin-bottom: 15px;
+}
+
+.cotent-body .top-content .qick-search .search-button {
+    width: 80px;
+    height: 40px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.cotent-body .top-content .image-item-slide img {
+    width: 100%;
+    height: 410px;
+    max-height: 410px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cotent-body .top-content #myCarousel {
+    background-color: red;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}

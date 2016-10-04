@@ -5,10 +5,13 @@
     <title>Du lịch Việt - Trang chủ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/write/header.css">
     <link rel="stylesheet" href="css/write/footer.css">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="css/write/index.css">
+
 
 
     <script src="js/jquery-1.12.4.js"></script>
@@ -16,89 +19,97 @@
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
+    <script src="js/jquery-ui.js"></script>
     <style type="text/css">
-        .top-content {
-            margin-top: 0px;
-            padding-top: 20px;
-            height: 450px;
-            background-image: url(images/banner.jpg);
+        body {
+            background-color: #f4f7f9;
         }
         
-        .image-slider {
-            height: 410px;
-        }
-        
-        .qick-search {
-            height: 410px;
-            background-color: rgba(51, 51, 51, 0.3);
-            border-radius: 5px;
-            box-sizing: border-box;
-            color: #FFF;
-        }
-        
-        .qick-search .text-input-icon {
-            background-color: #FFF;
-            color: #000;
-            height: 32px;
-            vertical-align: middle;
-            border-radius: 5px;
-            box-sizing: border-box;
-            padding: 0px;
-        }
-        
-        .qick-search .text-input-icon span {
-            margin-top: 8px;
-            margin-left: 5px;
-        }
-        
-        .qick-search .text-input-icon input {
-            margin-right: 8px;
-            margin-top: 5px;
-            color: #000;
-            border-style: none;
-            height: 22px;
-            padding-left: 5px;
-            padding-right: 5px;
-            font-size: 14px;
-            width: 80%;
-        }
-        
-        input:focus,
-        select:focus,
-        textarea:focus,
-        button:focus {
-            outline: none;
-        }
-        
-        .qick-search input {
-            color: #000;
-        }
-        
-        .qick-search .place-row .col-md-5 {
-            padding: 10px;
-            margin-left: 10px;
-        }
-        
-        .image-item-slide img {
-            width: 100%;
-            height: 410px;
-            max-height: 410px;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        
-        #myCarousel {
-            background-color: red;
-            border-radius: 5px;
-            box-sizing: border-box;
+        .cotent-body {
             margin: 0px;
-            padding: 0px;
+        }
+        
+        .clearfix {
+            margin-top: 10px;
         }
     </style>
 
     <script type="text/javascript">
         $(function () {
             $('#datetimepicker1').datetimepicker();
+
+            var provices = [
+              "An Giang"
+            , "Bà Rịa - Vũng Tàu"
+            , "Bắc Giang"
+            , "Bắc Kạn"
+            , "Bạc Liêu"
+            , "Bắc Ninh"
+            , "Bến Tre"
+            , "Bình Định"
+            , "Bình Dương"
+            , "Bình Phước"
+            , "Bình Thuận"
+            , "Cà Mau"
+            , "Cao Bằng"
+            , "Đắk Lắk"
+            , "Đắk Nông"
+            , "Điện Biên"
+            , "Đồng Nai"
+            , "Đồng Tháp"
+            , "Gia Lai"
+            , "Hà Giang"
+            , "Hà Nam"
+            , "Hà Tĩnh"
+            , "Hải Dương"
+            , "Hậu Giang"
+            , "Hòa Bình"
+            , "Hưng Yên"
+            , "Khánh Hòa"
+            , "Kiên Giang"
+            , "Kon Tum"
+            , "Lai Châu"
+            , "Lâm Đồng"
+            , "Lạng Sơn"
+            , "Lào Cai"
+            , "Long An"
+            , "Nam Định"
+            , "Nghệ An"
+            , "Ninh Bình"
+            , "Ninh Thuận"
+            , "Phú Thọ"
+            , "Quảng Bình"
+            , "Quảng Nam"
+            , "Quảng Ngãi"
+            , "Quảng Ninh"
+            , "Quảng Trị"
+            , "Sóc Trăng"
+            , "Sơn La"
+            , "Tây Ninh"
+            , "Thái Bình"
+            , "Thái Nguyên"
+            , "Thanh Hóa"
+            , "Thừa Thiên Huế"
+            , "Tiền Giang"
+            , "Trà Vinh"
+            , "Tuyên Quang"
+            , "Vĩnh Long"
+            , "Vĩnh Phúc"
+            , "Yên Bái"
+            , "Phú Yên"
+            , "Cần Thơ"
+            , "Đà Nẵng"
+            , "Hải Phòng"
+            , "Hà Nội"
+            , "TP HCM"
+            ];
+            $("#provice-text-from").autocomplete({
+                source: provices
+            });
+
+            $("#provice-text-to").autocomplete({
+                source: provices
+            });
         });
     </script>
 </head>
@@ -164,142 +175,178 @@
     </div>
     <!--/Header-->
 
-    <!--TopContent-->
-    <div id="top-content" class="top-content row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-3 image-slider">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
+    <!--Content-->
+    <div class="cotent-body">
+        <!--TopContent-->
+        <div id="top-content" class="top-content">
+            <div class="container">
+                <div class="col-md-4 image-slider">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active image-item-slide">
-                        <img src="images/1.jpg" alt="Vịnh Hạ Long" class="image-real">
-                        <div class="carousel-caption">
-                            <h3>Vịnh Hạ Long</h3>
-                            <p>Bãi biễn ven bờ Vịnh Hạ Long</p>
-                        </div>
-                    </div>
-
-                    <div class="item image-item-slide">
-                        <img src="images/4.jpg" alt="Chania" class="image-real">
-                        <div class="carousel-caption">
-                            <h3>Chania</h3>
-                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                        </div>
-                    </div>
-
-                    <div class="item image-item-slide">
-                        <img src="images/2.jpg" alt="Flower" class="image-real">
-                        <div class="carousel-caption">
-                            <h3>Flowers</h3>
-                            <p>Beatiful flowers in Kolymbari, Crete.</p>
-                        </div>
-                    </div>
-
-                    <div class="item image-item-slide">
-                        <img src="images/3.jpg" alt="Flower" class="image-real">
-                        <div class="carousel-caption">
-                            <h3>Flowers</h3>
-                            <p>Beatiful flowers in Kolymbari, Crete.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-7 qick-search container">
-            <div class="row title_header">
-                <h2>Tìm Tour</h2>
-            </div>
-            <div class="row title_header">
-                <div id="filter-content">
-                    <div class="row place-row">
-                        <div class="col-md-4">
-                            <h5>sadasdasd</h5>
-
-                            <div class="text-input-icon">
-                                <span class="glyphicon glyphicon-map-marker col-md-1"></span>
-                                <input type="text" class="place-area col-md-8" list="browsers" />
-                            </div>
-
-
-
-                            <datalist id="browsers">
-                                <option value="Internet Explorer" />
-                                <option value="Firefox" />
-                                <option value="Chrome" />
-                                <option value="Opera" />
-                                <option value="Safari" />
-                            </datalist>
-                        </div>
-                        <div class="col-md-3">
-                            <h5>sadasdasd</h5>
-                            <input type="text" class="place-area" list="browsers" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class='col-md-10'>
-                            <div class="form-group">
-                                <h5>Date picking</h5>
-                                <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
-                                    <input class="form-control" size="16" type="text" value="" readonly>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active image-item-slide">
+                                <img src="images/1.jpg" alt="Vịnh Hạ Long" class="image-real">
+                                <div class="carousel-caption">
+                                    <h3>Vịnh Hạ Long</h3>
+                                    <p>Bãi biễn ven bờ Vịnh Hạ Long</p>
                                 </div>
-                                <input type="hidden" id="dtp_input2" value="" />
-                                <br/>
+                            </div>
+
+                            <div class="item image-item-slide">
+                                <img src="images/4.jpg" alt="Chania" class="image-real">
+                                <div class="carousel-caption">
+                                    <h3>Chania</h3>
+                                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                </div>
+                            </div>
+
+                            <div class="item image-item-slide">
+                                <img src="images/2.jpg" alt="Flower" class="image-real">
+                                <div class="carousel-caption">
+                                    <h3>Flowers</h3>
+                                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                </div>
+                            </div>
+
+                            <div class="item image-item-slide">
+                                <img src="images/3.jpg" alt="Flower" class="image-real">
+                                <div class="carousel-caption">
+                                    <h3>Flowers</h3>
+                                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            $('.form_date').datetimepicker({
-                                language: 'vi',
-                                weekStart: 1,
-                                todayBtn: 1,
-                                autoclose: 1,
-                                todayHighlight: 1,
-                                startView: 2,
-                                minView: 2,
-                                forceParse: 0
-                            });
-                        </script>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 qick-search">
+                    <div class="row title_header">
+                        <h2>Tra Cứu Tour</h2>
+                    </div>
+                    <div class="row title_header">
+                        <div id="filter-content">
+                            <div class="row place-row">
+                                <div class="col-md-4">
+                                    <h5>Điểm khởi hành</h5>
+
+                                    <div class="text-input-icon">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        <input type="text" class="place-area" id="provice-text-from" placeholder="Địa điểm khởi hành" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Điểm tham quan</h5>
+                                    <div class="text-input-icon">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        <input type="text" class="place-area" id="provice-text-to" placeholder="Địa điểm tham quan" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Ngày khởi hành</h5>
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
+                                </div>
+                                <div class="dropdown-list col-md-2">
+                                    <h5>Người lớn</h5>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown-list col-md-2">
+                                    <h5>Trẻ em</h5>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <script type="text/javascript">
+                                    $('.form_date').datetimepicker({
+                                        language: 'vi',
+                                        weekStart: 1,
+                                        todayBtn: 1,
+                                        autoclose: 1,
+                                        todayHighlight: 1,
+                                        startView: 2,
+                                        minView: 2,
+                                        forceParse: 0
+                                    });
+                                </script>
+                            </div>
+                            <div class="row">
+                                <div class="class-droplist col-md-3">
+                                    <h5>Gói cước</h5>
+                                    <select>
+                                        <option value="1">Tiết Kiệm</option>
+                                        <option value="2">Doanh Nhân</option>
+                                        <option value="3">Cao Cấp</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row title_header">
+                        <input type="submit" value="Search" class="search-button" />
                     </div>
                 </div>
             </div>
-            <div class="row title_header">
-                <h2>Search</h2>
+        </div>
+        <!--/TopContent-->
+
+        <div class="clearfix"> </div>
+        <div id="middle-content" class="middle-content">
+            <div class="container">
+                <h3>Collapsible Navbar</h3>
+                <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+                    <p>Only when the button is clicked, the navigation bar will be displayed.</p>
             </div>
         </div>
-    </div>
-    <div class="clearfix"> </div>
-    </div>
-    <div class="col-md-1">
-    </div>
-    </div>
-    <!--/TopContent-->
+        <div class="clearfix"> </div>
+        <div id="bottom-content" class="bottom-content">
 
-    <div class="clearfix"> </div>
-    <div class="container">
-        <h3>Collapsible Navbar</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-            <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        </div>
+
     </div>
-    <div class="clearfix"> </div>
+    <!--/Content-->
 
     <br/>
     <!--Footer-->
@@ -317,7 +364,7 @@
                 </div>
                 <br/>
                 <p>
-                    Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước
+                    Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
                 </p>
             </div>
             <div class="col-md-3">
@@ -378,16 +425,64 @@
                 <div class="col-md-4">
                     <form>
                         <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                        <input type="submit" value="Đăng ký nhận tin mới">
+                        <input class="f-submit" type="submit" value="Đăng ký nhận tin">
                     </form>
                 </div>
-                <div class="clearfix"> </div>
             </div>
         </div>
         <!-- //news-letter -->
     </div>
+    <div class="clearfix"> </div>
+    <div class="footer-bottom-grids">
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-4 footer-bottom-left">
+                <h4>Tải Về Ứng Dụng Trên Mobile</h4>
+                <div class="d-apps">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/app1.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/app2.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/app3.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 footer-bottom-left">
+                <h4>Thanh Toán</h4>
+                <div class="a-cards">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/c1.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/c2.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/c3.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 footer-bottom-left">
+                <h4>Liên Hệ</h4>
+                <div class="f-contac">
+                    <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                    <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <br/>
+            <div class="copyright">
+                <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+            </div>
+        </div>
+    </div>
     <!--/Footer-->
-
 </body>
 
 </html>
