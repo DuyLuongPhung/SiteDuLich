@@ -38,6 +38,18 @@
      transition: font-size 0.3s ease, background-color 0.3s ease;
  }
  
+ .footer .title-call {
+     font-size: 16px;
+     font-weight: bold;
+     color: #6fd508;
+ }
+ 
+ .footer .phone-call {
+     font-size: 20px;
+     font-weight: bold;
+     color: #0099cc;
+ }
+ 
  .footer h4 {
      font-size: 18px;
      font-weight: bold;

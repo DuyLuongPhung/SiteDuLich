@@ -53,14 +53,6 @@
     margin-right: 8%;
 }
 
-.clearfix:after {
-    clear: both;
-    content: ".";
-    display: block;
-    width: 0px;
-    height: 0px;
-}
-
 .header .tdcontent {
     width: 80%;
 }
