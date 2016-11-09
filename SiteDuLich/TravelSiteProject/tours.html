@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tour | Du Lịch Việt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/write/header.css">
+    <link rel="stylesheet" href="css/write/footer.css">
+    <link rel="stylesheet" href="css/write/index-slider.css">
+
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
+    <script src="js/jquery-ui.js"></script>
+    <style type="text/css">
+        .middle-content .droplist-accordion button {
+            border-style: none;
+            width: 100%;
+            border-radius: 0px;
+            text-align: left;
+            background-color: #FFF;
+            height: 50px;
+            color: #0099cc;
+            padding-left: 20px;
+        }
+        
+        .middle-content .droplist-accordion button:focus {
+            outline: none;
+        }
+        
+        .middle-content .droplist-accordion button span {
+            float: right;
+        }
+        
+        .middle-content .droplist-accordion .panel {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #e6e6e6;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content {
+            background-color: #f2f2f2;
+            color: #0099cc;
+            font-size: 13px;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content img {
+            width: 100%;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content a {
+            text-decoration: none;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content span {
+            color: #ffcc00;
+            font-size: 13px;
+        }
+        
+        .middle-content .droplist-accordion .collapse-content a:hover {
+            color: #007399;
+        }
+        
+        .middle-content .droplist-accordion ul li {
+            display: inline;
+        }
+        
+        .middle-content .droplist-accordion ul li a {
+            width: 100%;
+        }
+        
+        .middle-content .droplist-accordion .destinations-images {
+            width: 100%;
+            height: auto;
+        }
+        
+        .middle-content .hot-tour-lst {
+            padding: 5px;
+            padding-right: 15px;
+        }
+        
+        .middle-content .hot-tour-lst .panel .tour-short-detail {
+            padding-bottom: 15px;
+        }
+        
+        .middle-content .hot-tour-best {
+            padding: 5px;
+            padding-right: 15px;
+        }
+        
+        .middle-content .hot-tour-best .hot-items {
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .middle-content .hot-tour-best .hot-items .money-pricing {
+            position: absolute;
+            top: 15px;
+            right: 0px;
+            padding-right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #0099cc;
+            width: 120px;
+            color: #fff;
+        }
+        
+        .middle-content .hot-tour-best .hot-items a {
+            width: 100%;
+            text-decoration: none;
+        }
+        
+        .middle-content .hot-tour-best .hot-items .hot-items-details {
+            color: #000;
+        }
+        
+        .middle-content .hot-tour-best .hot-items .hot-items-details .top-contents {
+            color: #999999;
+        }
+        
+        .middle-content .hot-tour-best .hot-items .hot-items-details .bot-contents {
+            color: #404040;
+        }
+        
+        .middle-content .hot-tour-best .hot-items .hot-items-details h5 {
+            color: #0099cc;
+            font-weight: bold;
+        }
+        
+        .middle-content .hot-tour-best .hot-items a img {
+            width: 100%;
+        }
+        
+        .middle-content .hot-tour-best .hot-items a div {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .middle-content .hot-tour-best .top-destinations .top-destinations-bottom {
+            background-color: white;
+            border: 1px solid #e6e6e6;
+        }
+        
+        .middle-content .hot-tour-best .top-destinations .top-destinations-bottom a {
+            color: #0099cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .middle-content .hot-tour-best .top-destinations .top-destinations-bottom p {
+            color: #999999;
+        }
+        
+        .middle-content .hot-tour-best .top-destinations .top-destinations-bottom span {
+            color: #ffcc00;
+            font-size: 13px;
+        }
+        
+        .middle-content .hot-tour-best .top-destinations .top-destinations-bottom .money {
+            color: #00ff00;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .middle-content .hot-tour-best .news-grids .news-grids-bottom {
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        
+        middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text {
+            margin-top: 10px;
+        }
+        
+        .middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text a {
+            color: #0099cc;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        .middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text p {
+            color: #999999;
+            margin-top: 5px;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids {
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            padding: 5px;
+            padding-left: 20px;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids .choose-grids-info .logo {
+            color: #00ff00;
+            align-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids .choose-grids-info .usd-icon {
+            color: #fff;
+            align-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50%;
+            padding: 2px;
+            height: 45px;
+            width: 45px;
+            background: #00ff00;
+            margin-left: 10px;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids .choose-grids-info .logo h4 {
+            width: 100%;
+            font-size: 15px;
+            font-weight: normal;
+            color: #999999;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids .choose-grids-info .logo h5 {
+            width: 100%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .middle-content .hot-tour-lst #why .choose-grids .choose-grids-info .logo-icon {
+            width: 100%;
+            height: 100%;
+            font-size: 45px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        body {
+            background-color: #f4f7f9;
+        }
+        
+        .cotent-body {
+            margin: 0px;
+        }
+        
+        .clearfix {
+            margin-top: 10px;
+        }
+        
+        .top-content {
+            margin: 0px;
+            padding-top: 20px;
+            height: 250px;
+            background-image: url(../../images/banner2.jpg);
+            opacity: 0.5;
+            background-size: 100%;
+        }
+        
+        #top-banner {
+            position: relative;
+        }
+        
+        #top-banner .container {
+            position: absolute;
+            top: 10px;
+            left: 70px;
+        }
+        
+        .im-centered {
+            margin: auto;
+            max-width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Header-Rows-->
+    <div id="header" class="row">
+        <div class="header">
+            <div id="logo" class="logo">
+                <table>
+                    <tr>
+                        <td class="margin"></td>
+                        <td class="tdlogo">
+                            <div class="logo">
+                                <h1><a  href="index.html"><span>Du Lịch Việt</span></a></h1>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="phone">
+                                <ul>
+                                    <li class="caption">
+                                        SĐT
+                                    </li>
+                                    <li class="text_phone">
+                                        (+84)969909893
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="margin"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clearfix"> </div>
+            <div id="menu" class="menu">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li class="item-active"><a href="#">Tour</a></li>
+                                <li><a href="#">Địa Điểm</a></li>
+                                <li><a href="#">Khách Sạn</a></li>
+                                <li><a href="#">Phương Tiện</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
+                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right login-box">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--/Header-Rows-->
+
+    <div id="top-banner">
+        <div id="top-content" class="row top-content">
+        </div>
+        <div class="container" style="margin-top: 5%;">
+            <div class="col-md-6 col-md-offset-3">
+
+                <!-- Search Form -->
+                <form role="form">
+
+                    <!-- Search Field -->
+                    <div class="row">
+                        <h1 class="text-center">Tra Cứu Nhanh</h1>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="search" placeholder="Tìm tour" />
+                                <span class="input-group-btn">
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;"></span></button>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- End of Search Form -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"> </div>
+
+    <!--Main-Content-->
+    <div id="main-content" class="row cotent-body">
+        <div id="middle-content" class="middle-content">
+            <div class="container">
+                <br/>
+                <div class="col-md-4 hot-tour-best">
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a3.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour Đà Lạt, mùa xuân rực rỡ 2016!</h5>
+                                <p class="top-contents">Tham quan các địa danh nổi tiếng ở Đà Lạt, hồ Xuân Hương, thác Drây-Sáp, v.v.. hơn thế nữa là được tận hưởng tiết trời se lạnh của Đà Lạt ngay trong mùa xuân này.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a2.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour du lịch Hà Lan!</h5>
+                                <p class="top-contents">Tham quan các địa danh của Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-md-4 hot-tour-best">
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a5.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour du lịch Sapa thơ mộng!</h5>
+                                <p class="top-contents">Đặt chân lên Sapa giữa tiết trời đông se lạnh đang dần chuyển xuân. Được đắm mình trong không khí lễ hội của đồng bào dân tộc miền núi trong dịp xuân về.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a1.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
+                                <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 hot-tour-best">
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a4.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour du lịch Singapore!</h5>
+
+                                <p class="top-contents">Tham quan các địa danh nổi tiếng ở Singapore cùng rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Đắm mình trong thành phố hiện dại nhất Đông Nam Á.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hot-items">
+                        <a href="products.html">
+                            <img src="images/a6.jpg" alt="" />
+                            <div class="money-pricing text-right">15.000.000đ</div>
+                            <div class="hot-items-details">
+                                <h5>Đặt ngay Tour du lịch Vũng Tàu - biển gọi!</h5>
+                                <p class="top-contents">Tận hưởng kỳ nghỉ tại Vũng Tàu với rất nhiều thắng cảnh vô cùng tuyệt đẹp. Được thả mình trên những bãi biển xinh đẹp. Là địa điểm đáng để gia đình bạn có một kỳ nghỉ mát tuyệt vời.</p>
+                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--/Main-Content-->
+    <div class="clearfix"> </div>
+    <div class="im-centered row">
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="?page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="?page=4">4</a></li>
+                <li class="page-item"><a class="page-link" href="?page=5">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="clearfix"> </div>
+    <!--Footer-Sitemap-->
+    <div id="footer-sitemap" class="row">
+        <div id="footer" class="footer">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-3">
+                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <hr/>
+                    <div class="block social">
+                        <a href=""><img src="images/icons/internet.png" alt=""></a>
+                        <a href="https://www.facebook.com/cr.luonguit/"><img src="images/icons/facebook.png" alt=""></a>
+                        <a href=""><img src="images/icons/twitter.png" alt=""></a>
+                        <a href=""><img src="images/icons/google-plus.png" alt=""></a>
+                    </div>
+                    <br/>
+                    <p>
+                        Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>DỊCH VỤ</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="index.html">Tour Du Lịch Trong Nước</a></li>
+                        <li><a href="flights-hotels.html">Tour Du Lịch Nước Ngoài</a></li>
+                        <li><a href="index.html">Đặt Vé Máy Bay</a></li>
+                        <li><a href="hotels.html">Đặt Vé Tàu</a></li>
+                        <li><a href="hotels.html">Phương Tiện Du Lịch</a></li>
+                        <li><a href="hotels.html">Đặt Khách Sạn</a></li>
+                        <li><a href="bus.html">Tư Vấn Địa Điểm Du Lịch</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Điều Khoản</a></li>
+                        <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>LIÊN KẾT</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="#">VietNam Airlines</a></li>
+                        <li><a href="#">Jetstar Pacific Airlines</a></li>
+                        <li><a href="#">Xe Phương Trang</a></li>
+                        <li><a href="#">Xe Mai Linh</a></li>
+                        <li><a href="#">Tân Sơn Nhất Hotels</a></li>
+                        <li><a href="#">Mường Thanh Hotels</a></li>
+                        <li><a href="#">Bà Nà Hills</a></li>
+                        <li><a href="#">Khu Du Lịch Suối Tiên</a></li>
+                        <li><a href="#">Khu Du Lịch Đầm Sen</a></li>
+                        <li><a href="#">Khu Du Lịch Cần Giờ</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- //container -->
+
+            <!-- news-letter -->
+            <div class="container">
+                <hr/>
+                <div>
+                    <div class="col-md-4">
+                        <p><span class="title-call">Tư Vấn Miễn Phí : </span> <span class="phone-call">(+84)0969909893</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mail">Email : <a href="mailto:luonguit@gmail.com">luonguit@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <form>
+                            <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                            <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- //news-letter -->
+        </div>
+
+    </div>
+    <!--/Footer-Sitemap-->
+
+    <div class="clearfix"> </div>
+
+    <!--Footer-End-->
+    <div id="footer-end" class="row">
+        <div class="footer-bottom-grids">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Tải Về Ứng Dụng Trên Mobile</h4>
+                    <div class="d-apps">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/app1.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/app2.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/app3.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Thanh Toán</h4>
+                    <div class="a-cards">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/c1.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/c2.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/c3.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Liên Hệ</h4>
+                    <div class="f-contac">
+                        <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                        <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <br/>
+                <div class="copyright">
+                    <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--/Footer-End-->
+
+    <div class="clearfix"> </div>
+</body>
+
+</html>
