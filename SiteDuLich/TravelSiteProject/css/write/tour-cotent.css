@@ -1,0 +1,122 @@
+.middle-content .hot-tour-best .hot-items {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.middle-content .hot-tour-best .hot-items .money-pricing {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0099cc;
+    width: 120px;
+    color: #fff;
+}
+
+.middle-content .hot-tour-best .hot-items a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.middle-content .hot-tour-best .hot-items .hot-items-details {
+    color: #000;
+}
+
+.middle-content .hot-tour-best .hot-items .hot-items-details .top-contents {
+    color: #999999;
+}
+
+.middle-content .hot-tour-best .hot-items .hot-items-details .bot-contents {
+    color: #404040;
+}
+
+.middle-content .hot-tour-best .hot-items .hot-items-details h5 {
+    color: #0099cc;
+    font-weight: bold;
+}
+
+.middle-content .hot-tour-best .hot-items a img {
+    width: 100%;
+}
+
+.middle-content .hot-tour-best .hot-items a div {
+    width: 100%;
+    padding: 5px;
+}
+
+.middle-content .hot-tour-best .top-destinations .top-destinations-bottom {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+.middle-content .hot-tour-best .top-destinations .top-destinations-bottom a {
+    color: #0099cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.middle-content .hot-tour-best .top-destinations .top-destinations-bottom p {
+    color: #999999;
+}
+
+.middle-content .hot-tour-best .top-destinations .top-destinations-bottom span {
+    color: #ffcc00;
+    font-size: 13px;
+}
+
+.middle-content .hot-tour-best .top-destinations .top-destinations-bottom .money {
+    color: #00ff00;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.middle-content .hot-tour-best .news-grids .news-grids-bottom {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text {
+    margin-top: 10px;
+}
+
+.middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text a {
+    color: #0099cc;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.middle-content .hot-tour-best .news-grids .news-grids-bottom .date-text p {
+    color: #999999;
+    margin-top: 5px;
+}
+
+.top-content {
+    margin: 0px;
+    padding-top: 20px;
+    height: 250px;
+    background-image: url(../../images/banner2.jpg);
+    opacity: 0.5;
+    background-size: 100%;
+}
+
+#top-banner {
+    position: relative;
+}
+
+#top-banner .container {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.im-centered {
+    margin: auto;
+    max-width: 300px;
+}
