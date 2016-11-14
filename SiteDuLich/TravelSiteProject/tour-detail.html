@@ -23,6 +23,14 @@
     <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
     <script src="js/jquery-ui.js"></script>
     <style type="text/css">
+        body {
+            background-color: #f4f7f9;
+        }
+        
+        .cotent-body {
+            margin: 0px;
+        }
+        
         #top-content {
             width: 100%;
             margin: 0px;
@@ -72,38 +80,242 @@
         }
         
         .book-now {
-            border: 1px solid blue;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: white;
         }
         
         .book-now .header-content {
-            border: 1px solid red;
+            background-color: #6FD508;
+            width: 100%;
+            color: white;
+            font-size: 18px;
         }
         
-        .book-content {
-            border: 1px solid blue;
+        .book-now .header-content .icon-tag {
+            float: left;
+            padding: 5px;
+            color: white;
+        }
+        
+        .book-now .header-content .icon-tag span {
+            color: white;
+        }
+        
+        .book-now .header-content .text-tag {
+            float: inherit;
+            padding: 5px;
+        }
+        
+        .book-now .middle-book {
+            padding-right: 10px;
+            padding-bottom: 20px;
+        }
+        
+        .book-now .middle-book h4 {
+            font-weight: bold;
+            font-size: 24px;
+            color: #000;
+        }
+        
+        .book-now .middle-book h4 span {
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .book-now .middle-book .best-price {
+            padding-bottom: 20px;
+        }
+        
+        .book-now .middle-book .best-btn {
+            text-decoration: none;
+            background-color: #6FD508;
+            color: white;
+            font-weight: bold;
+            padding: 12px 25px;
+            text-transform: uppercase;
+        }
+        
+        .book-now .middle-book .best-btn:hover {
+            background-color: #0099cc;
+        }
+        
+        .other-comments {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        
+        .other-comments .comments-head {
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+        }
+        
+        .other-comments .comments-bot {
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+            color: #808080;
+        }
+        
+        .other-comments .comments-bot h4 {
+            padding: 5px;
+            color: #0099cc;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .other-comments .comments-bot h4 span {
+            font-size: 12px;
+        }
+        
+        #book-tour .book-content {
+            border: 1px solid #e6e6e6;
             padding: 15px;
             margin-top: 20px;
+            background-color: white;
+            display: block;
+            width: 100%;
+            float: left;
         }
         
-        .book-content ul {
+        #book-tour .book-content ul {
             list-style: none;
+            float: left;
         }
         
-        .book-content ul li span {
+        #book-tour .book-content ul li {
+            padding-top: 5px;
+        }
+        
+        #book-tour .book-content ul li span {
             margin-right: 10px;
+            color: #808080;
+            align-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #808080;
+            border-radius: 50%;
+            padding: 5px;
+            margin-right: 20px;
+        }
+        
+        #book-tour .book-content .book-content-btn {
+            text-decoration: none;
+            background-color: #6FD508;
+            color: white;
+            font-weight: bold;
+            float: right;
+            padding: 12px 25px;
+            text-transform: uppercase;
+        }
+        
+        #book-tour .book-content .book-content-btn:hover {
+            background-color: #0099cc;
         }
         
         .middle-content .left-content {
             padding: 30px;
-            border: 1px solid red;
+            padding-top: 20px;
         }
         
         .middle-content .right-content {
             padding: 20px;
-            border: 1px solid red;
+        }
+        
+        #main-content .middle-content .left-content #img-gallery {
+            padding-top: 1px;
+            border: 1px solid #e6e6e6;
+            background-color: white;
+        }
+        
+        #tour-slogen .overview-content {
+            border-left: 10px solid blue;
+            border-right: 10px solid blue;
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 24px;
+            font-size: 20px;
+            background-color: white;
+        }
+        
+        #tour-detail {
+            border: 1px solid #e6e6e6;
+            background-color: white;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        
+        #tour-detail .tour-content {
+            padding: 30px;
+        }
+        
+        #tour-detail .tour-title {
+            font-weight: bold;
+            font-size: 24px;
+            background-color: #bdcfdb;
+            margin-top: 0px;
+            padding: 5px;
+        }
+        
+        #tour-detail .tour-content .normal-text {
+            font-weight: normal;
+            font-size: 16px;
+            font-style: normal;
+        }
+        
+        #tour-detail .tour-content .day-content .day-title {
+            font-weight: bold;
+            font-size: 18px;
+            font-style: normal;
+            padding-left: 10px;
+        }
+        
+        #tour-detail .tour-content .day-content .day-event {
+            font-weight: normal;
+            font-size: 16px;
+            font-style: normal;
+            padding-left: 20px;
+        }
+        
+        #tour-detail .tour-content .day-content .day-event strong {
+            font-style: italic;
+            color: #0099cc;
+        }
+        
+        #main-content .bottom-content {
+            padding: 30px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            width: 100%;
+        }
+        
+        #main-content .bottom-content .row-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+        
+        #main-content .bottom-content .middle-content img {
+            width: 100%;
+        }
+        
+        #main-content .bottom-content .row-item .header-title {
+            background-color: #F4F7F9;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #main-content .bottom-content .row-item .header-title .col-md-3 {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 10px;
         }
     </style>
 
@@ -204,13 +416,7 @@
         <div class="container">
             <div class="middle-content">
                 <div class="col-md-8 left-content">
-
-                    <div class="row">
-                        <div class="single-pg-hdr">
-                            <h2>Morbi mollis mattis dolor</h2>
-                            <p>Eiusmod Tempor inc , St Dolore Place,Kingsport 56777</p>
-                            <p>Jump to: <a href="#">Over View</a>|<a href="#">Room Choices</a>|<a href="#">Hotel Information</a></p>
-                        </div>
+                    <div id="img-gallery" class="row">
                         <div class="flexslider">
                             <ul class="slides">
                                 <li data-thumb="images/a1.jpg">
@@ -264,219 +470,342 @@
                             });
                         </script>
                     </div>
-                    <div class="row">
+                    <div id="book-tour" class="row">
                         <div class="book-content">
                             <ul>
-                                <li><span class="glyphicon glyphicon-time"></span> <strong>Thời gian:</strong> 10/3/2016 - 17/3/2016</li>
-                                <li><span class="glyphicon glyphicon-flag"></span> <strong>Địa điểm:</strong> Paris (Pháp)</li>
-                                <li><span class="glyphicon glyphicon-send"></span><strong>Số vé còn lại:</strong> 52</li>
-                                <li><span class="glyphicon glyphicon-usd"></span><strong>Giá:</strong> 25.000.000đ</li>
+                                <li><span class="glyphicon glyphicon-time"></span><strong>Thời gian:</strong> 10/12/2016 - 14/12/2016</li>
+                                <li><span class="glyphicon glyphicon-flag"></span><strong>Địa điểm:</strong> TP. Hồ Chí Minh - Đà Lạt</li>
+                                <li><span class="glyphicon glyphicon-send"></span><strong>Số vé còn lại:</strong> 19</li>
+                                <li><span class="glyphicon glyphicon-usd"></span><strong>Giá:</strong> 2.500.000đ</li>
                             </ul>
-                            <a href="#" class="kd-booking-btn thbg-color">ĐẶT NGAY</a>
+                            <a href="#" class="book-content-btn text-right">ĐẶT NGAY</a>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="book-content">
-                            <p>adasd adad adaada</p>
+                    <div id="tour-slogen" class="row">
+                        <div class="overview-content">
+                            <p>Với độ cao 1.500 mét so với mực nước biển và được các dãy núi cùng quần hệ thực vật rừng bao quanh, Đà Lạt thừa hưởng một khí hậu miền núi ôn hòa và dịu mát quanh năm. Lịch sử hơn một thế kỷ cũng để lại cho thành phố một di sản kiến trúc giá trị, được ví như một bảo tàng kiến trúc châu Âu thế kỷ 20.</p>
                         </div>
                     </div>
-
+                    <div id="tour-detail" class="row">
+                        <div class="tour-title">
+                            Lịch trình
+                        </div>
+                        <div class="tour-content">
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>Ngày 1</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text"><strong>Di chuyển: </strong> Công ty sẽ đón du khách tại TP. HCM và di chuyển về Đà Lạt bằng xe riêng.
+                                    </p>
+                                    <p class="normal-text"><strong>Nhận phòng: </strong> Du khách được nhận phòng tại khách sạn và nghỉ ngơi trong buổi chiều.
+                                    </p>
+                                    <p class="normal-text"><strong>Tham quan tự do: </strong> Du khách được tự do khám phá Đà Lạt về đêm.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>Ngày 2</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text"><strong>8h30 tham quan Đường hầm đất sét: </strong> Đường hầm đất sét này được bắt đầu xây dựng từ năm 2010 với chiều dài khoảng 2 km tính tới nay chủ nhân của nó anh Trịnh Bá Dũng đã đầu tư khoảng 200 tỷ đồng. Điều hấp dẫn du khách ghé thăm khu du lịch này là vì nó tái hiện về lịch sử thành phố Đà Lạt từ thủa ban sơ cho tới một Đà Lạt năng động và hiện đại như bây giờ. Anh Dũng nói " Toàn bộ công trình đường hầm điêu khắc có 2 chủ đề chính là tái tạo lịch sử thành phố Đà Lạt và những câu chuyện nhân văn hóa, nhân văn có tính giáo dục.
+                                    </p>
+                                    <p class="normal-text"><strong>9h30 tham quan Thiền viện Trúc Lâm: </strong> là ngôi chùa lớn xây dựng năm 1993 theo Thiền Tông, rộng 24 hecta. Đến Thiền Viện Trúc Lâm, du khách sẽ được tắm mình trong không khí thanh tịnh nơi chốn Thiền môn. Từ trên cao quý khách có thể ngắm toàn cảnh hồ Tuyền Lâm cùng với tổng thể núi rừng hùng vỹ bao quanh. đã tạo thêm cho ngôi chùa có sức thu hút mãnh liệt với du khách.
+                                    </p>
+                                    <p class="normal-text"><strong>10h30 tham quan Thác Đatala: </strong> Du khách được tham quan phong cảnh của thác Datala, một trong những thác tự nhiên đẹp nhất Việt Nam. Tại đây, du khách còn được tham gia vào các trò chơi như ở công viên nước.
+                                    </p>
+                                    <p class="normal-text"><strong>12h00 ăn trưa và nghỉ ngơi tại trung tâm.</strong>
+                                    </p>
+                                    <p class="normal-text"><strong>13h30 tham quan Khu du lịch cáp treo: </strong> Du khách được tham quan khu cáp treo có độ cao 1500m so với mực nước biển để du khách có thể ngắm toàn cảnh thành phố Đà Lạt. Với hệ thống cáp treo dài 2300m, du khách sẽ tha hồ thưởng ngoạn để thăm quan ngôi chùa lớn nhất Đà Lạt.
+                                    </p>
+                                    <p class="normal-text"><strong>15h30 tham quan Trang trại cà phê chồn đầu tiên tại Đà Lạt: </strong> Du khách được tham quan trang trại sản xuất cà phê chồn, hương vị cà phê độc đáo và thơm ngon. Đây cũng là trang trại đầu tiên ở Việt Nam sản xuất cà phê chồn.
+                                    </p>
+                                    <p class="normal-text"><strong>17h30 ăn tối và nghỉ ngơi: </strong> Du khách ăn tối tại trung tâm, sau đó du khách có thể tự do tham quan Đà Lạt về đêm.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>Ngày 3</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text"><strong>8h30 tham quan Làng villa Pháp: </strong> Du khách được tham quan làng Villa, ngôi làng cổ được Pháp xây nhũng năm 50 của thế kỷ trước. Ngôi làng mang phong cách kiến trúc đậm chất Pháp, cũng như minh chứng cho một cột mốc lịch sử của Đà Lạt.
+                                    </p>
+                                    <p class="normal-text"><strong>10h30 tham quan Chùa ve chai: </strong> Chùa ve chai hay Linh Phước tự tọa lạc trên một khu đất nằm bên phải quốc lộ 20 - đường từ Đà Lạt đi Cầu Đất, thuộc địa bàn Trại Mát, phường 11. Chùa được khởi công xây dựng vào năm 1949 và hòan thành vào năm 1952 do Phật tử địa phương phát tâm đóng góp. Năm 1990 dưới sự thiết kế và chỉ huy thi công của Thầy Trụ trì đời thứ năm là Thượng Tọa Thích Tâm Vị và sự đóng góp của Phật tử địa phương cùng Phật tử các nơi, Chùa đã được xây dựng lại toàn bộ như ngày nay.
+                                    </p>
+                                    <p class="normal-text"><strong>12h00 ăn trưa và nghỉ ngơi tại trung tâm.</strong>
+                                    </p>
+                                    <p class="normal-text"><strong>13h30 tham quan Vườn hoa: </strong> Có thể nói các lễ hội hoa đã làm nên sự độc đáo cho Đà Lạt. Và ở Đà Lạt, những vườn hoa đẹp mộng mơ làm say đắm du khách khi đến nơi đây.
+                                    </p>
+                                    <p class="normal-text"><strong>15h30 tham quan Nhà ga cổ nhât Việt Nam: </strong> là nhà ga tàu hỏa của thành phố Đà Lạt, đây được xem là nhà ga cổ kính nhất Việt Nam và Đông Dương.
+                                    </p>
+                                    <p class="normal-text"><strong>17h30 ăn tối và nghỉ ngơi: </strong> Du khách ăn tối tại trung tâm, sau đó du khách có thể tự do tham quan Đà Lạt về đêm.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>Ngày 4</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text"><strong>Tham quan tự do: </strong> Du khách tự do khám phá, dạo phố, mua sắm tại Đà Lạt.
+                                    </p>
+                                    <p class="normal-text"><strong>11h30 trả phòng.</strong>
+                                    </p>
+                                    <p class="normal-text"><strong>12h00 di chuyển về TP. HCM.</strong>
+                                    </p>
+                                    <p class="normal-text"><strong>16h00 kết thúc tour.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 right-content">
                     <div class="book-now">
-                        <div class="header-content row">
-                            <div class="col-md-2">
+                        <div class="header-content">
+                            <div class="icon-tag">
                                 <a href="#">
                                     <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
                                 </a>
                             </div>
-                            <div class="col-md-10">
-                                <p>Special Offer</p>
+                            <div class="text-tag">
+                                <p>Ưu đãi tuần 19</p>
                             </div>
                         </div>
-                        <div class="sp-bor-btn text-right">
-                            <h4><span>$8,750</span> $4,850</h4>
-                            <p class="best-pri">Best price</p>
-                            <a class="best-btn" href="booking.html">Book Now</a>
+                        <div class="middle-book text-right">
+                            <h4><span>2.500.00đ</span> 2.250.000đ</h4>
+                            <p class="best-price">Giảm ngay 10%</p>
+                            <a class="best-btn" href="booking.html">Đặt ngay</a>
                         </div>
                     </div>
                     <div class="map-gd">
-                        <iframe style="height:300px;width:100%;border:1px solid black;" src="https://www.google.com/maps/embed/v1/place?q=thành+phố+Đà+Lạt,+Lâm+Đồng,+Vietnam&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                        <iframe style="height:300px;width:100%;border:1px solid #ccc;" src="https://www.google.com/maps/embed/v1/place?q=thành+phố+Đà+Lạt,+Lâm+Đồng,+Vietnam&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
                     </div>
                     <div class="other-comments">
                         <div class="comments-head">
-                            <h3>Excellent</h3>
-                            <p>4.5/5</p>
+                            <h3>Du Khách Cảm Nhận</h3>
                             <div class="clearfix"></div>
                         </div>
                         <div class="comments-bot">
-                            <p>"Vestibulum ullamcorper condimentum luctus. Ut ullamcorper elit eu auctor commodo."</p>
-                            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> John Doe</h4>
+                            <p>"Một trải nghiệm thú vị và đáng nhớ. Phong cảnh tuyệt vời để thư giãn sau những ngày làm việc mệt mỏi. Tôi rất hài lòng với dịch vụ của công ty."</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Bảo Châu</h4>
                         </div>
                         <div class="comments-bot">
-                            <p>"Aliquam non purus quis tellus varius egestas ut vitae tellus. Pellentesque non est ac tortor maximus imperdiet at id quam."</p>
-                            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Luther</h4>
+                            <p>"Một chuyến đi tuyệt vời, đó là những gì tôi muốn nói về chuyến đi này. Tôi đã có nhiều bức hình đáng giá để lưu lại kỷ niệm này. Hãy ghé thăm Đà Lạt nếu bạn có thời gian nhé!"</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Quang Trung</h4>
                         </div>
                         <div class="comments-bot">
-                            <p>"Vestibulum sapien quam, interdum quis bibendum quis, malesuada a nisi. Proin at blandit justo."</p>
-                            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Patrick</h4>
+                            <p>"Chuyến đi tuyệt vời. Tôi đã có thêm nhiều trải nghiệm, tiếp thu nhiều nét độc đáo về văn hóa cũng như thiên nhiên nơi đây. Tôi sẽ lại ghé thăm Đà Lạt một ngày không xa. Dịch vụ của công ty rất tuyệt vời, chi phí lại rất hợp lý!"</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Tú Linh</h4>
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="bottom-content"></div>
-        </div>
-        <!--/Main-Content-->
-
-        <div class="clearfix"> </div>
-        <!--Footer-Sitemap-->
-        <div id="footer-sitemap" class="row">
-            <div id="footer" class="footer">
-                <!-- container -->
-                <div class="container">
+            <div class="bottom-content">
+                <div class="row-item row">
                     <div class="col-md-3">
-                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
-                        <hr/>
-                        <div class="block social">
-                            <a href=""><img src="images/icons/internet.png" alt=""></a>
-                            <a href="https://www.facebook.com/cr.luonguit/"><img src="images/icons/facebook.png" alt=""></a>
-                            <a href=""><img src="images/icons/twitter.png" alt=""></a>
-                            <a href=""><img src="images/icons/google-plus.png" alt=""></a>
+                        <div class="header-title">Mô tả</div>
+                        <div class="middle-content">
+                            <a href="#"><img src="images/p2.jpg" alt=""></a>
+                            <div class="room-basic-info">
+                                <a href="#">Fusce vestibulum ultricies rutrum</a>
+                                <h6>1 king bed or  2 single beds</h6>
+                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
+                            </div>
                         </div>
-                        <br/>
-                        <p>
-                            Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
-                        </p>
                     </div>
                     <div class="col-md-3">
-                        <h4>DỊCH VỤ</h4>
-                        <hr/>
-                        <ul>
-                            <li><a href="index.html">Tour Du Lịch Trong Nước</a></li>
-                            <li><a href="flights-hotels.html">Tour Du Lịch Nước Ngoài</a></li>
-                            <li><a href="index.html">Đặt Vé Máy Bay</a></li>
-                            <li><a href="hotels.html">Đặt Vé Tàu</a></li>
-                            <li><a href="hotels.html">Phương Tiện Du Lịch</a></li>
-                            <li><a href="hotels.html">Đặt Khách Sạn</a></li>
-                            <li><a href="bus.html">Tư Vấn Địa Điểm Du Lịch</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-grid">
-                        <h4>VỀ CHÚNG TÔI</h4>
-                        <hr/>
-                        <ul>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Điều Khoản</a></li>
-                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                            <li><a href="#">Tuyển Dụng</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Feedback</a></li>
-                        </ul>
+                        <div class="header-title">Hoạt động</div>
+                        <div class="middle-content">
+                            <a href="#"><img src="images/p2.jpg" alt=""></a>
+                            <div class="room-basic-info">
+                                <a href="#">Fusce vestibulum ultricies rutrum</a>
+                                <h6>1 king bed or  2 single beds</h6>
+                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h4>LIÊN KẾT</h4>
-                        <hr/>
-                        <ul>
-                            <li><a href="#">VietNam Airlines</a></li>
-                            <li><a href="#">Jetstar Pacific Airlines</a></li>
-                            <li><a href="#">Xe Phương Trang</a></li>
-                            <li><a href="#">Xe Mai Linh</a></li>
-                            <li><a href="#">Tân Sơn Nhất Hotels</a></li>
-                            <li><a href="#">Mường Thanh Hotels</a></li>
-                            <li><a href="#">Bà Nà Hills</a></li>
-                            <li><a href="#">Khu Du Lịch Suối Tiên</a></li>
-                            <li><a href="#">Khu Du Lịch Đầm Sen</a></li>
-                            <li><a href="#">Khu Du Lịch Cần Giờ</a></li>
-                        </ul>
+                        <div class="header-title">Chi phí</div>
+                        <div class="middle-content">
+                            <a href="#"><img src="images/p2.jpg" alt=""></a>
+                            <div class="room-basic-info">
+                                <a href="#">Fusce vestibulum ultricies rutrum</a>
+                                <h6>1 king bed or  2 single beds</h6>
+                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="col-md-3">
+                        <div class="header-title">Đăng ký</div>
+                        <div class="middle-content">
+                            <a href="#"><img src="images/p2.jpg" alt=""></a>
+                            <div class="room-basic-info">
+                                <a href="#">Fusce vestibulum ultricies rutrum</a>
+                                <h6>1 king bed or  2 single beds</h6>
+                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- //container -->
+            </div>
+        </div>
+    </div>
+    <!--/Main-Content-->
 
-                <!-- news-letter -->
-                <div class="container">
+    <div class="clearfix"> </div>
+    <!--Footer-Sitemap-->
+    <div id="footer-sitemap" class="row">
+        <div id="footer" class="footer">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-3">
+                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
                     <hr/>
-                    <div>
-                        <div class="col-md-4">
-                            <p><span class="title-call">Tư Vấn Miễn Phí : </span> <span class="phone-call">(+84)0969909893</span></p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="mail">Email : <a href="mailto:luonguit@gmail.com">luonguit@gmail.com</a></p>
-                        </div>
-                        <div class="col-md-4">
-                            <form>
-                                <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
-                            </form>
-                        </div>
+                    <div class="block social">
+                        <a href=""><img src="images/icons/internet.png" alt=""></a>
+                        <a href="https://www.facebook.com/cr.luonguit/"><img src="images/icons/facebook.png" alt=""></a>
+                        <a href=""><img src="images/icons/twitter.png" alt=""></a>
+                        <a href=""><img src="images/icons/google-plus.png" alt=""></a>
                     </div>
-                </div>
-                <!-- //news-letter -->
-            </div>
-
-        </div>
-        <!--/Footer-Sitemap-->
-
-        <div class="clearfix"> </div>
-
-        <!--Footer-End-->
-        <div id="footer-end" class="row">
-            <div class="footer-bottom-grids">
-                <!-- container -->
-                <div class="container">
-                    <div class="col-md-4 footer-bottom-left">
-                        <h4>Tải Về Ứng Dụng Trên Mobile</h4>
-                        <div class="d-apps">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/app1.png" alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/app2.png" alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/app3.png" alt="" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-bottom-left">
-                        <h4>Thanh Toán</h4>
-                        <div class="a-cards">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/c1.png" alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/c2.png" alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/c3.png" alt="" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-bottom-left">
-                        <h4>Liên Hệ</h4>
-                        <div class="f-contac">
-                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
-                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
-                        </div>
-                    </div>
-                    <div class="clearfix"> </div>
                     <br/>
-                    <div class="copyright">
-                        <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                    <p>
+                        Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>DỊCH VỤ</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="index.html">Tour Du Lịch Trong Nước</a></li>
+                        <li><a href="flights-hotels.html">Tour Du Lịch Nước Ngoài</a></li>
+                        <li><a href="index.html">Đặt Vé Máy Bay</a></li>
+                        <li><a href="hotels.html">Đặt Vé Tàu</a></li>
+                        <li><a href="hotels.html">Phương Tiện Du Lịch</a></li>
+                        <li><a href="hotels.html">Đặt Khách Sạn</a></li>
+                        <li><a href="bus.html">Tư Vấn Địa Điểm Du Lịch</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Điều Khoản</a></li>
+                        <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>LIÊN KẾT</h4>
+                    <hr/>
+                    <ul>
+                        <li><a href="#">VietNam Airlines</a></li>
+                        <li><a href="#">Jetstar Pacific Airlines</a></li>
+                        <li><a href="#">Xe Phương Trang</a></li>
+                        <li><a href="#">Xe Mai Linh</a></li>
+                        <li><a href="#">Tân Sơn Nhất Hotels</a></li>
+                        <li><a href="#">Mường Thanh Hotels</a></li>
+                        <li><a href="#">Bà Nà Hills</a></li>
+                        <li><a href="#">Khu Du Lịch Suối Tiên</a></li>
+                        <li><a href="#">Khu Du Lịch Đầm Sen</a></li>
+                        <li><a href="#">Khu Du Lịch Cần Giờ</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- //container -->
+
+            <!-- news-letter -->
+            <div class="container">
+                <hr/>
+                <div>
+                    <div class="col-md-4">
+                        <p><span class="title-call">Tư Vấn Miễn Phí : </span> <span class="phone-call">(+84)0969909893</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mail">Email : <a href="mailto:luonguit@gmail.com">luonguit@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <form>
+                            <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                            <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                        </form>
                     </div>
                 </div>
             </div>
-
+            <!-- //news-letter -->
         </div>
-        <!--/Footer-End-->
 
-        <div class="clearfix"> </div>
+    </div>
+    <!--/Footer-Sitemap-->
+
+    <div class="clearfix"> </div>
+
+    <!--Footer-End-->
+    <div id="footer-end" class="row">
+        <div class="footer-bottom-grids">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Tải Về Ứng Dụng Trên Mobile</h4>
+                    <div class="d-apps">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/app1.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/app2.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/app3.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Thanh Toán</h4>
+                    <div class="a-cards">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/c1.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/c2.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/c3.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-bottom-left">
+                    <h4>Liên Hệ</h4>
+                    <div class="f-contac">
+                        <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                        <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <br/>
+                <div class="copyright">
+                    <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--/Footer-End-->
+
+    <div class="clearfix"> </div>
 </body>
 
 </html>
