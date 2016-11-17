@@ -218,12 +218,17 @@
         }
         
         .middle-content .left-content {
-            padding: 30px;
+            padding-left: 0px;
+            padding-right: 20px;
+            padding-bottom: 20px;
             padding-top: 20px;
         }
         
         .middle-content .right-content {
-            padding: 20px;
+            padding-left: 30px;
+            padding-right: 0px;
+            padding-bottom: 20px;
+            padding-top: 20px;
         }
         
         #main-content .middle-content .left-content #img-gallery {
@@ -233,8 +238,8 @@
         }
         
         #tour-slogen .overview-content {
-            border-left: 10px solid blue;
-            border-right: 10px solid blue;
+            border-left: 10px solid #bdcfdb;
+            border-right: 10px solid #bdcfdb;
             font-style: italic;
             margin-top: 20px;
             margin-bottom: 10px;
@@ -288,20 +293,21 @@
         }
         
         #main-content .bottom-content {
-            padding: 30px;
-            padding-bottom: 0px;
-            padding-top: 0px;
-            width: 100%;
+            padding: 0px;
         }
         
         #main-content .bottom-content .row-item {
             border: 1px solid #ccc;
-            padding: 10px;
+            padding: 0px;
             background-color: white;
         }
         
-        #main-content .bottom-content .middle-content img {
+        #main-content .bottom-content .bottom-content img {
             width: 100%;
+        }
+        
+        #main-content .bottom-content .row-item .col-md-3 {
+            margin: 0px;
         }
         
         #main-content .bottom-content .row-item .header-title {
@@ -309,6 +315,7 @@
             font-size: 20px;
             padding: 0px;
             margin: 0px;
+            border: 1px solid red;
         }
         
         #main-content .bottom-content .row-item .header-title .col-md-3 {
@@ -611,7 +618,7 @@
                 <div class="row-item row">
                     <div class="col-md-3">
                         <div class="header-title">Mô tả</div>
-                        <div class="middle-content">
+                        <div class="bottom-content">
                             <a href="#"><img src="images/p2.jpg" alt=""></a>
                             <div class="room-basic-info">
                                 <a href="#">Fusce vestibulum ultricies rutrum</a>
