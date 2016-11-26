@@ -1,0 +1,178 @@
+#courses-left-menu .main .row {
+    padding: 0px;
+    margin: 0px;
+}
+
+#courses-left-menu nav.sidebar.navbar {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#courses-left-menu nav.sidebar,
+#courses-left-menu .main {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+
+/* Add gap to nav and right windows.*/
+
+#courses-left-menu .main {
+    padding: 10px 10px 0 10px;
+}
+
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+
+/*small/medium side display*/
+
+@media (min-width: 769px) {
+    /*Allow main to be next to Nav*/
+    #courses-left-menu .main {
+        position: absolute;
+        width: 100%;
+        /*keeps 100% minus nav size*/
+        margin-left: 40px;
+        float: right;
+    }
+    /*lets nav bar to be showed on mouseover*/
+    #courses-left-menu nav.sidebar:hover + .main {
+        margin-left: 200px;
+    }
+    /*Center Brand*/
+    #courses-left-menu nav.sidebar.navbar.sidebar>.container .navbar-brand,
+    #courses-left-menu .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    #courses-left-menu nav.sidebar .navbar-brand,
+    #courses-left-menu nav.sidebar .navbar-header {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    /*Center Icons*/
+    #courses-left-menu nav.sidebar a {
+        padding-right: 13px;
+    }
+    /*adds border top to first nav box */
+    #courses-left-menu nav.sidebar .navbar-nav > li:first-child {
+        border-top: 1px #e5e5e5 solid;
+    }
+    /*adds border to bottom nav boxes*/
+    #courses-left-menu nav.sidebar .navbar-nav > li {
+        border-bottom: 1px #e5e5e5 solid;
+    }
+    /* Colors/style dropdown box*/
+    #courses-left-menu nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    /*allows nav box to use 100% width*/
+    #courses-left-menu nav.sidebar .navbar-collapse,
+    #courses-left-menu nav.sidebar .container-fluid {
+        padding: 0 0px 0 0px;
+    }
+    /*colors dropdown box text */
+    #courses-left-menu .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    /*gives sidebar width/height*/
+    #courses-left-menu nav.sidebar {
+        width: 100%;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        z-index: 8000;
+        margin-bottom: 0px;
+    }
+    #courses-left-menu {
+        padding-top: 10px;
+    }
+    /*give sidebar 100% width;*/
+    #courses-left-menu nav.sidebar li {
+        width: 100%;
+    }
+    /* Move nav to full on mouse over*/
+    #courses-left-menu nav.sidebar:hover {
+        margin-left: 0px;
+    }
+    /*for hiden things when navbar hidden*/
+    #courses-left-menu .forAnimate {
+        opacity: 0;
+    }
+}
+
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+    /*Allow main to be next to Nav*/
+    #courses-left-menu .main {
+        width: calc(100% - 200px);
+        /*keeps 100% minus nav size*/
+        margin-left: 200px;
+    }
+    /*Show all nav*/
+    #courses-left-menu nav.sidebar {
+        margin-left: 0px;
+        float: left;
+    }
+    /*Show hidden items on nav*/
+    #courses-left-menu nav.sidebar .forAnimate {
+        opacity: 1;
+    }
+}
+
+#courses-left-menu nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover,
+#courses-left-menu nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+#courses-left-menu nav:hover .forAnimate {
+    opacity: 1;
+}
+
+#courses-left-menu section {
+    padding-left: 15px;
+}
+
+#courses-left-menu #bs-sidebar-navbar-collapse-1 .nav.navbar-nav li a:hover {
+    color: white;
+    background-color: rgba(66, 139, 202, .6);
+}
+
+#courses-left-menu .navbar-default .navbar-nav>.active>a,
+#courses-left-menu .navbar-default .navbar-nav>.active>a:focus,
+#courses-left-menu .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: rgba(66, 139, 202, .8);
+}
+
+#courses-left-menu .navbar.navbar-default.sidebar .navbar-header .navbar-toggle {
+    margin-right: 0px;
+}
+
+#courses-left-menu .navbar.navbar-default.sidebar .navbar-header .navbar-brand {
+    margin-left: 0px;
+    padding-left: 0px;
+    cursor: default;
+}
+
+@media only screen and (max-width:768px) {
+    #courses-left-menu .navbar.navbar-default.sidebar {
+        background-color: transparent;
+        border-style: none;
+    }
+}

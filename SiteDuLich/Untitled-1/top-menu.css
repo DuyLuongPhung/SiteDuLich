@@ -1,0 +1,67 @@
+ #top-menu .navbar-brand-centered {
+     position: absolute;
+     left: 50%;
+     display: block;
+     width: 160px;
+     text-align: center;
+     background-color: transparent;
+ }
+ 
+ #top-menu .navbar>.container .navbar-brand-centered,
+ #top-menu .navbar>.container-fluid .navbar-brand-centered {
+     margin-left: -80px;
+ }
+ 
+ #top-menu .navbar,
+ #top-menu .navbar-default {
+     background-color: transparent;
+     border-style: none;
+ }
+ 
+ @media only screen and (min-width:769px) {
+     #top-menu .end-right-item {
+         padding-right: 80px;
+     }
+ }
+ 
+ #top-menu .dropdown-header {
+     font-style: italic;
+     color: rgba(51, 204, 51, .5);
+ }
+ 
+ #top-menu #personal-dropdown-lst {
+     background-color: white;
+ }
+ 
+ #top-menu #personal-dropdown-lst li a {
+     color: black;
+ }
+ 
+ #top-menu #personal-dropdown-lst li a:hover {
+     color: rgba(11, 159, 243, .9);
+ }
+ 
+ @media only screen and (max-width:768px) {
+     #top-menu #logo-lnk img {
+         width: 60%;
+     }
+ }
+ 
+ #top-menu #personal-manage {
+     color: rgba(51, 204, 51, .9);
+     font-size: 18px;
+     font-weight: bold;
+ }
+ 
+ #top-menu #navbar .main-item {
+     font-size: 18px;
+     font-weight: bold;
+ }
+ 
+ #top-menu #navbar .main-item a:hover {
+     color: rgba(11, 159, 243, .9);
+ }
+ 
+ #top-menu #navbar .active-item a {
+     color: rgba(11, 159, 243, .9);
+ }

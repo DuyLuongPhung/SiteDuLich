@@ -1,0 +1,91 @@
+ #top-banner-tour-filter {
+     background-image: url(../../../assets/images/banner.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 60px 00px;
+ }
+ 
+ #top-banner-tour-filter .main-search-tour {
+     background-color: rgba(0, 0, 0, .7);
+     border-radius: 10px;
+     padding: 40px 0px;
+     padding-bottom: 60px;
+ }
+ 
+ @media only screen and (max-width:768px) {
+     #top-banner-tour-filter {
+         padding: 20px 10px;
+     }
+     #top-banner-tour-filter .main-search-tour {
+         padding: 20px 10px;
+     }
+     #top-banner-tour-filter .main-search-tour .hidden-i9n-mobile {
+         display: none;
+     }
+ }
+ 
+ #top-banner-tour-filter .qick-search {
+     border-radius: 5px;
+     box-sizing: border-box;
+     color: #FFF;
+     padding-left: 40px;
+ }
+ 
+ #top-banner-tour-filter .qick-search .text-input-icon {
+     background-color: #FFF;
+     color: #000;
+     vertical-align: middle;
+     box-sizing: border-box;
+     padding: 3px 5px;
+     border-radius: 3px;
+ }
+ 
+ #top-banner-tour-filter .qick-search .text-input-icon span {
+     margin-top: 8px;
+     margin-left: 5px;
+ }
+ 
+ #top-banner-tour-filter .qick-search .text-input-icon input {
+     color: #000;
+     border-style: none;
+     font-size: 14px;
+     width: 80%;
+ }
+ 
+ #top-banner-tour-filter .qick-search h5 {
+     font-weight: bold;
+ }
+ 
+ #top-banner-tour-filter .qick-search .class-droplist select {
+     color: #737373;
+     box-sizing: border-box;
+     border-radius: 3px;
+     padding: 8px;
+     width: 100%;
+ }
+ 
+ #top-banner-tour-filter .qick-search input:focus,
+ #top-banner-tour-filter .qick-search select:focus,
+ #top-banner-tour-filter .qick-search textarea:focus,
+ #top-banner-tour-filter .qick-search button:focus {
+     outline: none;
+ }
+ 
+ #top-banner-tour-filter .qick-search input {
+     color: #000;
+ }
+ 
+ #top-banner-tour-filter .qick-search .search-button {
+     padding: 8px 28px;
+     color: #FFF;
+     font-weight: bold;
+     box-sizing: border-box;
+     border: 1px solid #6fd508;
+     border-radius: 3px;
+     background-color: #6fd508;
+ }
+ 
+ #top-banner-tour-filter .qick-search .search-button:hover {
+     background-color: #59ac06;
+     border-color: #59ac06;
+ }

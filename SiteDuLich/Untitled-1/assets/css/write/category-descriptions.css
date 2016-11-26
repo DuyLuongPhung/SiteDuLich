@@ -1,0 +1,26 @@
+ #category-descriptions .col-md-12.maincontent {
+     background-color: rgba(242, 242, 242, .6);
+     margin-bottom: 20px;
+     border-radius: 20px;
+     padding: 10px;
+     padding-right: 20px;
+ }
+ 
+ #category-descriptions .col-md-12.maincontent h3 {
+     color: #000;
+     font-size: 25px;
+     font-weight: bold;
+ }
+ 
+ #category-descriptions .col-md-12.maincontent p {
+     color: rgba(51, 51, 51, .9);
+     font-size: 14px;
+ }
+ 
+ @media only screen and (min-width:769px) {
+     #category-descriptions .col-md-12.maincontent {
+         margin-left: 20px;
+         margin-right: 40px;
+         padding: 10px;
+     }
+ }

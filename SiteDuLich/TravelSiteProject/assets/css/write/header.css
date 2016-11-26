@@ -1,0 +1,241 @@
+/* Header logo and phone */
+
+#header #header-logo .col-md-6.col-xs-12 .phone-text {
+    color: rgb(70, 144, 179);
+    vertical-align: middle;
+}
+
+#header #header-logo .col-md-6.col-xs-12 .phone-text h2 {
+    font-size: 25px;
+}
+
+#header #header-logo .col-md-6.col-xs-12 .phone-text small {
+    font-size: 50%;
+    color: rgb(189, 189, 189);
+}
+
+@media only screen and (max-width:768px) {
+    #header #header-logo .col-md-6.col-xs-12 .phone-text {
+        text-align: left;
+    }
+    #header #header-logo .col-md-6.col-xs-12 .phone-text small {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    #header #header-logo .col-md-6.col-xs-12 .phone-text {
+        text-align: right;
+    }
+}
+
+
+/* Header menu */
+
+@media only screen and (min-width:769px) {
+    #header #header-menu .navbar-inverse,
+    #header #header-menu .navbar {
+        border: 1px solid rgb(189, 189, 189);
+        margin-bottom: 0px;
+    }
+    #header #header-menu .navbar-inverse .navbar-header h4 {
+        display: none;
+    }
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse {
+    background-color: rgb(89, 172, 6);
+    border-style: none;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a {
+    color: rgb(230, 230, 230);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a:hover,
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a:focus {
+    color: white;
+    background-color: rgba(111, 213, 8, .7);
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle {
+    color: rgb(230, 230, 230);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle:hover,
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle:focus,
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group>.open>a.dropdown-toggle {
+    color: white;
+    background-color: rgba(111, 213, 8, .7);
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .forgot-password a {
+    font-size: 12px;
+    display: inline;
+    float: right;
+    vertical-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .register-new-account {
+    font-size: 12px;
+    display: inline;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    color: #000;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .register-new-account a {
+    font-size: 14px;
+    display: inline;
+    vertical-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #0080c5;
+    font-weight: bold;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .forgot-password a:hover,
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .forgot-password a:focus,
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .forgot-password>.open>a {
+    color: #000;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group .login-header {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    float: left;
+}
+
+#header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group .item-active a {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(111, 213, 8, .7);
+}
+
+@media only screen and (max-width:768px) {
+    #header #header-menu .navbar-inverse,
+    #header #header-menu .navbar {
+        border-style: none;
+        margin-bottom: 0px;
+    }
+    #header #header-menu .navbar-inverse .navbar-header {
+        background-color: rgb(89, 172, 6);
+    }
+    #header #header-menu .navbar-inverse .navbar-header h4 {
+        padding-left: 10px;
+        padding-top: 10px;
+        color: #fff;
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse,
+    #header #header-menu .collapse {
+        background-color: #fff;
+        border-style: none;
+        border-color: transparent;
+        border: 0px;
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a {
+        color: rgb(36, 74, 92);
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a:hover,
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group li a:focus {
+        color: white;
+        background-color: rgba(111, 213, 8, .7);
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle {
+        color: rgb(36, 74, 92);
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle:hover,
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group li a.dropdown-toggle:focus,
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.login-group>.open>a.dropdown-toggle {
+        color: white;
+        background-color: rgba(111, 213, 8, .7);
+    }
+    #header #header-menu .navbar-inverse .navbar-collapse .navbar-nav.menu-group .item-active a {
+        background-color: rgb(64, 123, 4);
+    }
+}
+
+#header #header-menu .navbar-inverse .navbar-header .navbar-toggle {
+    border-color: #fff;
+}
+
+#header #header-menu .navbar-inverse .navbar-header .navbar-toggle:hover,
+#header #header-menu .navbar-inverse .navbar-header .navbar-toggle:focus {
+    background-color: rgb(64, 123, 4);
+}
+
+
+/*COLORS*/
+
+#header .color-red {
+    color: #FF0000;
+}
+
+#header .color-green {
+    color: #6cbc42;
+}
+
+#header .color-blue {
+    color: #0080c5;
+}
+
+#header .color-facebook {
+    color: #00539f;
+}
+
+#header .color-linkedin {
+    color: #0176b5;
+}
+
+
+/*NAVBAR STYLES*/
+
+#header .navbar-border {
+    border-bottom: solid 5px rgb(111, 213, 8);
+}
+
+#header .login-panel {
+    min-width: 250px;
+    border-top: 14px solid rgb(111, 213, 8);
+    border-right: 1px solid rgb(111, 213, 8);
+    border-bottom-right-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-bottom: 3px solid rgb(111, 213, 8);
+    border-left: 1px solid rgb(111, 213, 8);
+    border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+}
+
+#header .dropdown-header {
+    display: block !imnportant;
+    padding-bottom: 30px;
+    height: 10px;
+}
+
+#header .login-header {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    float: left;
+}
+
+#header .center-text {
+    text-align: center;
+}
+
+#header .error-message {
+    font-size: 11px;
+}
+
+#header {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}

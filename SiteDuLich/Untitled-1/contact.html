@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Contact us - eLearning</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/top-menu.css">
+    <link rel="stylesheet" href="assets/css/write/top-banner.css">
+    <link rel="stylesheet" href="assets/css/write/contact-us-content.css">
+
+    <!-- Custom JS -->
+    <script src="assets/js/write/top-menu.js"></script>
+
+</head>
+
+<body>
+    <!-- Top-menu -->
+    <div id="top-menu" class="container">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="logo-lnk" class="navbar-brand" href="#"><img class="logo-image" src="assets/images/logo.png" alt="elearning"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="main-item"><a href="index.html">Home</a></li>
+                        <li class="main-item"><a href="about.html">About</a></li>
+                        <li class="main-item"><a href="courses.html">Courses</a></li>
+                        <li class="end-right-item active-item main-item"><a href="contact.html">Contact</a></li>
+
+                        <li class="main-item"><a href="courses.html">Login</a></li>
+                        <li class="main-item"><a href="create-new-account.html">Sign up</a></li>
+
+                        <!--<li class="dropdown">
+                            <a id="personal-manage" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>&#09;luonguit <span class="caret"></span></a>
+                            <ul id="personal-dropdown-lst" class="dropdown-menu">
+                                <li class="dropdown-header">Personal Manage</li>
+                                <li><a href="#"><i class="fa fa-calendar"></i>&#09;My Work Schedule</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i>&#09;My Profile </a></li>
+                                <li><a href="#"><i class="fa fa-keyboard-o"></i>&#09;Change Password</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#"><i class="fa fa-power-off"></i>&#09;Logout</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Top-menu -->
+
+    <div class="clearfix"></div>
+    <!-- Top-banner -->
+    <header id="head" class="secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Contact us</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Top-banner -->
+
+    <div class="clearfix"></div>
+
+    <!-- Contact-us-content -->
+    <div id="contact-us-content" class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <h3 class="section-title">Your Message</h3>
+                <p>
+                    Lorem Ipsum is inting and typesetting in simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the is dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group">
+                        <input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+                    </div>
+
+                    <div class="control-group">
+                        <textarea rows="10" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+                    </div>
+                    <div id="success"> </div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary pull-right">Send</button>
+                </form>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div>
+                    <h3 class="section-title">Office Address</h3>
+                    <div class="contact-info">
+                        <h5>Address: <i>362/12 Phan Huy Ich, Ho Chi Minh, Viet Nam</i></h5>
+                        <h5>Email: <i>luonguit@gmail.com</i></h5>
+                        <h5>Phone: <i>(+84)969 90 98 93</i></h5>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <h3 class="section-title">Timings</h3>
+                    <div class="contact-info">
+                        <h5>Monday - Friday: <i>09:00 AM - 6:30 PM</i></h5>
+                        <h5>Saturday: <i>Closed</i></h5>
+                        <h5>Sunday: <i>Closed</i></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact-us-content -->
+
+    <div class="clearfix"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="simplenav">
+                                <a href="index.html">Home</a> |
+                                <a href="about.html">About</a> |
+                                <a href="courses.html">Courses</a> |
+                                <a href="contact.html">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="text-right">
+                                Copyright &copy; 2016 design by <a href="http://uit.edu.vn/" rel="develop">UIT - Team</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /row of panels -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

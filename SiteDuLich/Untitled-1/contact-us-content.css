@@ -1,0 +1,21 @@
+ #contact-us-content #contactForm .control-group {
+     padding: 5px 0px;
+ }
+ 
+ #contact-us-content #contactForm button.btn.btn-primary.pull-right {
+     padding: 5px 25px;
+     font-size: 18px;
+     font-weight: bold;
+     background-color: rgba(51, 204, 51, .9);
+     border-style: none;
+     margin-bottom: 30px;
+ }
+ 
+ #contact-us-content #contactForm button.btn.btn-primary.pull-right:hover {
+     background-color: rgb(70, 144, 179);
+ }
+ 
+ #contact-us-content .contact-info i {
+     color: rgb(70, 144, 179);
+     font-weight: bold;
+ }

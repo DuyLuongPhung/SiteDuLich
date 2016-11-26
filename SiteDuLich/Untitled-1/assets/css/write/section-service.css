@@ -1,0 +1,20 @@
+#section-service .row {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+#section-service .blockquote-1 p {
+    color: rgb(153, 153, 153);
+    font-style: italic;
+}
+
+#section-service .blockquote-1 {
+    color: rgba(153, 153, 153, .6);
+    font-style: italic;
+    background-color: rgb(242, 242, 242);
+}
+
+#section-service .blockquote-1 small {
+    color: rgb(153, 153, 153);
+    font-style: italic;
+}
