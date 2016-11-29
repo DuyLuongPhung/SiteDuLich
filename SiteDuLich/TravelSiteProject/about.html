@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Giới thiệu - G6 Travel</title>
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/header.css">
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/about.css">
+
+    <!-- Custom js -->
+
+    <style type="text/css">
+        body {
+            background-color: #f4f7f9;
+        }
+        
+        .row {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row" id="header-logo">
+                <div class="col-md-6 col-xs-12 col-ms-12">
+                    <div class="logo-img">
+                        <h1><a  href="index.html"><img src ="assets/images/logo.png" alt="g6 travel logo"/></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-ms-12 text-left">
+                    <div class="phone-text">
+                        <h2><small>SĐT:</small> (+84)969909893</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="row" id="header-menu">
+                <div class="col-md-12 col-xs-12 col-ms-12">
+                    <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h4><b>Trang Chủ</b></h4>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav menu-group">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Địa Điểm</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
+                                <li><a href="#">Bài Viết</a></li>
+                                <li class="item-active"><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login-group navbar-right ">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-log-in">
+                                        </i> Đăng nhập
+                                    </a>
+                                    <ul class="dropdown-menu login-panel">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <span class="login-header color-blue">Đăng Nhập</span>
+                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div style="padding: 8px;">
+                                                <form id="loginform" class="form-horizontal" role="form" autocomplete="off">
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                        <!-- USERNAME OR EMAIL ADDRESS -->
+                                                        <input id="login-username" type="email" class="form-control" name="username" placeholder="email" title="Minimum 5 letters or numbers." required>
+                                                    </div>
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                                        <!--  PASSWORD  -->
+                                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="mật khẩu" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Ghi nhớ</label>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Email hoặc mật khẩu không chính xác!</span>
+                                                    </div>
+                                                    <div style="margin-top:10px" class="form-group">
+                                                        <!-- Button -->
+                                                        <div class="col-sm-12 controls center-text">
+                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+
+                                        </li>
+                                        <!--<li class="divider"></li>-->
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Top-banner -->
+    <div id="top-banner">
+        <div id="top-content" class="row top-content">
+            <div class="container">
+                <h1 class="text-left"><b>Giới thiệu về chúng tôi</b></h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- Top-banner-tour -->
+
+    <div class="clearfix"> </div>
+
+    <!-- News-body -->
+    <div id="about-body">
+        <div class="container">
+            <h2>G6 Travel</h2>
+            <div class="content">
+                <img class="img-profile" src="assets/images/logo.png" />
+                <p><strong style="font-size:25px;">G6 Travel</strong> là một công ty du lịch tại Việt Nam, thành lập ngày 19/08/1991, có trụ sở chính tại thành phố Hồ Chí Minh, các chi nhánh trong nước tại thủ đô Hà Nội, Hải Phòng, Quảng Ninh, Quy Nhơn, Nha Trang, Đà Nẵng, Quảng Ngãi, Quảng Nam, Cần Thơ, Lào Cai, Đồng Nai, Bình Dương, Vũng Tàu, Gia Lai, Phú Quốc, Kiên Giang, Cà Mau, An Giang và các văn phòng đại diện tại Mỹ, Campuchia. Chúng tôi luôn phấn đấu để trở thành số 1 thế giới. Với phương châm “Không ngừng đổi mới” cùng chính sách đa dạng hóa sản phẩm và bảo đảm thực hiện đúng những cam kết của mình, G6 Travel đã định vị trong lòng đối tác và khách hàng là thương hiệu hàng đầu về chất lượng và phong cách phục vụ chuyên nghiệp. </p>
+                <h4><strong>TẦM NHÌN</strong></h4>
+                <p>Trên cơ sở phát triển bền vững sau gần 25 năm hình thành và phát triển, G6 Travel hướng đến trở thành 1 trong 10 công ty lữ hành hàng đầu khu vực Đông Nam Á vào năm 2015. Đến năm 2020. Vietravel phấn đấu trở thành 1 trong 10 công ty du lịch hàng đầu châu Á và trở thành Top Tập đoàn lữ hành hàng đầu khu vực Châu Á. Đây là tầm nhìn chiến lược và đầy thử thách nhưng với một mục tiêu chung, G6 Travel đã và đang hiện thực hoá những mục tiêu chiến lược của mình. </p>
+                <h4><strong>SỨ MỆNH</strong></h4>
+                <p>Mang lại cảm xúc thăng hoa cho du khách trong mỗi hành trình - Đây là mục tiêu và là sứ mệnh Vietravel cam kết và nỗ lực mang lại cho du khách. G6 Travel trở thành người bạn đồng hành cùng du khách trong mọi hành trình du lịch và tạo ra những giá trị tốt đẹp. Tại G6 Travel, du lịch không những là hành trình khám phá mà còn là hành trình sẻ chia, thể hiện dấu ấn khác biệt của Thương hiệu G6 Travel từ 3 thuộc tính thương hiệu: Sự chuyên nghiệp, mang lại cảm xúc thăng hoa cho khách hàng và những giá trị gia tăng hấp dẫn cho du khách sau mỗi chuyến đi.</p>
+                <h4><strong>TRIẾT LÝ KINH DOANH</strong></h4>
+                <p>Khách hàng là trung tâm: G6 Travel luôn khẳng định khách hàng là trung tâm của mọi hoạt động kinh doanh mà G6 Travel hướng đến, vì khách hàng là người góp phần to lớn xây dựng nên thương hiệu G6 Travel. Chuyên nghiệp là thước đo: Khẳng định uy tín thương hiệu, với mục tiêu không ngừng phát triển hoàn thiện để đạt đến những tầm cao mới trong định hướng chiến lược vươn ra thế giới. Chất lượng là danh dự: G6 Travel cam kết chất lượng dịch vụ cung cấp đến khách hàng là tốt nhất, điều đó tạo nên sự khác biệt so với thị trường, G6 Travel xem đó là trách nhiệm, là danh dự của mỗi cán bộ - nhân viên.</p>
+            </div>
+        </div>
+    </div>
+    <!-- News-body -->
+
+    <div class="clearfix"> </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <!-- container -->
+                    <div class="col-md-6 col-xs-12 panel-item">
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <hr/>
+                        <div class="block social">
+                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                        </div>
+                        <br/>
+                        <p>
+                            <a class="color-logo" href="#">G6 Travel</a> - <i>Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao</i>
+                        </p>
+                        <div class="get-email-ad">
+                            <form>
+                                <input id="txt-email" type="text" placeholder="email nhận tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'email nhận tin';}" required>
+                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>LIÊN HỆ</h4>
+                        <hr/>
+                        <div class="f-contac">
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+                <hr/>
+                <div>
+                    <div class="col-md-12 copyright">
+                        <p>Copyrights © 2016 - G6 Travel. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+</body>
+
+</html>

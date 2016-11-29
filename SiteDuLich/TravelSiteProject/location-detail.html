@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Sapa, thị trấn sương mù - G6 Travel</title>
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/header.css">
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/location-detail-top-banner.css">
+    <link rel="stylesheet" href="assets/css/write/location-detail-content.css">
+
+    <!-- Custom js -->
+
+    <style type="text/css">
+        body {
+            background-color: #f4f7f9;
+        }
+        
+        .row {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row" id="header-logo">
+                <div class="col-md-6 col-xs-12 col-ms-12">
+                    <div class="logo-img">
+                        <h1><a  href="index.html"><img src ="assets/images/logo.png" alt="g6 travel logo"/></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-ms-12 text-left">
+                    <div class="phone-text">
+                        <h2><small>SĐT:</small> (+84)969909893</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="row" id="header-menu">
+                <div class="col-md-12 col-xs-12 col-ms-12">
+                    <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h4><b>Trang Chủ</b></h4>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav menu-group">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li class="item-active"><a href="#">Địa Điểm</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
+                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login-group navbar-right ">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-log-in">
+                                        </i> Đăng nhập
+                                    </a>
+                                    <ul class="dropdown-menu login-panel">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <span class="login-header color-blue">Đăng Nhập</span>
+                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div style="padding: 8px;">
+                                                <form id="loginform" class="form-horizontal" role="form" autocomplete="off">
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                        <!-- USERNAME OR EMAIL ADDRESS -->
+                                                        <input id="login-username" type="email" class="form-control" name="username" placeholder="email" title="Minimum 5 letters or numbers." required>
+                                                    </div>
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                                        <!--  PASSWORD  -->
+                                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="mật khẩu" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Ghi nhớ</label>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Email hoặc mật khẩu không chính xác!</span>
+                                                    </div>
+                                                    <div style="margin-top:10px" class="form-group">
+                                                        <!-- Button -->
+                                                        <div class="col-sm-12 controls center-text">
+                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+
+                                        </li>
+                                        <!--<li class="divider"></li>-->
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <div class="clearfix"> </div>
+
+    <!-- Top-banner -->
+    <div id="top-banner">
+        <div id="bot-map-site">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div id="bot-map-site-content" class="col-md-6">
+                        <!-- Search Form -->
+                        <form role="form">
+                            <!-- Search Field -->
+                            <div class="row">
+                                <h1 class="text-center big-title">SAPA, THỊ TRẤN SƯƠNG MÙ</h1>
+                                <h1 class="text-center"></h1>
+                                <h4 class="text-center site-map"><a href="#">TRANG CHỦ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">ĐỊA ĐIỂM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">SAPA, THỊ TRẤN SƯƠNG MÙ</a></h4>
+                            </div>
+
+                        </form>
+                        <!-- End of Search Form -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Top-banner -->
+
+    <div class="clearfix"> </div>
+
+    <!-- Tour-detail-content --->
+    <div id="location-detail-content">
+        <div class="container">
+            <div id="top-content" class="row">
+                <div class="col-md-8 left-content">
+                    <div class="clearfix"></div>
+                    <div id="book-tour">
+                        <div class="book-content">
+                            <h3>Thị Trấn Sapa và Những Địa Danh Du Lịch Hấp Dẫn</h3>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-time"></span><strong>Ngày đăng:</strong> 10/12/2016 </li>
+                                <li><span class="glyphicon glyphicon-user"></span><strong>Người đăng:</strong> Duy Lương</li>
+                                <li><span class="glyphicon glyphicon-signal"></span><strong>Đánh giá:</strong>
+                                    <span class="glyphicon glyphicon-star" style="color:orange; margin-right:2px;" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" style="color:orange; margin-right:2px;" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-star" style="color:orange; margin-right:2px;" aria-hidden="true"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="img-gallery">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="assets/images/a5.jpg">
+                                    <img src="assets/images/a5.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a3.jpg">
+                                    <img src="assets/images/a3.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a1.jpg">
+                                    <img src="assets/images/a1.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a2.jpg">
+                                    <img src="assets/images/a2.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a4.jpg">
+                                    <img src="assets/images/a4.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a6.jpg">
+                                    <img src="assets/images/a6.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a3.jpg">
+                                    <img src="assets/images/a3.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a5.jpg">
+                                    <img src="assets/images/a5.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a1.jpg">
+                                    <img src="assets/images/a1.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a2.jpg">
+                                    <img src="assets/images/a2.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a4.jpg">
+                                    <img src="assets/images/a4.jpg" alt="" />
+                                </li>
+                                <li data-thumb="assets/images/a6.jpg">
+                                    <img src="assets/images/a6.jpg" alt="" />
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- FlexSlider -->
+                        <script defer src="assets/js/jquery.flexslider.js"></script>
+                        <script>
+                            // Can also be used with $(document).ready()
+                            $(window).load(function () {
+                                $('.flexslider').flexslider({
+                                    animation: "slide",
+                                    controlNav: "thumbnails"
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="tour-slogen">
+                        <div class="overview-content">
+                            <p>Sa Pa là một thị trấn vùng cao thuộc huyện Sa Pa, tỉnh Lào Cai, Việt Nam. Từ thị trấn nhìn xuống có thung lũng Ngòi Dum ở phía đông và thung lũng Mường Hoa ở phía tây nam.
+                            </p>
+                            <p>Nằm ở phía Tây Bắc của Việt Nam, thị trấn Sa Pa ở độ cao 1.600 mét so với mực nước biển, cách thành phố Lào Cai 38 km và 376 km tính từ Hà Nội. Tuy nằm ở miền Bắc Việt Nam, lẽ ra phải mang khí hậu nhiệt đới ẩm gió mùa, nhưng do nằm ở địa hình cao và gần chí tuyến nên Sa Pa có khí hậu cận nhiệt đới ẩm, ôn đới, không khí mát mẻ quanh năm. Vào mùa hè, thời tiết ở thị trấn một ngày như là có đủ bốn mùa: buổi sáng là tiết trời mùa xuân, buổi trưa tiết trời như vào hạ, có nắng, không khí dịu mát, buổi chiều mây và sương rơi xuống tạo cảm giác lành lạnh như trời thu và ban đêm là cái rét của mùa đông. Nhiệt độ không khí trung bình năm của Sa Pa là 15 °C. Mùa hè, thị trấn không phải chịu cái nắng gay gắt như vùng đồng bằng ven biển, khoảng 13 °C – 15 °C vào ban đêm và 20 °C – 25 °C vào ban ngày. Mùa đông thường có mây mù bao phủ và lạnh, nhiệt độ có lúc xuống dưới 0 °C và có tuyết rơi.
+                            </p>
+                            <p>Thị trấn Sa Pa là một trong những địa điểm có tuyết rơi tại Việt Nam. Trong khoảng thời gian từ 1957 tới 2013, 21 lần tuyết rơi tại Sa Pa. Lần tuyết rơi mạnh nhất vào ngày 13 tháng 2 năm 1968, liên tục từ 3 giờ sáng đến 14 giờ cùng ngày, dày tới 20 cm.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="tour-detail">
+                        <div class="tour-title">
+                            Những địa danh không thể bỏ qua
+                        </div>
+                        <div class="tour-content">
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>1. Chinh phục đỉnh Fansipan– Nóc nhà Đông Dương</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Fansipan là ngọn núi cao nhất của bán đảo Đông Dương (3.143 m), nằm ở trung tâm dãy Hoàng Liên Sơn. Tuy chỉ cách thị trấn Sapa 9 km về phía Tây Nam, nhưng nếu đi bộ, leo núi bạn phải mất 6 đến 7 ngày mới chinh phục được đỉnh núi này. Trên đường lên đỉnh núi, du khách sẽ được khám phá hệ động thực vật và thiên nhiên kỳ thú của dãy Hoàng Liên.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>2. Núi Hàm Rồng</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Núi Hàm Rồng nằm ngay sát ngay thị trấn Sapa, cách 3 km, du khách có thể đi bộ đến đó. Đứng trên đỉnh núi Hàm Rồng, bạn được ngắm toàn cảnh Sapa, thung lũng Mường Hoa, Sa Pả, Tả Phìn ẩn hiện trong sương khói.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>3. Nhà thờ cổ Sapa</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Tọa lạc ngay trung tâm thị trấn Sapa, nhà thờ Đá sapa được xây dựng từ năm 1895 được coi là một dấu ấn kiến trúc cổ toàn vẹn nhất của người Pháp còn sót lại. Nhà thờ đã được tôn tạo và bảo tồn, trở thành một hình ảnh không thể thiếu khi nhắc đến thị trấn Sa Pa mù sương.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>4. Bản Tả Phìn</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Bản Tả Phìn thuộc huyện Sa Pa, cách trung tâm thị trấn Sa Pa khoảng 17km về hướng Đông. Nơi đây có cảnh quan thiên nhiên tươi đẹp, những nét văn hóa đậm đà bản sắc dân tộc của người Dao Đỏ với nghề thổ cẩm nổi tiếng. Đến bản Tả Phìn, bạn có thể ghé thăm hang động Tả Phìn ngay gần đó. Trong hang có nhiều nhũ đá tạo nên những hình thù kỳ thú như hình tiên múa, đoàn tiên ngồi, cánh đồng xa, rừng cây lấp lánh.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>5. Cổng trời</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Ra khỏi thị trấn Sapa, đi theo hướng Bắc khoảng 18 km, đường lên cổng trời ngoằn ngoèo uốn lượn giữa lưng chừng núi trùng trùng điệp điệp. Con đường đèo này có tên là Trạm Tôn, len lỏi giữa dãy Hoàng Liên Sơn hùng vĩ. Và cổng trời chính là đỉnh của con đèo này. Đứng giữa cổng trời Sapa, bạn có thể phóng tầm mắt bao quát cả thung lũng rộng lớn phía dưới với những ruộng nương xanh rì, con đường ôtô xuôi ngược, xa xa là Thác Bạc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="tour-detail">
+                        <div class="tour-title">
+                            Đặc sắc ẩm thực
+                        </div>
+                        <div class="tour-content">
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>1. Cơm lam</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Cơm lam là món ăn đặc trưng của đồng bào dân tộc thiểu số vùng Tây Bắc nước ta, nguyên liệu chính là gạo nếp được nướng trong ống tre. Khi nướng chín, chỉ cần chẻ bỏ phần vỏ tre cháy bên ngoài, chừa lại một lớp lạt tre mỏng vừa tay người bóc khi ăn cơm. Cơm lam phổ biến và được yêu thích bởi vị ngon ấn tượng của gạo nếp, nước suối và hương thơm nhẹ nhàng của tre.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>2. Xôi bảy màu</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Xôi bảy màu là món ăn đậm nét văn hóa truyền thống của dân tộc Nùng ở Mường Khương, Lào Cai. Bảy màu của xôi gồm hồng, đỏ tươi, đỏ thắm, xanh cửu long, xanh vàng, xanh lá chuối và vàng đều được làm từ nhiều loại lá rừng tự nhiên nên xôi mang mùi vị đặc trưng của núi rừng nơi đây. Đồng bào ở đây quan niệm rằng, ăn xôi vào những dịp lễ tết sẽ mang lại nhiều may mắn.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>3. Thịt lợn cắp nách</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Bạn có thể dễ dàng bắt gặp hình ảnh người dân địa phương xách lợn hoặc thậm chí cắp vào nách đem bán ở các phiên chợ, cái tên “lợn cắp nách” bắt nguồn từ đó. Đây là giống lợn riêng của người dân vùng cao, lợn con sinh ra được thả rông cho lớn tự nhiên, khoảng một năm lợn nặng trên dưới 20kg thì đem bán lấy thịt. Thịt lợn “cắp nách” rất nổi tiếng và được các nhà hàng sang trọng sử dụng chế biến nhiều món ăn ngon.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="day-content ">
+                                <div class="day-title">
+                                    <p>4. Thắng cố</p>
+                                </div>
+                                <div class="day-event">
+                                    <p class="normal-text">Thắng cố là đặc sản của người Mông, thường có ở các bản làng và các phiên chợ của người Mông. Thắng cố Sa Pa chế biến chủ yếu từ ngựa, một nồi thắng cố có thịt, tim, gan, lòng, tiết ngựa và 12 thứ gia vị: thảo quả, quế chi, sả, gừng và nhiều thứ gia vị gia truyền khác, trong đó, cây thắng cố là gia vị thứ 12. Khi ăn, người ta sẽ múc nước dùng ra nồi lẩu, thái thịt ngựa thả vào.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="back-to-top" class="text-right">
+                            <a class="btn" id="backToTopbtn"><i class="glyphicon glyphicon-open">&nbsp;</i>Về đầu trang</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $("#backToTopbtn").click(function () {
+                                    $('body,html').animate({
+                                        scrollTop: 0
+                                    })
+                                })
+
+                            });
+                        </script>
+
+                    </div>
+                </div>
+                <div class="col-md-4 right-content">
+                    <div class="clearfix"></div>
+                    <div class="map-gd">
+                        <iframe style="height:300px;width:100%;border:1px solid #ccc; margin-top:20px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1ZruM2hBzTYRJ2fHu6It9OE&key=AIzaSyDUNN5lrBmizOGnqbT7jwgQ47EmnxuqQUE"></iframe>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="other-comments">
+                        <div class="comments-head">
+                            <h3>Du Khách Cảm Nhận</h3>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="comments-bot">
+                            <p>"Một trải nghiệm thú vị và đáng nhớ. Phong cảnh tuyệt vời để thư giãn sau những ngày làm việc mệt mỏi."</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Bảo Châu</h4>
+                        </div>
+                        <div class="comments-bot">
+                            <p>"Một chuyến đi tuyệt vời, đó là những gì tôi muốn nói về chuyến đi này. Tôi đã có nhiều bức hình đáng giá để lưu lại kỷ niệm này. Hãy ghé thăm Sapa nếu bạn có thời gian nhé!"</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Quang Trung</h4>
+                        </div>
+                        <div class="comments-bot">
+                            <p>"Một địa điểm lý thú để thư giãn sau những công việc mệt mỏi, căng thẳng. Hãy đến với Sapa nếu bạn có dịp. Tuyệt vời!"</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Tú Linh</h4>
+                        </div>
+                        <div class="comments-bot">
+                            <p>"Những địa danh tuyệt vời. Văn hóa của đồng bào dân tộc thiểu số ở Sapa vô cùng độc đáo, ấm cúng. Tôi sẽ ghé thăm Sapa lần nữa một ngày nào đó không xa."</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Hạng Võ</h4>
+                        </div>
+                        <div class="comments-bot">
+                            <p>"Bạn đã bao giờ thưởng thức những món ăn đặc sản của núi rừng chưa? Hãy đến với Sapa, những đặc sản chỉ có ở núi rừng đang chào đón. Tuyệt vời!"</p>
+                            <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Bao Công</h4>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="suggest-tour">
+                        <h3 class="suggest-head">Địa điểm đề xuất</h3>
+                        <div class="clearfix"></div>
+                        <div class="row suggest-item">
+                            <a href="location-detail.html">
+                                <img src="assets/images/t1.jpg" alt="sapa" />
+                                <h3 class="title">Thác Bản Giốc</h3>
+                                <p class="content">Thác Bản Giốc nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
+                                <div class="clearfix"> </div>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+
+                                <p class="time"><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="location-detail.html">
+                                <img src="assets/images/t3.jpg" alt="sapa" />
+                                <h3 class="title">Khải Hoàn Môn</h3>
+                                <p class="content">Khải Hoàn Môn đứng chế ngự một vòng tròn lớn, mang tên Place Etoile (Rond-point), nằm ở đầu con đường đại lộ Champs Elysées thuộc quận 8 Paris.</p>
+                                <div class="clearfix"> </div>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+
+                                <p class="time"><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="location-detail.html">
+                                <img src="assets/images/t4.jpg" alt="sapa" />
+                                <h3 class="title">New York</h3>
+                                <p class="content">New York là nơi hội tụ đa dạng nền văn hóa, nghệ thuật, kiến trúc, lịch sử và giải trí.Với biểu tượng Nữ Thần Tự Do hay tòa nhà Empire State cao vợi.</p>
+                                <div class="clearfix"> </div>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+
+                                <p class="time"><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="location-detail.html">
+                                <img src="assets/images/t5.jpg" alt="sapa" />
+                                <h3 class="title">Vantican</h3>
+                                <p class="content">Vantican là một quốc gia có chủ quyền với lãnh thổ bao gồm một vùng đất có tường bao kín nằm trong lòng thành phố Roma, Ý, vốn nổi tiếng bới tòa thánh Vantican.</p>
+                                <div class="clearfix"> </div>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+
+                                <p class="time"><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="location-detail.html">
+                                <img src="assets/images/t6.jpg" alt="sapa" />
+                                <h3 class="title">Cao Nguyên Mộc Châu</h3>
+                                <p class="content">Cao nguyên Mộc Châu thuộc huyện Mộc Châu, tỉnh Sơn La. Có độ cao trung bình 1.050 m so với mực nước biển.</p>
+                                <div class="clearfix"> </div>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star price" aria-hidden="true"></span>
+
+                                <p class="time"><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="bot-content">
+                <h3><b>Những Tour du lịch đến <i style="color:orange;">"SAPA"</i> được đề xuất cho bạn</b></h3>
+                <div></div>
+                <div id="bot-content-item" class="row">
+                    <div class="col-md-3 over-view">
+                        <div class="header-title">Giới thiệu</div>
+                        <a href="tour-detail.html">
+                            <img src="assets/images/a5.jpg" alt="sapa" />
+                            <h3>Sapa thơ mộng</h3>
+                        </a>
+                        <p>Tận hưởng tiết trời se lạnh, tuyết rơi trắng xóa tại Sapa khi đông về. Ngắm nhìn Mù Căng Chải ngập mình trong sương mai trắng xóa.</p>
+                    </div>
+                    <div class="col-md-4 option-view">
+                        <div class="header-title">Hoạt động</div>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Chinh phục đỉnh Fansipan</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan Núi Hàm Rồng</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Thăm Nhà thờ cổ Sapa</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Ghé thăm Bản Cát Cát</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan thung lũng mường Hoa</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Ghé thăm Cổng trời</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan Thắng cảnh Hang Tiên</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Chinh phục Mù Căng Chải</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham gia vào các lễ hội đặc sắc</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 pirce-view">
+                        <div class="header-title">Chi phí</div>
+                        <h3>Thời gian tham quan: <i>5 ngày / 4 đêm</i></h3>
+                        <h3>Chi phí: <b>5.000.000đ</b></h3>
+                    </div>
+                    <div class="col-md-2 book-view">
+                        <div class="header-title end-item">Đặt vé</div>
+                        <h3>Đặt tour đến: <i>15/01/2017</i></h3>
+                        <a href="#">ĐẶT NGAY</a>
+                    </div>
+                </div>
+                <div id="bot-content-item" class="row">
+                    <div class="col-md-3 over-view">
+                        <div class="header-title">Giới thiệu</div>
+                        <a href="tour-detail.html">
+                            <img src="assets/images/a7.jpg" alt="sapa" />
+                            <h3>Mù căng chải, trùng điệp bậc thang</h3>
+                        </a>
+                        <p>Tận hưởng tiết trời se lạnh, tuyết rơi trắng xóa tại Sapa khi đông về. Ngắm nhìn Mù Căng Chải ngập mình trong sương mai trắng xóa.</p>
+                    </div>
+                    <div class="col-md-4 option-view">
+                        <div class="header-title">Hoạt động</div>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Chinh phục Mù Căng Chải</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham gia vào các lễ hội đặc sắc</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Chinh phục đỉnh Fansipan</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan Núi Hàm Rồng</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Thăm Nhà thờ cổ Sapa</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Ghé thăm Bản Cát Cát</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan thung lũng mường Hoa</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Ghé thăm Cổng trời</li>
+                            <li><i class="glyphicon glyphicon-chevron-right">&nbsp;&nbsp;</i>Tham quan Thắng cảnh Hang Tiên</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 pirce-view">
+                        <div class="header-title">Chi phí</div>
+                        <h3>Thời gian tham quan: <i>4 ngày / 3 đêm</i></h3>
+                        <h3>Chi phí: <b>4.500.000đ</b></h3>
+                    </div>
+                    <div class="col-md-2 book-view">
+                        <div class="header-title end-item">Đặt vé</div>
+                        <h3>Đặt tour đến: <i>11/01/2017</i></h3>
+                        <a href="#">ĐẶT NGAY</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="back-to-top" class="text-right">
+                    <a class="btn" id="backToTopbtn1"><i class="glyphicon glyphicon-open">&nbsp;</i>Về đầu trang</a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <script type="text/javascript">
+                    $(document).ready(function ($) {
+                        $("#backToTopbtn1").click(function () {
+                            $('body,html').animate({
+                                scrollTop: 0
+                            })
+                        })
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Tour-detail-content --->
+
+    <div class="clearfix"> </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <!-- container -->
+                    <div class="col-md-6 col-xs-12 panel-item">
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <hr/>
+                        <div class="block social">
+                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                        </div>
+                        <br/>
+                        <p>
+                            <a class="color-logo" href="#">G6 Travel</a> - <i>Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao</i>
+                        </p>
+                        <div class="get-email-ad">
+                            <form>
+                                <input id="txt-email" type="text" placeholder="email nhận tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'email nhận tin';}" required>
+                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>LIÊN HỆ</h4>
+                        <hr/>
+                        <div class="f-contac">
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+                <hr/>
+                <div>
+                    <div class="col-md-12 copyright">
+                        <p>Copyrights © 2016 - G6 Travel. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+</body>
+
+</html>

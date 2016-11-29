@@ -7,15 +7,17 @@
     <meta name="description" content="eLearning by UIT - Team.">
     <meta name="author" content="uit.edu.vn">
     <title>Trang Chủ - G6 Travel</title>
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="icon" href="assets/images/logo.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="assets/js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
     <script src="assets/js/jquery-ui.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,25 +25,18 @@
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
 
-
+    <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/write/header.css">
-    <link rel="stylesheet" href="assets/css/write/index-content.css">
     <link rel="stylesheet" href="assets/css/write/footer.css">
     <link rel="stylesheet" href="assets/css/write/top-banner-tour-filter.css">
+    <link rel="stylesheet" href="assets/css/write/index-body.css">
 
+    <!-- Custom js -->
     <script type="text/javascript" src="assets/js/write/top-banner-tour-filter.js" charset="UTF-8"></script>
 
     <style type="text/css">
         body {
             background-color: #f4f7f9;
-        }
-        
-        .cotent-body {
-            margin: 0px;
-        }
-        
-        #top-banner {
-            height: 350px;
         }
     </style>
 
@@ -178,7 +173,7 @@
             <div class="row main-search-tour">
                 <div class="col-md-1 hidden-i9n-mobile"></div>
                 <div class="col-md-10 col-xs-12 qick-search">
-                    <div>
+                    <div class="text-center">
                         <h2>Tìm Ghép Tour Nhanh</h2>
                     </div>
                     <div>
@@ -253,150 +248,453 @@
 
     <div class="clearfix"> </div>
 
-    <!-- Main-Content -->
-    <div id="main-content" class="cotent-body">
-        <div id="middle-content" class="middle-content">
-            <div class="container">
+    <!-- Index-body -->
+    <div id="index-body">
+        <div class="container">
+            <div class="row hot-tour-best">
+                <div class="row lst-header">
+                    <div class="col-md-8 col-xs-6 title-group">
+                        <p>Tour nổi bật</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 text-right button-group">
+                        Nhiều hơn
+                        <a href="#list-tour-slide" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a href="#list-tour-slide" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="row main-lst-slider">
+                    <div id="list-tour-slide" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/a1.jpg" alt="" />
+                                                <p class="tour-price">15.000.000đ</p>
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Du lịch Hawaii 6 ngày/ 5 đêm!</h5>
+                                                    <p class="top-content">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
+                                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/a2.jpg" alt="" />
+                                                <p class="tour-price">20.000.000đ</p>
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Du lịch Hà Lan 7 ngày/ 6 đêm!</h5>
+                                                    <p class="top-content">Tham quan các địa danh nổi tiếng tại Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip. </p>
+                                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/a3.jpg" alt="" />
+                                                <p class="tour-price">5.000.000đ</p>
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Đà Lạt, mùa xuân rực rỡ 2016!</h5>
+                                                    <p class="top-content">Đón xuân Đà Lạt se lạnh trong 3 ngày/ 2 đêm. Ngắm Hồ Xuân Hương tuyệt đẹp khi hoàng hôn xuống.</p>
+                                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/a5.jpg" alt="" />
+                                                <p class="tour-price">5.500.000đ</p>
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Du lịch Sapa 3 ngày / 2 đêm!</h5>
+                                                    <p class="top-content">Tận hưởng tiết trời se lạnh, tuyết rơi trắng xóa tại Sapa khi đông về. Ngắm nhìn Mù Căng Chải ngập mình trong sương mai trắng xóa.</p>
+                                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/a6.jpg" alt="" />
+                                                <p class="tour-price">3.000.000đ</p>
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Du lịch Vũng Tàu - biển gọi!</h5>
+                                                    <p class="top-content">Tận hưởng kỳ nghỉ trên bãi biển Vũng Tàu xinh đẹp trong 3 ngày/ 2 đêm. Đặc biệt du khách được tham gia vào các lễ hội truyền thống của người dân miền biển.</p>
+                                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
 
-                <div class="row">
-                    <h3>Tour Nổi Bật</h3>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a1.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
-                                    <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+                        <div class="clearfix"> </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a2.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hà Lan!</h5>
-                                    <p class="top-contents">Tham quan các địa danh của Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+            </div>
+            <div class="row hot-location-best">
+                <div class="row lst-header">
+                    <div class="col-md-8 col-xs-6 title-group">
+                        <p>Địa điểm nổi bật</p>
                     </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a1.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
-                                    <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-4 col-xs-6 text-right button-group">
+                        Nhiều hơn
+                        <a href="#list-location-slide" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a href="#list-location-slide" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
 
                 </div>
-                <div class="row">
-                    <h3>Địa Điểm Nổi Bật</h3>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="td-grids">
-                            <div class="col-xs-3 td-left">
-                                <img src="assets/images/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-xs-9 td-middle">
-                                <a href="products.html">Thác bản giốc</a>
-                                <p>Thác Bản Giốc là một trong số những con thác đẹp nhất tại Việt Nam. Thác nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
-                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                            </div>
+                <div class="row main-lst-slider">
+                    <div id="list-location-slide" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t1.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">Thác Bản Giốc</a>
+                                                        <p class="content-show">Thác Bản Giốc nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 
-                            <div class="clearfix"> </div>
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t2.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">Sapa</a>
+                                                        <p class="content-show">Sa Pa là một thị trấn vùng cao thuộc huyện Sa Pa, tỉnh Lào Cai, Việt Nam. Sa Pa nằm trên một mặt bằng ở độ cao 1500 đến 1650 mét ở sườn núi Lô Suây Tông.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t3.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">Khải Hoàn Môn</a>
+                                                        <p class="content-show">Khải Hoàn Môn đứng chế ngự một vòng tròn lớn, mang tên Place Etoile (Rond-point), nằm ở đầu con đường đại lộ Champs Elysées thuộc quận 8 Paris.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t4.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">New York</a>
+                                                        <p class="content-show">New York là nơi hội tụ đa dạng nền văn hóa, nghệ thuật, kiến trúc, lịch sử và giải trí.Với biểu tượng Nữ Thần Tự Do hay tòa nhà Empire State cao vợi.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t5.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">Vantican</a>
+                                                        <p class="content-show">Vantican là một quốc gia có chủ quyền với lãnh thổ bao gồm một vùng đất có tường bao kín nằm trong lòng thành phố Roma, Ý, vốn nổi tiếng bới tòa thánh Vantican.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 hot-location-best-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <div class="td-grids top-content">
+                                                    <div class="col-md-5 td-left">
+                                                        <img src="assets/images/t6.jpg" alt="" />
+                                                    </div>
+                                                    <div class="col-md-7 td-middle">
+                                                        <a href="products.html">Cao nguyên Mộc Châu</a>
+                                                        <p class="content-show">Cao nguyên Mộc Châu thuộc huyện Mộc Châu, tỉnh Sơn La. Có độ cao trung bình 1.050 m so với mực nước biển.</p>
+                                                        <div class="clearfix"> </div>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                                                        <p><i>Tác giả</i>: <span class="author">Duy Lương</span></p>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="td-grids">
-                            <div class="col-xs-3 td-left">
-                                <img src="assets/images/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-xs-9 td-middle">
-                                <a href="products.html">Thác bản giốc</a>
-                                <p>Thác Bản Giốc là một trong số những con thác đẹp nhất tại Việt Nam. Thác nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
-                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                            </div>
-
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="td-grids">
-                            <div class="col-xs-3 td-left">
-                                <img src="assets/images/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-xs-9 td-middle">
-                                <a href="products.html">Thác bản giốc</a>
-                                <p>Thác Bản Giốc là một trong số những con thác đẹp nhất tại Việt Nam. Thác nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
-                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                            </div>
-
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-
+                    <div class="clearfix"> </div>
                 </div>
-                <div class="row">
-                    <h3>Tin Tức Mới Nhất</h3>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a1.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
-                                    <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                                </div>
-                            </a>
-                        </div>
+            </div>
+            <div class="row newsest-list">
+                <div class="row lst-header">
+                    <div class="col-md-8 col-xs-6 title-group">
+                        <p>Tin Tức Mới</p>
                     </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a2.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hà Lan!</h5>
-                                    <p class="top-contents">Tham quan các địa danh của Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-4 col-xs-6 text-right button-group">
+                        Nhiều hơn
+                        <a href="#list-news-slide" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a href="#list-news-slide" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                    <div class="col-md-4 col-xs-12 hot-tour-best">
-                        <div class="hot-items">
-                            <a href="products.html">
-                                <img src="assets/images/a1.jpg" alt="" />
-                                <div class="hot-items-details">
-                                    <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
-                                    <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
-                                    <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="row main-lst-slider">
+                    <div id="list-news-slide" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n1.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Top 5 hành trình du lịch lý tưởng cho ngày giao mùa đông – xuân</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Những ngày giao mùa đông – xuân, nhiều du khách có nhu cầu đi du lịch song lại băn khoăn không biết đi đâu là có cảnh đẹp đúng mùa.</p>
 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n2.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Đón xuân trên du thuyền 5 sao - Đẳng cấp mới, trải nghiệm mới</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Du thuyền vòng quanh Trung Đông – một trong những tuyến hấp dẫn nhất thế giới chính là lựa chọn hoàn hảo cho dịp Tết năm nay.</p>
 
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n10.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Khuyến mãi 20% các tour du lịch trong nước</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Nhằm tri ân khách hàng trong dịp noel năm nay, G6 travel giảm đến 20% chi phí cho các tour du lịch trong nước.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n4.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Những điều kỳ diệu chỉ có ở Madagascar</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Madagascar nằm ở Ấn Độ Dương, phía đông Châu Phi, là miền đất của những điều kỳ diệu.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n5.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Thu vàng nước Nga</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Không chỉ là bản hòa tấu sắc màu của thiên nhiên, thu vàng nước Nga còn ấp ủ cả tiếng lòng của người thưởng lãm.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n6.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Úc châu - Tím biếc mùa hoa thương nhớ</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Nhắc đến nước Úc, hẳn bạn sẽ nghĩ đến những công trình kiến trúc đặc sắc mang đậm nét nghệ thuật hay chú chuột túi đáng yêu.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n7.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Iran bước ra từ cổ tích “Nghìn lẻ một đêm”</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Iran nằm ở khu vực Tây Á là xứ sở “nghìn lẻ một đêm”, một điểm chặng quan trọng trên con đường tơ lụa huyền thoại nối liền châu Á với châu Âu.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n8.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Khám phá mùa đông thú vị tại xứ Hàn</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Hướng đến chào mừng sự kiện Thế vận hội mùa đông 2018 tại Pyeongchang hứa hẹn sẽ mang đến du khách Việt những trải nghiệm mới lạ với các môn thể thao trên tuyết vô cùng thú vị.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n9.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Nhật Bản mùa lá đỏ - Chưa xa đã “nhớ”</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Không chỉ có vẻ đẹp diễm lệ của đền đài cổ kính ẩn hiện dưới tán lá vàng lá đỏ, nàng thu xứ Phù Tang khiến lữ khách rung động bởi sự hồi sinh diệu kỳ của thiên nhiên.</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 newsest-list-item">
+                                        <div class="item-content">
+                                            <a href="products.html">
+                                                <img src="assets/images/n3.jpg" alt="" />
+                                                <div class="item-content-detail">
+                                                    <h5 class="title-content">Vì sao phải đến Quy Nhơn mùa thu này?</h5>
+                                                    <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                                    <p class="top-content">Không chỉ tự hào là miền đất địa linh nhân kiệt, quê hương của nhiều anh hùng lừng danh, Quy Nhơn còn quyến rũ bởi vẻ đẹp hoang sơ của biển trời và tình người chân chất..</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Main-Content -->
+    <!-- Index-body -->
 
     <div class="clearfix"> </div>
 
     <!-- Footer -->
     <div id="footer">
-        <div class="footer">
-            <div class="container">
+        <div class="container">
+            <div class="footer">
                 <div class="row">
                     <!-- container -->
                     <div class="col-md-6 col-xs-12 panel-item">

@@ -1,0 +1,49 @@
+#locations-body .hot-location-best-item {
+    padding: 10px;
+    margin: 0px;
+}
+
+#locations-body .hot-location-best-item .item-content {
+    position: relative;
+    background-color: white;
+    min-height: 200px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+#locations-body .top-content .td-left {
+    padding: 0px;
+    margin: 0px;
+}
+
+#locations-body .top-content .td-left img {
+    width: 100%;
+    min-height: 120px;
+}
+
+#locations-body .top-content .td-middle {
+    padding-top: 5px 10px;
+    padding-right: 5px;
+    margin: 0px;
+}
+
+#locations-body .top-content .td-middle a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(51, 122, 183);
+}
+
+#locations-body .top-content .td-middle p {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+
+#locations-body .hot-location-best-item .top-content .td-middle span {
+    color: rgb(253, 208, 0);
+    font-size: 14px;
+}
+
+#locations-body .im-centered {
+    margin: auto;
+    max-width: 300px;
+}

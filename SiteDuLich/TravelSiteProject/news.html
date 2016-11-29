@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Bài viết - G6 Travel</title>
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/header.css">
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/tours-list-header.css">
+    <link rel="stylesheet" href="assets/css/write/news-body.css">
+
+    <!-- Custom js -->
+
+    <style type="text/css">
+        body {
+            background-color: #f4f7f9;
+        }
+        
+        .row {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row" id="header-logo">
+                <div class="col-md-6 col-xs-12 col-ms-12">
+                    <div class="logo-img">
+                        <h1><a  href="index.html"><img src ="assets/images/logo.png" alt="g6 travel logo"/></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-ms-12 text-left">
+                    <div class="phone-text">
+                        <h2><small>SĐT:</small> (+84)969909893</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="row" id="header-menu">
+                <div class="col-md-12 col-xs-12 col-ms-12">
+                    <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h4><b>Trang Chủ</b></h4>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav menu-group">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Địa Điểm</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
+                                <li class="item-active"><a href="#">Bài Viết</a></li>
+                                <li><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav login-group navbar-right ">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-log-in">
+                                        </i> Đăng nhập
+                                    </a>
+                                    <ul class="dropdown-menu login-panel">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <span class="login-header color-blue">Đăng Nhập</span>
+                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div style="padding: 8px;">
+                                                <form id="loginform" class="form-horizontal" role="form" autocomplete="off">
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                        <!-- USERNAME OR EMAIL ADDRESS -->
+                                                        <input id="login-username" type="email" class="form-control" name="username" placeholder="email" title="Minimum 5 letters or numbers." required>
+                                                    </div>
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                                        <!--  PASSWORD  -->
+                                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="mật khẩu" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Ghi nhớ</label>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Email hoặc mật khẩu không chính xác!</span>
+                                                    </div>
+                                                    <div style="margin-top:10px" class="form-group">
+                                                        <!-- Button -->
+                                                        <div class="col-sm-12 controls center-text">
+                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+
+                                        </li>
+                                        <!--<li class="divider"></li>-->
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Top-banner -->
+    <div id="top-banner">
+        <div id="top-content" class="row top-content">
+        </div>
+        <div class="container" style="margin-top: 5%;">
+            <div class="col-md-6 col-md-offset-3">
+                <!-- Search Form -->
+                <form role="form">
+
+                    <!-- Search Field -->
+                    <div class="row">
+                        <h1 class="text-center">Tra Cứu Nhanh</h1>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="search" placeholder="Tìm địa điểm" />
+                                <span class="input-group-btn">
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;"></span></button>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- End of Search Form -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Top-banner-tour -->
+
+    <div class="clearfix"> </div>
+
+    <!-- News-body -->
+    <div id="news-body">
+        <div class="container">
+            <div id="tours-list-header">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><strong>Danh sách bài viết</strong></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                            <p class="text-left">Sắp xếp theo "<i>Nổi Bật</i>"<span class="glyphicon glyphicon-chevron-down"></span></p>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="btn btn-default btn-outline items-0 not-active">Sắp Xếp</a></li>
+                            <li><a class=" btn btn-default btn-outline btn-circle items-1 active" href="# ">Nổi Bật</a></li>
+                            <li><a class="btn btn-default btn-outline btn-circle items-2 " href="# ">Mới</a></li>
+                            <li><a class="btn btn-default btn-outline btn-circle items-3 " href="# ">Tên</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="row newsest-list">
+                <div class="row main-lst-slider">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n1.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Top 5 hành trình du lịch lý tưởng cho ngày giao mùa đông – xuân</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Những ngày giao mùa đông – xuân, nhiều du khách có nhu cầu đi du lịch song lại băn khoăn không biết đi đâu là có cảnh đẹp đúng mùa.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n2.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Đón xuân trên du thuyền 5 sao - Đẳng cấp mới, trải nghiệm mới</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Du thuyền vòng quanh Trung Đông – một trong những tuyến hấp dẫn nhất thế giới chính là lựa chọn hoàn hảo cho dịp Tết năm nay.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n4.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Những điều kỳ diệu chỉ có ở Madagascar</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Madagascar nằm ở Ấn Độ Dương, phía đông Châu Phi, là miền đất của những điều kỳ diệu.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n3.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Vì sao phải đến Quy Nhơn mùa thu này?</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Không chỉ tự hào là miền đất địa linh nhân kiệt, quê hương của nhiều anh hùng lừng danh, Quy Nhơn còn quyến rũ bởi vẻ đẹp hoang sơ của biển trời và tình người chân chất..</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n5.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Thu vàng nước Nga</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Không chỉ là bản hòa tấu sắc màu của thiên nhiên, thu vàng nước Nga còn ấp ủ cả tiếng lòng của người thưởng lãm.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n6.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Úc châu - Tím biếc mùa hoa thương nhớ</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Nhắc đến nước Úc, hẳn bạn sẽ nghĩ đến những công trình kiến trúc đặc sắc mang đậm nét nghệ thuật hay chú chuột túi đáng yêu.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n7.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Iran bước ra từ cổ tích “Nghìn lẻ một đêm”</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Iran nằm ở khu vực Tây Á là xứ sở “nghìn lẻ một đêm”, một điểm chặng quan trọng trên con đường tơ lụa huyền thoại nối liền châu Á với châu Âu.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n8.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Khám phá mùa đông thú vị tại xứ Hàn</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Hướng đến chào mừng sự kiện Thế vận hội mùa đông 2018 tại Pyeongchang hứa hẹn sẽ mang đến du khách Việt những trải nghiệm mới lạ với các môn thể thao trên tuyết vô cùng thú vị.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n9.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Nhật Bản mùa lá đỏ - Chưa xa đã “nhớ”</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Không chỉ có vẻ đẹp diễm lệ của đền đài cổ kính ẩn hiện dưới tán lá vàng lá đỏ, nàng thu xứ Phù Tang khiến lữ khách rung động bởi sự hồi sinh diệu kỳ của thiên nhiên.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n2.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Đón xuân trên du thuyền 5 sao - Đẳng cấp mới, trải nghiệm mới</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Du thuyền vòng quanh Trung Đông – một trong những tuyến hấp dẫn nhất thế giới chính là lựa chọn hoàn hảo cho dịp Tết năm nay.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n4.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Những điều kỳ diệu chỉ có ở Madagascar</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Madagascar nằm ở Ấn Độ Dương, phía đông Châu Phi, là miền đất của những điều kỳ diệu.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 newsest-list-item">
+                            <div class="item-content">
+                                <a href="products.html">
+                                    <img src="assets/images/n3.jpg" alt="" />
+                                    <div class="item-content-detail">
+                                        <h5 class="title-content">Vì sao phải đến Quy Nhơn mùa thu này?</h5>
+                                        <p class="bot-content"><i>19/11/2016</i> | Admin</p>
+                                        <p class="top-content">Không chỉ tự hào là miền đất địa linh nhân kiệt, quê hương của nhiều anh hùng lừng danh, Quy Nhơn còn quyến rũ bởi vẻ đẹp hoang sơ của biển trời và tình người chân chất..</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="clearfix"> </div>
+                    <div class="im-centered row">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="?page=1">1</a></li>
+                                <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+                                <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+                                <li class="page-item"><a class="page-link" href="?page=4">4</a></li>
+                                <li class="page-item"><a class="page-link" href="?page=5">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News-body -->
+
+    <div class="clearfix"> </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <!-- container -->
+                    <div class="col-md-6 col-xs-12 panel-item">
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <hr/>
+                        <div class="block social">
+                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                        </div>
+                        <br/>
+                        <p>
+                            <a class="color-logo" href="#">G6 Travel</a> - <i>Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao</i>
+                        </p>
+                        <div class="get-email-ad">
+                            <form>
+                                <input id="txt-email" type="text" placeholder="email nhận tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'email nhận tin';}" required>
+                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>LIÊN HỆ</h4>
+                        <hr/>
+                        <div class="f-contac">
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+                <hr/>
+                <div>
+                    <div class="col-md-12 copyright">
+                        <p>Copyrights © 2016 - G6 Travel. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+</body>
+
+</html>

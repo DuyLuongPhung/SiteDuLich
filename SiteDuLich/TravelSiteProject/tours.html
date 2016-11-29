@@ -2,31 +2,49 @@
 <html lang="en">
 
 <head>
-    <title>Tour | Du Lịch Việt</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/write/header.css">
-    <link rel="stylesheet" href="css/write/footer.css">
-    <link rel="stylesheet" href="css/write/index-slider.css">
-    <link rel="stylesheet" href="css/write/tour-cotent.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Danh sách Tour - G6 Travel</title>
+    <link rel="icon" href="assets/images/logo.png">
 
-    <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
-    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/header.css">
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/top-banner-tour-filter.css">
+    <link rel="stylesheet" href="assets/css/write/tours-list-header.css">
+    <link rel="stylesheet" href="assets/css/write/tours-body.css">
+
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/write/top-banner-tour-filter.js" charset="UTF-8"></script>
 
     <style type="text/css">
         body {
             background-color: #f4f7f9;
         }
         
-        .cotent-body {
+        .row {
+            width: 100%;
             margin: 0px;
+            padding: 0px;
         }
     </style>
 
@@ -34,362 +52,379 @@
 
 <body>
 
-    <!--Header-Rows-->
-    <div id="header" class="row">
-        <div class="header">
-            <div id="logo" class="logo">
-                <table>
-                    <tr>
-                        <td class="margin"></td>
-                        <td class="tdlogo">
-                            <div class="logo">
-                                <h1><a  href="index.html"><span>Du Lịch Việt</span></a></h1>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="phone">
-                                <ul>
-                                    <li class="caption">
-                                        SĐT
-                                    </li>
-                                    <li class="text_phone">
-                                        (+84)969909893
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td class="margin"></td>
-                    </tr>
-                </table>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row" id="header-logo">
+                <div class="col-md-6 col-xs-12 col-ms-12">
+                    <div class="logo-img">
+                        <h1><a  href="index.html"><img src ="assets/images/logo.png" alt="g6 travel logo"/></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-ms-12 text-left">
+                    <div class="phone-text">
+                        <h2><small>SĐT:</small> (+84)969909893</h2>
+                    </div>
+                </div>
             </div>
             <div class="clearfix"> </div>
-            <div id="menu" class="menu">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
+            <div class="row" id="header-menu">
+                <div class="col-md-12 col-xs-12 col-ms-12">
+                    <nav class="navbar navbar-inverse">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <h4><b>Trang Chủ</b></h4>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav menu-group">
                                 <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
                                 <li class="item-active"><a href="#">Tour</a></li>
                                 <li><a href="#">Địa Điểm</a></li>
-                                <li><a href="#">Khách Sạn</a></li>
-                                <li><a href="#">Phương Tiện</a></li>
                                 <li><a href="#">Khuyến Mãi</a></li>
                                 <li><a href="#">Tin Tức</a></li>
                                 <li><a href="#">Giới Thiệu</a></li>
                                 <li><a href="#">Liên Hệ</a></li>
                             </ul>
-                            <ul class="nav navbar-nav navbar-right login-box">
-                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                            <ul class="nav navbar-nav login-group navbar-right ">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-log-in">
+                                        </i> Đăng nhập
+                                    </a>
+                                    <ul class="dropdown-menu login-panel">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <span class="login-header color-blue">Đăng Nhập</span>
+                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div style="padding: 8px;">
+                                                <form id="loginform" class="form-horizontal" role="form" autocomplete="off">
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                        <!-- USERNAME OR EMAIL ADDRESS -->
+                                                        <input id="login-username" type="email" class="form-control" name="username" placeholder="email" title="Minimum 5 letters or numbers." required>
+                                                    </div>
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                                        <!--  PASSWORD  -->
+                                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="mật khẩu" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Ghi nhớ</label>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Email hoặc mật khẩu không chính xác!</span>
+                                                    </div>
+                                                    <div style="margin-top:10px" class="form-group">
+                                                        <!-- Button -->
+                                                        <div class="col-sm-12 controls center-text">
+                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+
+                                        </li>
+                                        <!--<li class="divider"></li>-->
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
-    <!--/Header-Rows-->
+    <!-- Header -->
 
-    <div id="top-banner">
-        <div id="top-content" class="row top-content">
-        </div>
-        <div class="container" style="margin-top: 5%;">
-            <div class="col-md-6 col-md-offset-3">
+    <!-- Top-banner-tour-filter -->
+    <div id="top-banner-tour-filter">
+        <div class="container">
+            <div class="row main-search-tour">
+                <div class="col-md-1 hidden-i9n-mobile"></div>
+                <div class="col-md-10 col-xs-12 qick-search">
+                    <div class="text-center">
+                        <h2>Tìm Kiếm Tour</h2>
+                    </div>
+                    <div>
+                        <div id="filter-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Điểm khởi hành</h5>
 
-                <!-- Search Form -->
-                <form role="form">
-
-                    <!-- Search Field -->
-                    <div class="row">
-                        <h1 class="text-center">Tra Cứu Nhanh</h1>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input class="form-control" type="text" name="search" placeholder="Tìm tour" />
-                                <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;"></span></button>
-                                </span>
-                                </span>
+                                    <div class="text-input-icon">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        <input type="text" class="place-area" id="provice-text-from" placeholder="Địa điểm khởi hành" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Điểm đến</h5>
+                                    <div class="text-input-icon">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                        <input type="text" class="place-area" id="provice-text-to" placeholder="Địa điểm tham quan" />
+                                    </div>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6 class-droplist">
+                                    <h5>Chi Phí</h5>
+                                    <select>
+                                        <option value="1">Dưới 3 triệu đồng / người</option>
+                                        <option value="2">3 đến 5 triệu đồng / người</option>
+                                        <option value="3">5 đến 10 triệu đồng / người</option>
+                                        <option value="4">10 đến 20 triệu đồng / người</option>
+                                        <option value="5">20 đến 50 triệu đồng / người</option>
+                                        <option value="6">Dưới 100 triệu đồng / người</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 class-droplist">
+                                    <h5>Số Ngày Tham Quan</h5>
+                                    <select>
+                                        <option value="1">1 Ngày</option>
+                                        <option value="2">2 Ngày</option>
+                                        <option value="3">3 Ngày</option>
+                                        <option value="4">4 Ngày</option>
+                                        <option value="5">5 Ngày</option>
+                                        <option value="6">6 Ngày</option>
+                                        <option value="7">7 Ngày</option>
+                                        <option value="8">8 Ngày</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 class-droplist">
+                                    <h5>Số Đêm Ở Lại</h5>
+                                    <select>
+                                        <option value="1">1 Đêm</option>
+                                        <option value="2">2 Đêm</option>
+                                        <option value="3">3 Đêm</option>
+                                        <option value="4">4 Đêm</option>
+                                        <option value="5">5 Đêm</option>
+                                        <option value="6">6 Đêm</option>
+                                        <option value="7">7 Đêm</option>
+                                        <option value="8">8 Đêm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br/>
                         </div>
                     </div>
+                    <div>
+                        <input type="submit" value="Tìm Kiếm" class="search-button" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top-banner-tour-filter -->
 
-                </form>
-                <!-- End of Search Form -->
+    <div class="clearfix"> </div>
+
+    <!-- Tours-body -->
+    <div id="tours-body">
+        <div class="container">
+            <div id="tours-list-header">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><strong>Danh sách Tour dành cho bạn</strong></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                            <p class="text-left">Sắp xếp theo "<i>Nổi Bật</i>"<span class="glyphicon glyphicon-chevron-down"></span></p>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="btn btn-default btn-outline items-0 not-active">Sắp Xếp</a></li>
+                            <li><a class=" btn btn-default btn-outline btn-circle items-1 active" href="# ">Nổi Bật</a></li>
+                            <li><a class="btn btn-default btn-outline btn-circle items-2 " href="# ">Mới</a></li>
+                            <li><a class="btn btn-default btn-outline btn-circle items-3 " href="# ">Tên</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="row hot-tour-best">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a1.jpg" alt="" />
+                                <p class="tour-price">15.000.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Du lịch Hawaii 6 ngày/ 5 đêm!</h5>
+                                    <p class="top-content">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a2.jpg" alt="" />
+                                <p class="tour-price">20.000.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Du lịch Hà Lan 7 ngày/ 6 đêm!</h5>
+                                    <p class="top-content">Tham quan các địa danh nổi tiếng tại Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip. </p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a3.jpg" alt="" />
+                                <p class="tour-price">5.000.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Đà Lạt, mùa xuân rực rỡ 2016!</h5>
+                                    <p class="top-content">Đón xuân Đà Lạt se lạnh trong 3 ngày/ 2 đêm. Ngắm Hồ Xuân Hương tuyệt đẹp khi hoàng hôn xuống.</p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a5.jpg" alt="" />
+                                <p class="tour-price">5.500.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Du lịch Sapa 3 ngày / 2 đêm!</h5>
+                                    <p class="top-content">Tận hưởng tiết trời se lạnh, tuyết rơi trắng xóa tại Sapa khi đông về. Ngắm nhìn Mù Căng Chải ngập mình trong sương mai trắng xóa.</p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a6.jpg" alt="" />
+                                <p class="tour-price">3.000.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Du lịch Vũng Tàu - biển gọi!</h5>
+                                    <p class="top-content">Tận hưởng kỳ nghỉ trên bãi biển Vũng Tàu xinh đẹp trong 3 ngày/ 2 đêm. Đặc biệt du khách được tham gia vào các lễ hội truyền thống của người dân miền biển.</p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 hot-tour-best-item">
+                        <div class="item-content">
+                            <a href="products.html">
+                                <img src="assets/images/a4.jpg" alt="" />
+                                <p class="tour-price">9.000.000đ</p>
+                                <div class="item-content-detail">
+                                    <h5 class="title-content">Du lịch Singapore!</h5>
+                                    <p class="top-content">Tham quan các địa danh nổi tiếng ở Singapore cùng rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Đắm mình trong thành phố hiện dại nhất Đông Nam Á.</p>
+                                    <p class="bot-content">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="im-centered row">
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="?page=1">1</a></li>
+                            <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+                            <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+                            <li class="page-item"><a class="page-link" href="?page=4">4</a></li>
+                            <li class="page-item"><a class="page-link" href="?page=5">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
 
             </div>
         </div>
     </div>
+    <!-- Tours-body -->
 
     <div class="clearfix"> </div>
 
-    <!--Main-Content-->
-    <div id="main-content" class="row cotent-body">
-        <div id="middle-content" class="middle-content">
-            <div class="container">
-                <br/>
-                <div class="col-md-4 hot-tour-best">
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a3.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour Đà Lạt, mùa xuân rực rỡ 2016!</h5>
-                                <p class="top-contents">Tham quan các địa danh nổi tiếng ở Đà Lạt, hồ Xuân Hương, thác Drây-Sáp, v.v.. hơn thế nữa là được tận hưởng tiết trời se lạnh của Đà Lạt ngay trong mùa xuân này.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <!-- container -->
+                    <div class="col-md-6 col-xs-12 panel-item">
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <hr/>
+                        <div class="block social">
+                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                        </div>
+                        <br/>
+                        <p>
+                            <a class="color-logo" href="#">G6 Travel</a> - <i>Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao</i>
+                        </p>
+                        <div class="get-email-ad">
+                            <form>
+                                <input id="txt-email" type="text" placeholder="email nhận tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'email nhận tin';}" required>
+                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                            </form>
+                        </div>
                     </div>
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a2.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour du lịch Hà Lan!</h5>
-                                <p class="top-contents">Tham quan các địa danh của Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
                     </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>LIÊN HỆ</h4>
+                        <hr/>
+                        <div class="f-contac">
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
 
                 </div>
-                <div class="col-md-4 hot-tour-best">
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a5.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour du lịch Sapa thơ mộng!</h5>
-                                <p class="top-contents">Đặt chân lên Sapa giữa tiết trời đông se lạnh đang dần chuyển xuân. Được đắm mình trong không khí lễ hội của đồng bào dân tộc miền núi trong dịp xuân về.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a1.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour du lịch Hawaii 6 ngày/ 5 đêm!</h5>
-                                <p class="top-contents">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 hot-tour-best">
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a4.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour du lịch Singapore!</h5>
-
-                                <p class="top-contents">Tham quan các địa danh nổi tiếng ở Singapore cùng rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Đắm mình trong thành phố hiện dại nhất Đông Nam Á.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hot-items">
-                        <a href="products.html">
-                            <img src="images/a6.jpg" alt="" />
-                            <div class="money-pricing text-right">15.000.000đ</div>
-                            <div class="hot-items-details">
-                                <h5>Đặt ngay Tour du lịch Vũng Tàu - biển gọi!</h5>
-                                <p class="top-contents">Tận hưởng kỳ nghỉ tại Vũng Tàu với rất nhiều thắng cảnh vô cùng tuyệt đẹp. Được thả mình trên những bãi biển xinh đẹp. Là địa điểm đáng để gia đình bạn có một kỳ nghỉ mát tuyệt vời.</p>
-                                <p class="bot-contents">Đặt tour đến: 19/11/2016 | Khởi hành: 11/12/2016 </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-    <!--/Main-Content-->
-
-    <div class="clearfix"> </div>
-
-    <div class="im-centered row">
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="?page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
-                <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="?page=4">4</a></li>
-                <li class="page-item"><a class="page-link" href="?page=5">5</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
-
-    <div class="clearfix"> </div>
-
-    <!--Footer-Sitemap-->
-    <div id="footer-sitemap" class="row">
-        <div id="footer" class="footer">
-            <!-- container -->
-            <div class="container">
-                <div class="col-md-3">
-                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
-                    <hr/>
-                    <div class="block social">
-                        <a href=""><img src="images/icons/internet.png" alt=""></a>
-                        <a href="https://www.facebook.com/cr.luonguit/"><img src="images/icons/facebook.png" alt=""></a>
-                        <a href=""><img src="images/icons/twitter.png" alt=""></a>
-                        <a href=""><img src="images/icons/google-plus.png" alt=""></a>
-                    </div>
-                    <br/>
-                    <p>
-                        Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <h4>DỊCH VỤ</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="index.html">Tour Du Lịch Trong Nước</a></li>
-                        <li><a href="flights-hotels.html">Tour Du Lịch Nước Ngoài</a></li>
-                        <li><a href="index.html">Đặt Vé Máy Bay</a></li>
-                        <li><a href="hotels.html">Đặt Vé Tàu</a></li>
-                        <li><a href="hotels.html">Phương Tiện Du Lịch</a></li>
-                        <li><a href="hotels.html">Đặt Khách Sạn</a></li>
-                        <li><a href="bus.html">Tư Vấn Địa Điểm Du Lịch</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-grid">
-                    <h4>VỀ CHÚNG TÔI</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="#">Giới Thiệu</a></li>
-                        <li><a href="#">Điều Khoản</a></li>
-                        <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                        <li><a href="#">Tuyển Dụng</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>LIÊN KẾT</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="#">VietNam Airlines</a></li>
-                        <li><a href="#">Jetstar Pacific Airlines</a></li>
-                        <li><a href="#">Xe Phương Trang</a></li>
-                        <li><a href="#">Xe Mai Linh</a></li>
-                        <li><a href="#">Tân Sơn Nhất Hotels</a></li>
-                        <li><a href="#">Mường Thanh Hotels</a></li>
-                        <li><a href="#">Bà Nà Hills</a></li>
-                        <li><a href="#">Khu Du Lịch Suối Tiên</a></li>
-                        <li><a href="#">Khu Du Lịch Đầm Sen</a></li>
-                        <li><a href="#">Khu Du Lịch Cần Giờ</a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <!-- //container -->
-
-            <!-- news-letter -->
-            <div class="container">
                 <hr/>
                 <div>
-                    <div class="col-md-4">
-                        <p><span class="title-call">Tư Vấn Miễn Phí : </span> <span class="phone-call">(+84)0969909893</span></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="mail">Email : <a href="mailto:luonguit@gmail.com">luonguit@gmail.com</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <form>
-                            <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                            <input class="f-submit" type="submit" value="Đăng ký nhận tin">
-                        </form>
+                    <div class="col-md-12 copyright">
+                        <p>Copyrights © 2016 - G6 Travel. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
                     </div>
                 </div>
             </div>
-            <!-- //news-letter -->
         </div>
-
     </div>
-    <!--/Footer-Sitemap-->
-
-    <div class="clearfix"> </div>
-
-    <!--Footer-End-->
-    <div id="footer-end" class="row">
-        <div class="footer-bottom-grids">
-            <!-- container -->
-            <div class="container">
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Tải Về Ứng Dụng Trên Mobile</h4>
-                    <div class="d-apps">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/app1.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/app2.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/app3.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Thanh Toán</h4>
-                    <div class="a-cards">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/c1.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/c2.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/c3.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Liên Hệ</h4>
-                    <div class="f-contac">
-                        <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
-                        <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-                <br/>
-                <div class="copyright">
-                    <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!--/Footer-End-->
-
-    <div class="clearfix"> </div>
+    <!-- Footer -->
 </body>
 
 </html>

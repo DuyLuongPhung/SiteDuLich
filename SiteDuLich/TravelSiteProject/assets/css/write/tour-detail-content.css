@@ -1,0 +1,335 @@
+#tour-detail-content {
+    padding: 10px 0px;
+}
+
+@media only screen and (min-width:769px) {
+    #tour-detail-content .left-content {
+        padding-left: 0px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #tour-detail-content .book-now {
+        border: 1px solid #ccc;
+        background-color: white;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    #tour-detail-content #top-content {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #tour-detail-content .left-content {
+        padding: 0px 0px;
+    }
+    #tour-detail-content .book-now {
+        border: 1px solid #ccc;
+        background-color: white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #tour-detail-content .right-content {
+        padding: 0px 0px;
+    }
+    #tour-detail-content #top-content {
+        padding: 0px 0px;
+    }
+}
+
+#tour-detail-content #left-content #img-gallery {
+    padding-top: 1px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+}
+
+#tour-detail-content #book-tour .book-content ul {
+    list-style: none;
+    float: left;
+    padding: 5px;
+}
+
+#tour-detail-content #book-tour .book-content ul li span {
+    margin-right: 10px;
+    color: #808080;
+    align-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    #tour-detail-content #book-tour .book-content ul li {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+    #tour-detail-content #book-tour .book-content ul li span {
+        margin-right: 16px;
+        color: #808080;
+        align-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid #808080;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 20px;
+    }
+    #tour-detail-content #book-tour .book-content {
+        border: 1px solid #e6e6e6;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: white;
+        display: block;
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tour-detail-content #book-tour .book-content ul li {
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    #tour-detail-content #book-tour .book-content ul li span {
+        margin-right: 14px;
+        color: #808080;
+        align-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid #808080;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 20px;
+    }
+    #tour-detail-content #book-tour .book-content {
+        border: 1px solid #e6e6e6;
+        padding: 5px;
+        margin-top: 10px;
+        background-color: white;
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    #tour-detail-content #back-to-top {
+        display: none;
+    }
+}
+
+#tour-detail-content #book-tour .book-content .book-content-btn {
+    text-decoration: none;
+    background-color: #6FD508;
+    color: white;
+    font-weight: bold;
+    float: right;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+
+#tour-detail-content #book-tour .book-content .book-content-btn:hover {
+    background-color: #0099cc;
+}
+
+#tour-detail-content #tour-slogen .overview-content {
+    border-left: 10px solid #bdcfdb;
+    border-right: 10px solid #bdcfdb;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 24px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#tour-detail-content #tour-detail {
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+#tour-detail-content #tour-detail .tour-content {
+    padding: 30px;
+}
+
+#tour-detail-content #tour-detail .tour-title {
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #bdcfdb;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+#tour-detail-content #tour-detail .tour-content .normal-text {
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+}
+
+#tour-detail-content #tour-detail .tour-content .day-content .day-title {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+#tour-detail-content #tour-detail .tour-content .day-content .day-event {
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    padding-left: 20px;
+}
+
+#tour-detail-content #tour-detail .tour-content .day-content .day-event strong {
+    font-style: italic;
+    color: #0099cc;
+}
+
+#tour-detail-content .right-content .header-content {
+    background-color: #6FD508;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+
+#tour-detail-content .right-content .header-content .icon-tag {
+    float: left;
+    padding: 5px;
+    color: white;
+}
+
+#tour-detail-content .right-content .header-content .icon-tag span {
+    color: white;
+}
+
+#tour-detail-content .right-content .header-content .text-tag {
+    float: inherit;
+    padding: 5px;
+}
+
+#tour-detail-content .right-content .middle-book {
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+#tour-detail-content .right-content .middle-book h4 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+}
+
+#tour-detail-content .right-content .middle-book h4 span {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+#tour-detail-content .right-content .middle-book .best-price {
+    padding-bottom: 20px;
+}
+
+#tour-detail-content .right-content .middle-book .best-btn {
+    text-decoration: none;
+    background-color: #6FD508;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+
+#tour-detail-content .right-content .middle-book .best-btn:hover {
+    background-color: #0099cc;
+}
+
+#tour-detail-content .right-content .other-comments {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+#tour-detail-content .right-content .other-comments .comments-head {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+#tour-detail-content .right-content .other-comments .comments-bot {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    color: #808080;
+}
+
+#tour-detail-content .right-content .other-comments .comments-bot h4 {
+    padding: 5px;
+    color: #0099cc;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#tour-detail-content .right-content .other-comments .comments-bot h4 span {
+    font-size: 12px;
+}
+
+#tour-detail-content .right-content .suggest-tour {
+    border: 1px solid #ccc;
+    border-bottom-style: none;
+    margin-bottom: 10px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-head {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    height: 380px;
+    min-height: 380px;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    height: 380px;
+    min-height: 380px;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item a img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item a .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(51, 122, 183);
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item a .price {
+    font-weight: bold;
+    font-size: 16px;
+    color: orange;
+}
+
+#tour-detail-content .right-content .suggest-tour .suggest-item a .time {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}

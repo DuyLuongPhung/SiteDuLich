@@ -1,0 +1,156 @@
+ #tours-list-header .navbar-nav.navbar-right .btn.active {
+     background-color: rgba(66, 139, 202, .8);
+     color: white;
+     font-weight: bold;
+ }
+ 
+ #tours-list-header .navbar-nav.navbar-right .btn:hover {
+     background-color: rgba(66, 139, 202, .6);
+     color: white;
+ }
+ 
+ #tours-list-header .btn.items-0 {
+     border-style: none;
+     border-radius: 0px;
+ }
+ 
+ @media only screen and (min-width:769px) {
+     #tours-list-header .navbar-nav.navbar-right .btn {
+         position: relative;
+         padding: 4px 20px;
+         margin: 10px 0px;
+         width: 110px;
+         font-size: 14px;
+     }
+     #tours-list-header .btn.btn-circle.items-1 {
+         border-right-style: none;
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+     }
+     #tours-list-header .btn.btn-circle.items-2 {
+         border-right-style: none;
+         border-radius: 0px;
+     }
+     #tours-list-header .btn.btn-circle.items-3 {
+         border-right-style: none;
+         border-radius: 0px;
+         border-top-right-radius: 50px;
+         border-bottom-right-radius: 50px;
+     }
+     #tours-list-header .navbar-brand {
+         padding-left: 0px;
+     }
+ }
+ 
+ @media only screen and (max-width:768px) {
+     #tours-list-header .navbar-nav.navbar-right .btn {
+         position: relative;
+         padding: 10px 0px;
+         margin: 0px 0px;
+         width: 100%;
+         font-size: 14px;
+     }
+     #tours-list-header .btn.btn-circle.items-1 {
+         width: 100%;
+         border-style: none;
+         border-radius: 0px;
+         text-align: left;
+         padding-left: 20px;
+     }
+     #tours-list-header .navbar-nav.navbar-right .btn.items-0 {
+         width: 100%;
+         text-align: left;
+         padding-left: 20px;
+         font-style: italic;
+         font-weight: bold;
+         color: rgba(51, 204, 51, .5);
+     }
+     #tours-list-header .btn.btn-circle.items-2 {
+         width: 100%;
+         border-style: none;
+         border-radius: 0px;
+         text-align: left;
+         padding-left: 20px;
+     }
+     #tours-list-header .btn.btn-circle.items-3 {
+         width: 100%;
+         border-style: none;
+         border-radius: 0px;
+         text-align: left;
+         padding-left: 20px;
+     }
+     #tours-list-header .navbar-toggle.collapsed {
+         margin-right: 0px;
+         width: 100%;
+         padding-top: 10px;
+         padding-bottom: 5px;
+         padding-left: 20px;
+         padding-right: 10px;
+         background-color: rgba(66, 139, 202, .8);
+         color: white;
+         font-size: 14px;
+     }
+     #tours-list-header .navbar-toggle.collapsed .text-left {
+         position: relative;
+         font-size: 14px;
+     }
+     #tours-list-header .navbar-toggle.collapsed .text-left i {
+         font-weight: bold;
+     }
+     #tours-list-header .navbar-toggle.collapsed .glyphicon.glyphicon-chevron-down {
+         float: right;
+     }
+     #tours-list-header .navbar-toggle .text-left {
+         position: relative;
+         font-size: 14px;
+     }
+     #tours-list-header .navbar-toggle .text-left i {
+         font-weight: bold;
+     }
+     #tours-list-header .navbar-toggle .glyphicon.glyphicon-chevron-down {
+         float: right;
+     }
+     #tours-list-header .navbar-toggle {
+         margin-right: 0px;
+         width: 100%;
+         padding-top: 10px;
+         padding-bottom: 5px;
+         padding-left: 20px;
+         padding-right: 10px;
+         background-color: rgba(66, 139, 202, .8);
+         color: white;
+     }
+     #tours-list-header .navbar-brand {
+         margin-left: 0px;
+         padding-left: 0px;
+         margin-bottom: 5px;
+         font-size: 14px;
+     }
+     #tours-list-header .navbar-brand strong {
+         margin-left: 0px;
+         padding-left: 0px;
+         margin-bottom: 5px;
+     }
+ }
+ 
+ #tours-list-header .btn.btn-outline {
+     background-color: transparent;
+ }
+ 
+ #tours-list-header .not-active {
+     pointer-events: none;
+     cursor: default;
+ }
+ 
+ #tours-list-header .navbar.navbar-default {
+     background-color: transparent;
+     border-style: none;
+     padding: 0px;
+ }
+ 
+ #tours-list-header {
+     background-color: transparent;
+     padding: 0px;
+     padding-right: 10px;
+     padding-top: 20px;
+ }

@@ -2,327 +2,49 @@
 <html lang="en">
 
 <head>
-    <title>Tour Đà Lạt | Du Lịch Việt</title>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/write/header.css">
-    <link rel="stylesheet" href="css/write/footer.css">
-    <link rel="stylesheet" href="css/write/index-slider.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eLearning by UIT - Team.">
+    <meta name="author" content="uit.edu.vn">
+    <title>Đà Lạt mùa xuân rực rỡ 2017 - G6 Travel</title>
+    <link rel="icon" href="assets/images/logo.png">
 
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap-3.3.7.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/write/header.css">
+    <link rel="stylesheet" href="assets/css/write/footer.css">
+    <link rel="stylesheet" href="assets/css/write/tour-detail-banner.css">
+    <link rel="stylesheet" href="assets/css/write/tour-detail-content.css">
+
+    <!-- Custom js -->
 
 
-    <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="js/locales/bootstrap-datepicker.vi.min.js" charset="UTF-8"></script>
-    <script src="js/jquery-ui.js"></script>
     <style type="text/css">
         body {
             background-color: #f4f7f9;
         }
         
-        .cotent-body {
-            margin: 0px;
-        }
-        
-        #top-content {
+        .row {
             width: 100%;
             margin: 0px;
-            padding-top: 20px;
-            height: 250px;
-            background-image: url(../../images/banner3.jpg);
-            opacity: 1.8;
-            background-size: 100%;
-        }
-        
-        #top-banner {
-            position: relative;
-        }
-        
-        #top-banner .container {
-            position: absolute;
-            top: 10px;
-            left: 70px;
-        }
-        
-        .im-centered {
-            margin: auto;
-            max-width: 300px;
-        }
-        
-        .text-center {
-            color: white;
-            font-weight: bold;
-        }
-        
-        .site-map {
-            text-decoration: none;
-            color: white;
-            font-size: 10px;
-            font-weight: bold;
-        }
-        
-        .site-map a {
-            text-decoration: none;
-            color: white;
-            font-size: 10px;
-            font-weight: bold;
-        }
-        
-        #main-content {
-            padding-top: 10px;
-        }
-        
-        .book-now {
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-            background-color: white;
-        }
-        
-        .book-now .header-content {
-            background-color: #6FD508;
-            width: 100%;
-            color: white;
-            font-size: 18px;
-        }
-        
-        .book-now .header-content .icon-tag {
-            float: left;
-            padding: 5px;
-            color: white;
-        }
-        
-        .book-now .header-content .icon-tag span {
-            color: white;
-        }
-        
-        .book-now .header-content .text-tag {
-            float: inherit;
-            padding: 5px;
-        }
-        
-        .book-now .middle-book {
-            padding-right: 10px;
-            padding-bottom: 20px;
-        }
-        
-        .book-now .middle-book h4 {
-            font-weight: bold;
-            font-size: 24px;
-            color: #000;
-        }
-        
-        .book-now .middle-book h4 span {
-            font-weight: bold;
-            font-size: 16px;
-            text-decoration: line-through;
-            color: #999;
-        }
-        
-        .book-now .middle-book .best-price {
-            padding-bottom: 20px;
-        }
-        
-        .book-now .middle-book .best-btn {
-            text-decoration: none;
-            background-color: #6FD508;
-            color: white;
-            font-weight: bold;
-            padding: 12px 25px;
-            text-transform: uppercase;
-        }
-        
-        .book-now .middle-book .best-btn:hover {
-            background-color: #0099cc;
-        }
-        
-        .other-comments {
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-            background-color: white;
-            margin-top: 10px;
-        }
-        
-        .other-comments .comments-head {
-            border-bottom: 1px solid #ccc;
-            padding: 5px;
-        }
-        
-        .other-comments .comments-bot {
-            border-bottom: 1px solid #ccc;
-            padding: 5px;
-            color: #808080;
-        }
-        
-        .other-comments .comments-bot h4 {
-            padding: 5px;
-            color: #0099cc;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        
-        .other-comments .comments-bot h4 span {
-            font-size: 12px;
-        }
-        
-        #book-tour .book-content {
-            border: 1px solid #e6e6e6;
-            padding: 15px;
-            margin-top: 20px;
-            background-color: white;
-            display: block;
-            width: 100%;
-            float: left;
-        }
-        
-        #book-tour .book-content ul {
-            list-style: none;
-            float: left;
-        }
-        
-        #book-tour .book-content ul li {
-            padding-top: 5px;
-        }
-        
-        #book-tour .book-content ul li span {
-            margin-right: 10px;
-            color: #808080;
-            align-content: center;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-            border: 1px solid #808080;
-            border-radius: 50%;
-            padding: 5px;
-            margin-right: 20px;
-        }
-        
-        #book-tour .book-content .book-content-btn {
-            text-decoration: none;
-            background-color: #6FD508;
-            color: white;
-            font-weight: bold;
-            float: right;
-            padding: 12px 25px;
-            text-transform: uppercase;
-        }
-        
-        #book-tour .book-content .book-content-btn:hover {
-            background-color: #0099cc;
-        }
-        
-        .middle-content .left-content {
-            padding-left: 0px;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-        
-        .middle-content .right-content {
-            padding-left: 30px;
-            padding-right: 0px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-        
-        #main-content .middle-content .left-content #img-gallery {
-            padding-top: 1px;
-            border: 1px solid #e6e6e6;
-            background-color: white;
-        }
-        
-        #tour-slogen .overview-content {
-            border-left: 10px solid #bdcfdb;
-            border-right: 10px solid #bdcfdb;
-            font-style: italic;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            padding: 24px;
-            font-size: 20px;
-            background-color: white;
-        }
-        
-        #tour-detail {
-            border: 1px solid #e6e6e6;
-            background-color: white;
-            margin-top: 20px;
             padding: 0px;
-        }
-        
-        #tour-detail .tour-content {
-            padding: 30px;
-        }
-        
-        #tour-detail .tour-title {
-            font-weight: bold;
-            font-size: 24px;
-            background-color: #bdcfdb;
-            margin-top: 0px;
-            padding: 5px;
-        }
-        
-        #tour-detail .tour-content .normal-text {
-            font-weight: normal;
-            font-size: 16px;
-            font-style: normal;
-        }
-        
-        #tour-detail .tour-content .day-content .day-title {
-            font-weight: bold;
-            font-size: 18px;
-            font-style: normal;
-            padding-left: 10px;
-        }
-        
-        #tour-detail .tour-content .day-content .day-event {
-            font-weight: normal;
-            font-size: 16px;
-            font-style: normal;
-            padding-left: 20px;
-        }
-        
-        #tour-detail .tour-content .day-content .day-event strong {
-            font-style: italic;
-            color: #0099cc;
-        }
-        
-        #main-content .bottom-content {
-            padding: 0px;
-        }
-        
-        #main-content .bottom-content .row-item {
-            border: 1px solid #ccc;
-            padding: 0px;
-            background-color: white;
-        }
-        
-        #main-content .bottom-content .bottom-content img {
-            width: 100%;
-        }
-        
-        #main-content .bottom-content .row-item .col-md-3 {
-            margin: 0px;
-        }
-        
-        #main-content .bottom-content .row-item .header-title {
-            background-color: #F4F7F9;
-            font-size: 20px;
-            padding: 0px;
-            margin: 0px;
-            border: 1px solid red;
-        }
-        
-        #main-content .bottom-content .row-item .header-title .col-md-3 {
-            border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            border-top: 1px solid #ccc;
-            padding: 10px;
         }
     </style>
 
@@ -330,143 +52,177 @@
 
 <body>
 
-    <!--Header-Rows-->
-    <div id="header" class="row">
-        <div class="header">
-            <div id="logo" class="logo">
-                <table>
-                    <tr>
-                        <td class="margin"></td>
-                        <td class="tdlogo">
-                            <div class="logo">
-                                <h1><a  href="index.html"><span>Du Lịch Việt</span></a></h1>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="phone">
-                                <ul>
-                                    <li class="caption">
-                                        SĐT
-                                    </li>
-                                    <li class="text_phone">
-                                        (+84)969909893
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td class="margin"></td>
-                    </tr>
-                </table>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row" id="header-logo">
+                <div class="col-md-6 col-xs-12 col-ms-12">
+                    <div class="logo-img">
+                        <h1><a  href="index.html"><img src ="assets/images/logo.png" alt="g6 travel logo"/></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-ms-12 text-left">
+                    <div class="phone-text">
+                        <h2><small>SĐT:</small> (+84)969909893</h2>
+                    </div>
+                </div>
             </div>
             <div class="clearfix"> </div>
-            <div id="menu" class="menu">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
+            <div class="row" id="header-menu">
+                <div class="col-md-12 col-xs-12 col-ms-12">
+                    <nav class="navbar navbar-inverse">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <h4><b>Trang Chủ</b></h4>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav menu-group">
                                 <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
                                 <li class="item-active"><a href="#">Tour</a></li>
                                 <li><a href="#">Địa Điểm</a></li>
-                                <li><a href="#">Khách Sạn</a></li>
-                                <li><a href="#">Phương Tiện</a></li>
                                 <li><a href="#">Khuyến Mãi</a></li>
                                 <li><a href="#">Tin Tức</a></li>
                                 <li><a href="#">Giới Thiệu</a></li>
                                 <li><a href="#">Liên Hệ</a></li>
                             </ul>
-                            <ul class="nav navbar-nav navbar-right login-box">
-                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                            <ul class="nav navbar-nav login-group navbar-right ">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="glyphicon glyphicon-log-in">
+                                        </i> Đăng nhập
+                                    </a>
+                                    <ul class="dropdown-menu login-panel">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <span class="login-header color-blue">Đăng Nhập</span>
+                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div style="padding: 8px;">
+                                                <form id="loginform" class="form-horizontal" role="form" autocomplete="off">
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                        <!-- USERNAME OR EMAIL ADDRESS -->
+                                                        <input id="login-username" type="email" class="form-control" name="username" placeholder="email" title="Minimum 5 letters or numbers." required>
+                                                    </div>
+                                                    <div style="margin-bottom: 10px" class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                                        <!--  PASSWORD  -->
+                                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="mật khẩu" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Ghi nhớ</label>
+                                                    </div>
+                                                    <div class="center-text">
+                                                        <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Email hoặc mật khẩu không chính xác!</span>
+                                                    </div>
+                                                    <div style="margin-top:10px" class="form-group">
+                                                        <!-- Button -->
+                                                        <div class="col-sm-12 controls center-text">
+                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+
+                                        </li>
+                                        <!--<li class="divider"></li>-->
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
-    <!--/Header-Rows-->
+    <!-- Header -->
+
+    <div class="clearfix"> </div>
 
     <div id="top-banner">
-        <div id="top-content" class="row">
-        </div>
-        <div class="container" style="margin-top: 5%;">
-            <div class="col-md-6 col-md-offset-3">
+        <div id="bot-map-site">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div id="bot-map-site-content" class="col-md-6">
+                        <!-- Search Form -->
+                        <form role="form">
+                            <!-- Search Field -->
+                            <div class="row">
+                                <h1 class="text-center big-title">ĐÀ LẠT MÙA XUÂN 2017</h1>
+                                <h1 class="text-center"></h1>
+                                <h4 class="text-center site-map"><a href="#">TRANG CHỦ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">TOUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">ĐÀ LẠT MÙA XUÂN 2017</a></h4>
+                            </div>
 
-                <!-- Search Form -->
-                <form role="form">
-
-                    <!-- Search Field -->
-                    <div class="row">
-                        <h1 class="text-center">ĐÀ LẠT MÙA XUÂN 2017</h1>
-                        <h1 class="text-center"></h1>
-                        <h4 class="text-center site-map"><a href="#">TRANG CHỦ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">TOUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">ĐÀ LẠT MÙA XUÂN 2017</a></h4>
+                        </form>
+                        <!-- End of Search Form -->
                     </div>
-
-                </form>
-                <!-- End of Search Form -->
-
+                </div>
             </div>
+
         </div>
     </div>
 
     <div class="clearfix"> </div>
 
-    <!--Main-Content-->
-    <div id="main-content" class="row">
+    <!-- Tour-detail-content --->
+    <div id="tour-detail-content">
         <div class="container">
-            <div class="middle-content">
+            <div id="top-content" class="row">
                 <div class="col-md-8 left-content">
-                    <div id="img-gallery" class="row">
+                    <div id="img-gallery">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li data-thumb="images/a1.jpg">
-                                    <img src="images/a1.jpg" alt="" />
+                                <li data-thumb="assets/images/a1.jpg">
+                                    <img src="assets/images/a1.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a2.jpg">
-                                    <img src="images/a2.jpg" alt="" />
+                                <li data-thumb="assets/images/a2.jpg">
+                                    <img src="assets/images/a2.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a3.jpg">
-                                    <img src="images/a3.jpg" alt="" />
+                                <li data-thumb="assets/images/a3.jpg">
+                                    <img src="assets/images/a3.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a4.jpg">
-                                    <img src="images/a4.jpg" alt="" />
+                                <li data-thumb="assets/images/a4.jpg">
+                                    <img src="assets/images/a4.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a1.jpg">
-                                    <img src="images/a1.jpg" alt="" />
+                                <li data-thumb="assets/images/a1.jpg">
+                                    <img src="assets/images/a1.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a2.jpg">
-                                    <img src="images/a2.jpg" alt="" />
+                                <li data-thumb="assets/images/a2.jpg">
+                                    <img src="assets/images/a2.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a3.jpg">
-                                    <img src="images/a3.jpg" alt="" />
+                                <li data-thumb="assets/images/a3.jpg">
+                                    <img src="assets/images/a3.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a4.jpg">
-                                    <img src="images/a4.jpg" alt="" />
+                                <li data-thumb="assets/images/a4.jpg">
+                                    <img src="assets/images/a4.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a1.jpg">
-                                    <img src="images/a1.jpg" alt="" />
+                                <li data-thumb="assets/images/a1.jpg">
+                                    <img src="assets/images/a1.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a2.jpg">
-                                    <img src="images/a2.jpg" alt="" />
+                                <li data-thumb="assets/images/a2.jpg">
+                                    <img src="assets/images/a2.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a3.jpg">
-                                    <img src="images/a3.jpg" alt="" />
+                                <li data-thumb="assets/images/a3.jpg">
+                                    <img src="assets/images/a3.jpg" alt="" />
                                 </li>
-                                <li data-thumb="images/a4.jpg">
-                                    <img src="images/a4.jpg" alt="" />
+                                <li data-thumb="assets/images/a4.jpg">
+                                    <img src="assets/images/a4.jpg" alt="" />
                                 </li>
 
                             </ul>
                         </div>
                         <!-- FlexSlider -->
-                        <script defer src="js/jquery.flexslider.js"></script>
+                        <script defer src="assets/js/jquery.flexslider.js"></script>
                         <script>
                             // Can also be used with $(document).ready()
                             $(window).load(function () {
@@ -477,7 +233,8 @@
                             });
                         </script>
                     </div>
-                    <div id="book-tour" class="row">
+                    <div class="clearfix"></div>
+                    <div id="book-tour">
                         <div class="book-content">
                             <ul>
                                 <li><span class="glyphicon glyphicon-time"></span><strong>Thời gian:</strong> 10/12/2016 - 14/12/2016</li>
@@ -488,12 +245,14 @@
                             <a href="#" class="book-content-btn text-right">ĐẶT NGAY</a>
                         </div>
                     </div>
-                    <div id="tour-slogen" class="row">
+                    <div class="clearfix"></div>
+                    <div id="tour-slogen">
                         <div class="overview-content">
                             <p>Với độ cao 1.500 mét so với mực nước biển và được các dãy núi cùng quần hệ thực vật rừng bao quanh, Đà Lạt thừa hưởng một khí hậu miền núi ôn hòa và dịu mát quanh năm. Lịch sử hơn một thế kỷ cũng để lại cho thành phố một di sản kiến trúc giá trị, được ví như một bảo tàng kiến trúc châu Âu thế kỷ 20.</p>
                         </div>
                     </div>
-                    <div id="tour-detail" class="row">
+                    <div class="clearfix"></div>
+                    <div id="tour-detail">
                         <div class="tour-title">
                             Lịch trình
                         </div>
@@ -570,7 +329,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="clearfix"></div>
+                        <div id="back-to-top" class="text-right">
+                            <a class="btn" id="backToTopbtn"><i class="glyphicon glyphicon-open">&nbsp;</i>Về đầu trang</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $("#backToTopbtn").click(function () {
+                                    $('body,html').animate({
+                                        scrollTop: 0
+                                    })
+                                })
+
+                            });
+                        </script>
+
                     </div>
+
                 </div>
                 <div class="col-md-4 right-content">
                     <div class="book-now">
@@ -590,9 +368,11 @@
                             <a class="best-btn" href="booking.html">Đặt ngay</a>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="map-gd">
                         <iframe style="height:300px;width:100%;border:1px solid #ccc;" src="https://www.google.com/maps/embed/v1/place?q=thành+phố+Đà+Lạt,+Lâm+Đồng,+Vietnam&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="other-comments">
                         <div class="comments-head">
                             <h3>Du Khách Cảm Nhận</h3>
@@ -611,208 +391,114 @@
                             <h4><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Tú Linh</h4>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="suggest-tour">
+                        <h3 class="suggest-head">Tour đề xuất</h3>
+                        <div class="clearfix"></div>
+                        <div class="row suggest-item">
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a5.jpg" alt="sapa" />
+                                <h3 class="title">Sapa thơ mộng!</h3>
+                                <p class="content">Tận hưởng tiết trời se lạnh, tuyết rơi trắng xóa tại Sapa khi đông về. Ngắm nhìn Mù Căng Chải ngập mình trong sương mai trắng xóa.</p>
+                                <h4 class="time">Thời gian tham quan:&nbsp;<i>5 ngày / 4 đêm</i></h4>
+                                <h4 class="price"><i >5.500.000đ</i></h4>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a1.jpg" alt="sapa" />
+                                <h3 class="title">Du lịch Hawaii!</h3>
+                                <p class="content">Tận hưởng kỳ nghỉ tại Hawaii với rất nhiều thắng cảnh vô cùng tuyệt đẹp, các lễ hội văn hóa đặc sắc. Được thả mình trên những bãi biển xinh đẹp.</p>
+                                <h4 class="time">Thời gian tham quan:&nbsp;<i>6 ngày / 5 đêm</i></h4>
+                                <h4 class="price"><i >15.000.000đ</i></h4>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a6.jpg" alt="sapa" />
+                                <h3 class="title">Du lịch Vũng Tàu - biển gọi!</h3>
+                                <p class="content">Tận hưởng kỳ nghỉ tại Vũng Tàu với rất nhiều thắng cảnh vô cùng tuyệt đẹp. Được thả mình trên những bãi biển xinh đẹp. Là địa điểm đáng để gia đình bạn có một kỳ nghỉ mát tuyệt vời.</p>
+                                <h4 class="time">Thời gian tham quan:&nbsp;<i>3 ngày / 2 đêm</i></h4>
+                                <h4 class="price"><i >3.500.000đ</i></h4>
+                            </a>
+                        </div>
+                        <div class="row suggest-item">
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a2.jpg" alt="sapa" />
+                                <h3 class="title">Du lịch Hà Lan!</h3>
+                                <p class="content">Tham quan các địa danh của Hà Lan, đất nước xinh đẹp với những cánh đồng hoa tulip.</p>
+                                <h4 class="time">Thời gian tham quan:&nbsp;<i>6 ngày / 5 đêm</i></h4>
+                                <h4 class="price"><i >15.500.000đ</i></h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="bottom-content">
-                <div class="row-item row">
-                    <div class="col-md-3">
-                        <div class="header-title">Mô tả</div>
-                        <div class="bottom-content">
-                            <a href="#"><img src="images/p2.jpg" alt=""></a>
-                            <div class="room-basic-info">
-                                <a href="#">Fusce vestibulum ultricies rutrum</a>
-                                <h6>1 king bed or  2 single beds</h6>
-                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="header-title">Hoạt động</div>
-                        <div class="middle-content">
-                            <a href="#"><img src="images/p2.jpg" alt=""></a>
-                            <div class="room-basic-info">
-                                <a href="#">Fusce vestibulum ultricies rutrum</a>
-                                <h6>1 king bed or  2 single beds</h6>
-                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="header-title">Chi phí</div>
-                        <div class="middle-content">
-                            <a href="#"><img src="images/p2.jpg" alt=""></a>
-                            <div class="room-basic-info">
-                                <a href="#">Fusce vestibulum ultricies rutrum</a>
-                                <h6>1 king bed or  2 single beds</h6>
-                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="header-title">Đăng ký</div>
-                        <div class="middle-content">
-                            <a href="#"><img src="images/p2.jpg" alt=""></a>
-                            <div class="room-basic-info">
-                                <a href="#">Fusce vestibulum ultricies rutrum</a>
-                                <h6>1 king bed or  2 single beds</h6>
-                                <p>Vestibulum ullamcorper(condimentum luctus)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <!--/Main-Content-->
+    <!-- Tour-detail-content --->
 
     <div class="clearfix"> </div>
-    <!--Footer-Sitemap-->
-    <div id="footer-sitemap" class="row">
-        <div id="footer" class="footer">
-            <!-- container -->
-            <div class="container">
-                <div class="col-md-3">
-                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
-                    <hr/>
-                    <div class="block social">
-                        <a href=""><img src="images/icons/internet.png" alt=""></a>
-                        <a href="https://www.facebook.com/cr.luonguit/"><img src="images/icons/facebook.png" alt=""></a>
-                        <a href=""><img src="images/icons/twitter.png" alt=""></a>
-                        <a href=""><img src="images/icons/google-plus.png" alt=""></a>
-                    </div>
-                    <br/>
-                    <p>
-                        Du lịch Việt - Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <h4>DỊCH VỤ</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="index.html">Tour Du Lịch Trong Nước</a></li>
-                        <li><a href="flights-hotels.html">Tour Du Lịch Nước Ngoài</a></li>
-                        <li><a href="index.html">Đặt Vé Máy Bay</a></li>
-                        <li><a href="hotels.html">Đặt Vé Tàu</a></li>
-                        <li><a href="hotels.html">Phương Tiện Du Lịch</a></li>
-                        <li><a href="hotels.html">Đặt Khách Sạn</a></li>
-                        <li><a href="bus.html">Tư Vấn Địa Điểm Du Lịch</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-grid">
-                    <h4>VỀ CHÚNG TÔI</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="#">Giới Thiệu</a></li>
-                        <li><a href="#">Điều Khoản</a></li>
-                        <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                        <li><a href="#">Tuyển Dụng</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>LIÊN KẾT</h4>
-                    <hr/>
-                    <ul>
-                        <li><a href="#">VietNam Airlines</a></li>
-                        <li><a href="#">Jetstar Pacific Airlines</a></li>
-                        <li><a href="#">Xe Phương Trang</a></li>
-                        <li><a href="#">Xe Mai Linh</a></li>
-                        <li><a href="#">Tân Sơn Nhất Hotels</a></li>
-                        <li><a href="#">Mường Thanh Hotels</a></li>
-                        <li><a href="#">Bà Nà Hills</a></li>
-                        <li><a href="#">Khu Du Lịch Suối Tiên</a></li>
-                        <li><a href="#">Khu Du Lịch Đầm Sen</a></li>
-                        <li><a href="#">Khu Du Lịch Cần Giờ</a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <!-- //container -->
 
-            <!-- news-letter -->
-            <div class="container">
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <!-- container -->
+                    <div class="col-md-6 col-xs-12 panel-item">
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <hr/>
+                        <div class="block social">
+                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                        </div>
+                        <br/>
+                        <p>
+                            <a class="color-logo" href="#">G6 Travel</a> - <i>Cung cấp các tour du lịch trong nước, ngoài nước chất lượng cao</i>
+                        </p>
+                        <div class="get-email-ad">
+                            <form>
+                                <input id="txt-email" type="text" placeholder="email nhận tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'email nhận tin';}" required>
+                                <input class="f-submit" type="submit" value="Đăng ký nhận tin">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 panel-item">
+                        <h4>LIÊN HỆ</h4>
+                        <hr/>
+                        <div class="f-contac">
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
                 <hr/>
                 <div>
-                    <div class="col-md-4">
-                        <p><span class="title-call">Tư Vấn Miễn Phí : </span> <span class="phone-call">(+84)0969909893</span></p>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="mail">Email : <a href="mailto:luonguit@gmail.com">luonguit@gmail.com</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <form>
-                            <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                            <input class="f-submit" type="submit" value="Đăng ký nhận tin">
-                        </form>
+                    <div class="col-md-12 copyright">
+                        <p>Copyrights © 2016 - G6 Travel. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
                     </div>
                 </div>
             </div>
-            <!-- //news-letter -->
         </div>
-
     </div>
-    <!--/Footer-Sitemap-->
-
-    <div class="clearfix"> </div>
-
-    <!--Footer-End-->
-    <div id="footer-end" class="row">
-        <div class="footer-bottom-grids">
-            <!-- container -->
-            <div class="container">
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Tải Về Ứng Dụng Trên Mobile</h4>
-                    <div class="d-apps">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/app1.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/app2.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/app3.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Thanh Toán</h4>
-                    <div class="a-cards">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/c1.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/c2.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/c3.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-bottom-left">
-                    <h4>Liên Hệ</h4>
-                    <div class="f-contac">
-                        <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
-                        <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-                <br/>
-                <div class="copyright">
-                    <p>Copyrights © 2016 Du Lich Viet. Design by <a href="https://www.facebook.com/cr.luonguit">Duy Luong</a></p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!--/Footer-End-->
-
-    <div class="clearfix"> </div>
+    <!-- Footer -->
 </body>
 
 </html>

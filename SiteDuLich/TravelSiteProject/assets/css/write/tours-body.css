@@ -1,0 +1,101 @@
+ #tours-body .hot-tour-best {
+     min-height: 400px;
+     width: 100%;
+ }
+ 
+ #tours-body .row.main-lst-slider {
+     border-top: 1px solid rgba(51, 51, 51, .3);
+     width: 100%;
+     margin: 0px;
+ }
+ 
+ #tours-body .main-lst-slider .item {
+     margin: 0px;
+     padding: 10px;
+ }
+ 
+ #tours-body .hot-tour-best-item {
+     padding: 10px;
+     margin: 0px;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content img {
+     width: 100%;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content a {
+     text-decoration: none;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content-detail {
+     padding: 10px;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content-detail .title-content {
+     font-weight: bold;
+     font-size: 18px;
+     color: rgb(51, 122, 183);
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content-detail .top-content {
+     font-size: 14px;
+     color: rgb(119, 119, 119);
+     max-height: 100px;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content-detail .bot-content {
+     font-size: 14px;
+     color: black;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content {
+     position: relative;
+     background-color: white;
+     border: 1px solid rgb(230, 230, 230);
+     min-height: 250px;
+     max-height: 450px;
+ }
+ 
+ #tours-body .hot-tour-best-item .item-content .tour-price {
+     position: absolute;
+     top: 20px;
+     right: 0px;
+     padding: 5px 20px;
+     border: 1px solid orange;
+     background-color: orange;
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
+     box-shadow: -4px 4px 5px #888888;
+ }
+ 
+ #index-body .row {
+     margin: 0px;
+ }
+ 
+ @media only screen and (max-width:768px) {
+     #tours-body .hot-tour-best-item .item-content {
+         position: relative;
+         min-height: 450px;
+         background-color: white;
+         border: 1px solid rgb(230, 230, 230);
+     }
+     #tours-body .hot-tour-best-item .item-content-detail .top-content {
+         font-size: 14px;
+         color: rgb(119, 119, 119);
+         max-height: 150px;
+     }
+     #tours-body .hot-tour-best-item .item-content-detail .bot-content {
+         font-size: 10px;
+         color: black;
+     }
+ }
+ 
+ #tours-body .im-centered {
+     margin: auto;
+     max-width: 300px;
+ }
+ 
+ .row {
+     margin: 0px;
+ }

@@ -1,0 +1,111 @@
+#news-body .row.main-lst-slider {
+    border-top: 1px solid rgba(51, 51, 51, .3);
+    width: 100%;
+    margin: 0px;
+}
+
+#news-body .main-lst-slider .item {
+    margin: 0px;
+    padding: 10px;
+}
+
+#news-body .newsest-list-item {
+    padding: 10px;
+    margin: 0px;
+}
+
+@media only screen and (min-width:769px) {
+    #news-body .newsest-list-item .item-content {
+        position: relative;
+        min-height: 400px;
+        height: 400px;
+        background-color: white;
+        border: 1px solid rgb(230, 230, 230);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #news-body .newsest-list-item .item-content {
+        position: relative;
+        min-height: 420px;
+        height: 430px;
+        background-color: white;
+        border: 1px solid rgb(230, 230, 230);
+    }
+}
+
+#news-body .newsest-list-item .item-content a {
+    text-decoration: none;
+}
+
+#news-body .newsest-list-item .item-content img {
+    width: 100%;
+}
+
+#news-body .newsest-list-item .item-content-detail {
+    padding: 10px;
+}
+
+#news-body .newsest-list-item .item-content-detail .title-content {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(51, 122, 183);
+}
+
+#news-body .newsest-list-item .item-content-detail .bot-content {
+    font-size: 14px;
+    color: black;
+}
+
+#news-body .newsest-list-item .item-content-detail .top-content {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    max-height: 100px;
+}
+
+#news-body .im-centered {
+    margin: auto;
+    max-width: 300px;
+}
+
+@media only screen and (min-width:769px) {
+    #top-banner .top-content {
+        margin: 0px;
+        padding-top: 20px;
+        height: 250px;
+        background-image: url(../../../assets/images/banner5.jpg);
+        opacity: 0.2;
+        background-size: 100%;
+    }
+    #top-banner {
+        position: relative;
+    }
+    #top-banner .container {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #top-banner .top-content {
+        margin: 0px;
+        padding-top: 5px;
+        height: 150px;
+        background-image: url(../../../assets/images/banner5.jpg);
+        opacity: 0.5;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #top-banner {
+        position: relative;
+    }
+    #top-banner .container {
+        position: absolute;
+        top: 0px;
+        left: 8px;
+    }
+    #top-banner .container h1 {
+        font-size: 20px;
+    }
+}
