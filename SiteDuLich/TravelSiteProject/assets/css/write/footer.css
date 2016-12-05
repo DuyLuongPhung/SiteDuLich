@@ -83,6 +83,7 @@
      width: 50%;
      margin-right: 0px;
      padding: 3px 5px;
+     border: 1px solid #ccc;
  }
  
  #footer .get-email-ad .f-submit {

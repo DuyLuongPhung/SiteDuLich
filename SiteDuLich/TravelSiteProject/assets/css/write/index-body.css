@@ -62,8 +62,9 @@
     position: relative;
     background-color: white;
     border: 1px solid rgb(230, 230, 230);
-    min-height: 250px;
+    min-height: 370px;
     max-height: 450px;
+    height: 370px;
 }
 
 #index-body .hot-tour-best-item .item-content .tour-price {
@@ -159,8 +160,10 @@
 #index-body .hot-location-best-item .item-content {
     position: relative;
     background-color: white;
-    min-height: 200px;
     border-bottom: 1px solid rgb(230, 230, 230);
+    min-height: 220px;
+    max-height: 320px;
+    height: 220px;
 }
 
 #index-body .newsest-list {
@@ -204,9 +207,10 @@
 
 #index-body .newsest-list-item .item-content {
     position: relative;
-    min-height: 200px;
     background-color: white;
     border: 1px solid rgb(230, 230, 230);
+    min-height: 400px;
+    max-height: 450px;
 }
 
 #index-body .newsest-list-item .item-content .tour-price {
@@ -232,6 +236,9 @@
         min-height: 450px;
         background-color: white;
         border: 1px solid rgb(230, 230, 230);
+        min-height: 350px;
+        max-height: 450px;
+        height: 350px;
     }
     #index-body .hot-tour-best-item .item-content-detail .top-content {
         font-size: 14px;
@@ -255,5 +262,15 @@
     #index-body .lst-header .button-group i:focus {
         font-size: 14px;
         color: rgb(119, 119, 119);
+    }
+    #index-body .lst-header .button-group {
+        display: none;
+    }
+    #index-body .hot-location-best-item .item-content {
+        position: relative;
+        background-color: white;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        min-height: 420px;
+        max-height: 520px;
     }
 }

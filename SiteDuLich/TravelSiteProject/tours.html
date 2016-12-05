@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="assets/css/write/tours-list-header.css">
     <link rel="stylesheet" href="assets/css/write/tours-body.css">
 
-
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/write/top-banner-tour-filter.js" charset="UTF-8"></script>
 
@@ -81,13 +80,13 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav menu-group">
-                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-                                <li class="item-active"><a href="#">Tour</a></li>
-                                <li><a href="#">Địa Điểm</a></li>
-                                <li><a href="#">Khuyến Mãi</a></li>
-                                <li><a href="#">Tin Tức</a></li>
-                                <li><a href="#">Giới Thiệu</a></li>
-                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li class="item-active"><a href="tours.html">Tour</a></li>
+                                <li><a href="locations.html">Địa Điểm</a></li>
+                                <li><a href="sales.html">Khuyến Mãi</a></li>
+                                <li><a href="news.html">Tin Tức</a></li>
+                                <li><a href="about.html">Giới Thiệu</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <ul class="nav navbar-nav login-group navbar-right ">
                                 <li class="dropdown">
@@ -99,7 +98,7 @@
                                         <li>
                                             <div class="dropdown-header">
                                                 <span class="login-header color-blue">Đăng Nhập</span>
-                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                                <span class="forgot-password color-blue"><a href="reset-password.html">Quên mật khẩu?</a></span>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div style="padding: 8px;">
@@ -124,13 +123,13 @@
                                                     <div style="margin-top:10px" class="form-group">
                                                         <!-- Button -->
                                                         <div class="col-sm-12 controls center-text">
-                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                            <a id="btn-login" href="#login" class="btn btn-block btn-success">Đăng Nhập</a>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
 
-                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+                                            <div class="register-new-account">Chưa có tài khoản?<a href="create-new-account.html"> Đăng ký ngay!</a></div>
 
                                         </li>
                                         <!--<li class="divider"></li>-->
@@ -151,14 +150,14 @@
         <div class="container">
             <div class="row main-search-tour">
                 <div class="col-md-1 hidden-i9n-mobile"></div>
-                <div class="col-md-10 col-xs-12 qick-search">
+                <div class="col-md-10 col-xs-12 qick-search tours-content">
                     <div class="text-center">
                         <h2>Tìm Kiếm Tour</h2>
                     </div>
                     <div>
                         <div id="filter-content">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 class-droplist">
                                     <h5>Điểm khởi hành</h5>
 
                                     <div class="text-input-icon">
@@ -166,7 +165,7 @@
                                         <input type="text" class="place-area" id="provice-text-from" placeholder="Địa điểm khởi hành" />
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 class-droplist">
                                     <h5>Điểm đến</h5>
                                     <div class="text-input-icon">
                                         <span class="glyphicon glyphicon-map-marker"></span>
@@ -217,7 +216,7 @@
                         </div>
                     </div>
                     <div>
-                        <input type="submit" value="Tìm Kiếm" class="search-button" />
+                        <input type="submit" value="Tìm Kiếm" class="search-button" onclick="window.location='tours.html';" />
                     </div>
                 </div>
             </div>
@@ -254,8 +253,8 @@
                 <div class="row">
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a1.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a1.jpg" alt="Hawaii" />
                                 <p class="tour-price">15.000.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Du lịch Hawaii 6 ngày/ 5 đêm!</h5>
@@ -267,8 +266,8 @@
                     </div>
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a2.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a2.jpg" alt="Hà Lan" />
                                 <p class="tour-price">20.000.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Du lịch Hà Lan 7 ngày/ 6 đêm!</h5>
@@ -280,8 +279,8 @@
                     </div>
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a3.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a3.jpg" alt="Đà Lạt" />
                                 <p class="tour-price">5.000.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Đà Lạt, mùa xuân rực rỡ 2016!</h5>
@@ -295,8 +294,8 @@
                 <div class="row">
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a5.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a5.jpg" alt="Sapa" />
                                 <p class="tour-price">5.500.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Du lịch Sapa 3 ngày / 2 đêm!</h5>
@@ -308,8 +307,8 @@
                     </div>
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a6.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a6.jpg" alt="Vũng Tàu" />
                                 <p class="tour-price">3.000.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Du lịch Vũng Tàu - biển gọi!</h5>
@@ -321,8 +320,8 @@
                     </div>
                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                         <div class="item-content">
-                            <a href="products.html">
-                                <img src="assets/images/a4.jpg" alt="" />
+                            <a href="tour-detail.html">
+                                <img src="assets/images/a4.jpg" alt="Singapore" />
                                 <p class="tour-price">9.000.000đ</p>
                                 <div class="item-content-detail">
                                     <h5 class="title-content">Du lịch Singapore!</h5>
@@ -377,10 +376,10 @@
                         <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
                         <hr/>
                         <div class="block social">
-                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="index.html"><img src="assets/images/icons/internet.png" alt=""></a>
                             <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                            <a href="#twitter"><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href="#g+"><img src="assets/images/icons/google-plus.png" alt=""></a>
                         </div>
                         <br/>
                         <p>
@@ -393,22 +392,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-2 col-xs-12 panel-item">
                         <h4>VỀ CHÚNG TÔI</h4>
                         <hr/>
                         <ul>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Dịch Vụ</a></li>
-                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
-                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                            <li><a href="#">Feedback</a></li>
+                            <li><a href="about.html">Giới Thiệu</a></li>
+                            <li><a href="news.html">Tin Tức</a></li>
+                            <li><a href="#">Đặt Tour</a></li>
+                            <li><a href="tours.html">Ghép Tour Du Lịch</a></li>
+                            <li><a href="contact.html">Liên Hệ Với Chúng Tôi</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-4 col-xs-12 panel-item">
                         <h4>LIÊN HỆ</h4>
                         <hr/>
                         <div class="f-contac">
-                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Gò Vấp, TP. HCM</p>
                             <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
                         </div>
                     </div>

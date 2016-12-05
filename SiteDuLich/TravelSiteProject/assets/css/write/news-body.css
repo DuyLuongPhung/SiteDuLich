@@ -22,24 +22,30 @@
         background-color: white;
         border: 1px solid rgb(230, 230, 230);
     }
+    #news-body .newsest-list-item .item-content img {
+        width: 100%;
+        max-height: 180px;
+        min-height: 180px;
+    }
 }
 
 @media only screen and (max-width:768px) {
     #news-body .newsest-list-item .item-content {
         position: relative;
         min-height: 420px;
-        height: 430px;
+        height: 420px;
         background-color: white;
         border: 1px solid rgb(230, 230, 230);
+    }
+    #news-body .newsest-list-item .item-content img {
+        width: 100%;
+        max-height: 220px;
+        min-height: 220px;
     }
 }
 
 #news-body .newsest-list-item .item-content a {
     text-decoration: none;
-}
-
-#news-body .newsest-list-item .item-content img {
-    width: 100%;
 }
 
 #news-body .newsest-list-item .item-content-detail {

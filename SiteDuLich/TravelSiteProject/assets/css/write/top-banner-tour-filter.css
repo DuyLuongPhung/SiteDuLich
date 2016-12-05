@@ -56,6 +56,10 @@
      font-weight: bold;
  }
  
+ #top-banner-tour-filter .qick-search.tours-content .class-droplist {
+     padding-left: 0px;
+ }
+ 
  #top-banner-tour-filter .qick-search .class-droplist select {
      color: #737373;
      box-sizing: border-box;

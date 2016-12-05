@@ -77,13 +77,13 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav menu-group">
-                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-                                <li><a href="#">Tour</a></li>
-                                <li><a href="#">Địa Điểm</a></li>
-                                <li><a href="#">Khuyến Mãi</a></li>
-                                <li class="item-active"><a href="#">Tin Tức</a></li>
-                                <li><a href="#">Giới Thiệu</a></li>
-                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="tours.html">Tour</a></li>
+                                <li><a href="locations.html">Địa Điểm</a></li>
+                                <li><a href="sales.html">Khuyến Mãi</a></li>
+                                <li class="item-active"><a href="news.html">Tin Tức</a></li>
+                                <li><a href="about.html">Giới Thiệu</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <ul class="nav navbar-nav login-group navbar-right ">
                                 <li class="dropdown">
@@ -95,7 +95,7 @@
                                         <li>
                                             <div class="dropdown-header">
                                                 <span class="login-header color-blue">Đăng Nhập</span>
-                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                                <span class="forgot-password color-blue"><a href="reset-password.html">Quên mật khẩu?</a></span>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div style="padding: 8px;">
@@ -120,13 +120,13 @@
                                                     <div style="margin-top:10px" class="form-group">
                                                         <!-- Button -->
                                                         <div class="col-sm-12 controls center-text">
-                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                            <a id="btn-login" href="#login" class="btn btn-block btn-success">Đăng Nhập</a>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
 
-                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+                                            <div class="register-new-account">Chưa có tài khoản?<a href="create-new-account.html"> Đăng ký ngay!</a></div>
 
                                         </li>
                                         <!--<li class="divider"></li>-->
@@ -157,7 +157,7 @@
                             <div class="row">
                                 <h1 class="text-center big-title">TOP 5 HÀNH TRÌNH DU LỊCH ĐÔNG - XUÂN</h1>
                                 <h1 class="text-center"></h1>
-                                <h4 class="text-center site-map"><a href="#">TRANG CHỦ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">BÀI VIẾT </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">TOP 5 HÀNH TRÌNH DU LỊCH ĐÔNG - XUÂN</a></h4>
+                                <h4 class="text-center site-map"><a href="index.html">TRANG CHỦ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="news.html">BÀI VIẾT </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="news-sale-detail.html">TOP 5 HÀNH TRÌNH DU LỊCH ĐÔNG - XUÂN</a></h4>
                             </div>
 
                         </form>
@@ -273,9 +273,26 @@
                         </div>
 
                         <div class="clearfix"></div>
-                        <div id="back-to-top" class="text-right">
+                        <div class="text-right">
                             <p><i>(Nguồn: sưu tầm internet) &nbsp;&nbsp;</i></p>
                         </div>
+                        <div class="clearfix"></div>
+                        <div id="back-to-top" class="text-right">
+                            <a class="btn" id="backToTopbtn1"><i class="glyphicon glyphicon-open">&nbsp;</i>Về đầu trang</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function ($) {
+                                $("#backToTopbtn1").click(function () {
+                                    $('body,html').animate({
+                                        scrollTop: 0
+                                    })
+                                })
+
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="col-md-4 right-content">
@@ -283,8 +300,8 @@
                         <h3 class="suggest-head">Bài viết liên quan</h3>
                         <div class="clearfix"></div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t1.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t1.jpg" alt="Thác Bản Giốc" />
                                 <h3 class="title">Thác Bản Giốc</h3>
                                 <p class="content">Thác Bản Giốc nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
                                 <div class="clearfix"> </div>
@@ -292,8 +309,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t3.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t3.jpg" alt="Khải Hoàn Môn" />
                                 <h3 class="title">Khải Hoàn Môn</h3>
                                 <p class="content">Khải Hoàn Môn đứng chế ngự một vòng tròn lớn, mang tên Place Etoile (Rond-point), nằm ở đầu con đường đại lộ Champs Elysées thuộc quận 8 Paris.</p>
                                 <div class="clearfix"> </div>
@@ -301,8 +318,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t4.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t4.jpg" alt="new York" />
                                 <h3 class="title">New York</h3>
                                 <p class="content">New York là nơi hội tụ đa dạng nền văn hóa, nghệ thuật, kiến trúc, lịch sử và giải trí.Với biểu tượng Nữ Thần Tự Do hay tòa nhà Empire State cao vợi.</p>
                                 <div class="clearfix"> </div>
@@ -310,8 +327,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t5.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t5.jpg" alt="Vantican" />
                                 <h3 class="title">Vantican</h3>
                                 <p class="content">Vantican là một quốc gia có chủ quyền với lãnh thổ bao gồm một vùng đất có tường bao kín nằm trong lòng thành phố Roma, Ý, vốn nổi tiếng bới tòa thánh Vantican.</p>
                                 <div class="clearfix"> </div>
@@ -319,8 +336,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t6.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t6.jpg" alt="Mộc Châu" />
                                 <h3 class="title">Cao Nguyên Mộc Châu</h3>
                                 <p class="content">Cao nguyên Mộc Châu thuộc huyện Mộc Châu, tỉnh Sơn La. Có độ cao trung bình 1.050 m so với mực nước biển.</p>
                                 <div class="clearfix"> </div>
@@ -328,8 +345,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t1.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t1.jpg" alt="Thác bản Giốc" />
                                 <h3 class="title">Thác Bản Giốc</h3>
                                 <p class="content">Thác Bản Giốc nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
                                 <div class="clearfix"> </div>
@@ -337,8 +354,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t3.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t3.jpg" alt="Khải Hoàn Môn" />
                                 <h3 class="title">Khải Hoàn Môn</h3>
                                 <p class="content">Khải Hoàn Môn đứng chế ngự một vòng tròn lớn, mang tên Place Etoile (Rond-point), nằm ở đầu con đường đại lộ Champs Elysées thuộc quận 8 Paris.</p>
                                 <div class="clearfix"> </div>
@@ -346,8 +363,8 @@
                             </a>
                         </div>
                         <div class="row suggest-item">
-                            <a href="location-detail.html">
-                                <img src="assets/images/t4.jpg" alt="sapa" />
+                            <a href="news-sale-detail.html">
+                                <img src="assets/images/t4.jpg" alt="New York" />
                                 <h3 class="title">New York</h3>
                                 <p class="content">New York là nơi hội tụ đa dạng nền văn hóa, nghệ thuật, kiến trúc, lịch sử và giải trí.Với biểu tượng Nữ Thần Tự Do hay tòa nhà Empire State cao vợi.</p>
                                 <div class="clearfix"> </div>
@@ -374,10 +391,10 @@
                         <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
                         <hr/>
                         <div class="block social">
-                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="index.html"><img src="assets/images/icons/internet.png" alt=""></a>
                             <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                            <a href="#twitter"><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href="#g+"><img src="assets/images/icons/google-plus.png" alt=""></a>
                         </div>
                         <br/>
                         <p>
@@ -390,22 +407,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-2 col-xs-12 panel-item">
                         <h4>VỀ CHÚNG TÔI</h4>
                         <hr/>
                         <ul>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Dịch Vụ</a></li>
-                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
-                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                            <li><a href="#">Feedback</a></li>
+                            <li><a href="about.html">Giới Thiệu</a></li>
+                            <li><a href="news.html">Tin Tức</a></li>
+                            <li><a href="#">Đặt Tour</a></li>
+                            <li><a href="tours.html">Ghép Tour Du Lịch</a></li>
+                            <li><a href="contact.html">Liên Hệ Với Chúng Tôi</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-4 col-xs-12 panel-item">
                         <h4>LIÊN HỆ</h4>
                         <hr/>
                         <div class="f-contac">
-                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Gò Vấp, TP. HCM</p>
                             <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
                         </div>
                     </div>

@@ -41,6 +41,19 @@
     </style>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            var width = $(window).width();
+            if (width <= 768) {
+                $('.carousel').carousel({
+                    interval: false
+                });
+            } else {
+                $('.carousel').carousel({
+                    interval: 3000
+                });
+            }
+        });
+
         $(function () {
             $('#datetimepicker1').datetimepicker();
             var provices = [
@@ -102,13 +115,13 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav menu-group">
-                                <li class="item-active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-                                <li><a href="#">Tour</a></li>
-                                <li><a href="#">Địa Điểm</a></li>
-                                <li><a href="#">Khuyến Mãi</a></li>
-                                <li><a href="#">Tin Tức</a></li>
-                                <li><a href="#">Giới Thiệu</a></li>
-                                <li><a href="#">Liên Hệ</a></li>
+                                <li class="item-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="tours.html">Tour</a></li>
+                                <li><a href="locations.html">Địa Điểm</a></li>
+                                <li><a href="sales.html">Khuyến Mãi</a></li>
+                                <li><a href="news.html">Tin Tức</a></li>
+                                <li><a href="about.html">Giới Thiệu</a></li>
+                                <li><a href="contact.html">Liên Hệ</a></li>
                             </ul>
                             <ul class="nav navbar-nav login-group navbar-right ">
                                 <li class="dropdown">
@@ -120,7 +133,7 @@
                                         <li>
                                             <div class="dropdown-header">
                                                 <span class="login-header color-blue">Đăng Nhập</span>
-                                                <span class="forgot-password color-blue"><a href="">Quên mật khẩu?</a></span>
+                                                <span class="forgot-password color-blue"><a href="reset-password.html">Quên mật khẩu?</a></span>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div style="padding: 8px;">
@@ -145,13 +158,13 @@
                                                     <div style="margin-top:10px" class="form-group">
                                                         <!-- Button -->
                                                         <div class="col-sm-12 controls center-text">
-                                                            <a id="btn-login" href="#" class="btn btn-block btn-success">Đăng Nhập</a>
+                                                            <a id="btn-login" href="#login" class="btn btn-block btn-success">Đăng Nhập</a>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
 
-                                            <div class="register-new-account">Chưa có tài khoản?<a href=""> Đăng ký ngay!</a></div>
+                                            <div class="register-new-account">Chưa có tài khoản?<a href="create-new-account.html"> Đăng ký ngay!</a></div>
 
                                         </li>
                                         <!--<li class="divider"></li>-->
@@ -174,12 +187,12 @@
                 <div class="col-md-1 hidden-i9n-mobile"></div>
                 <div class="col-md-10 col-xs-12 qick-search">
                     <div class="text-center">
-                        <h2>Tìm Ghép Tour Nhanh</h2>
+                        <h2>Tìm Kiếm Tour</h2>
                     </div>
                     <div>
                         <div id="filter-content">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 class-droplist">
                                     <h5>Điểm khởi hành</h5>
 
                                     <div class="text-input-icon">
@@ -187,7 +200,7 @@
                                         <input type="text" class="place-area" id="provice-text-from" placeholder="Địa điểm khởi hành" />
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 class-droplist">
                                     <h5>Điểm đến</h5>
                                     <div class="text-input-icon">
                                         <span class="glyphicon glyphicon-map-marker"></span>
@@ -238,7 +251,7 @@
                         </div>
                     </div>
                     <div>
-                        <input type="submit" value="Tìm Kiếm" class="search-button" />
+                        <input type="submit" value="Tìm Kiếm" class="search-button" onclick="window.location='tours.html';" />
                     </div>
                 </div>
             </div>
@@ -269,8 +282,8 @@
                                 <div class="row">
                                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/a1.jpg" alt="" />
+                                            <a href="tour-detail.html">
+                                                <img src="assets/images/a1.jpg" alt="Hawaii" />
                                                 <p class="tour-price">15.000.000đ</p>
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Du lịch Hawaii 6 ngày/ 5 đêm!</h5>
@@ -282,8 +295,8 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/a2.jpg" alt="" />
+                                            <a href="tour-detail.html">
+                                                <img src="assets/images/a2.jpg" alt="Hà Lan" />
                                                 <p class="tour-price">20.000.000đ</p>
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Du lịch Hà Lan 7 ngày/ 6 đêm!</h5>
@@ -295,8 +308,8 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/a3.jpg" alt="" />
+                                            <a href="tour-detail.html">
+                                                <img src="assets/images/a3.jpg" alt="Đà Lạt" />
                                                 <p class="tour-price">5.000.000đ</p>
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Đà Lạt, mùa xuân rực rỡ 2016!</h5>
@@ -312,8 +325,8 @@
                                 <div class="row">
                                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/a5.jpg" alt="" />
+                                            <a href="tour-detail.html">
+                                                <img src="assets/images/a5.jpg" alt="Sapa" />
                                                 <p class="tour-price">5.500.000đ</p>
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Du lịch Sapa 3 ngày / 2 đêm!</h5>
@@ -325,8 +338,8 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-tour-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/a6.jpg" alt="" />
+                                            <a href="tour-detail.html">
+                                                <img src="assets/images/a6.jpg" alt="Vũng Tàu" />
                                                 <p class="tour-price">3.000.000đ</p>
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Du lịch Vũng Tàu - biển gọi!</h5>
@@ -363,13 +376,13 @@
                                 <div class="row">
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t1.jpg" alt="" />
+                                                        <img src="assets/images/t1.jpg" alt="Thác Bản Giốc" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">Thác Bản Giốc</a>
+                                                        <a href="location-detail.html">Thác Bản Giốc</a>
                                                         <p class="content-show">Thác Bản Giốc nằm ngay trên đường biên giới giữa Việt Nam và Trung Quốc thuộc tỉnh Cao Bằng.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -388,13 +401,13 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t2.jpg" alt="" />
+                                                        <img src="assets/images/t2.jpg" alt="Sapa" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">Sapa</a>
+                                                        <a href="location-detail.html">Sapa</a>
                                                         <p class="content-show">Sa Pa là một thị trấn vùng cao thuộc huyện Sa Pa, tỉnh Lào Cai, Việt Nam. Sa Pa nằm trên một mặt bằng ở độ cao 1500 đến 1650 mét ở sườn núi Lô Suây Tông.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -413,13 +426,13 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t3.jpg" alt="" />
+                                                        <img src="assets/images/t3.jpg" alt="Khải Hoàn Môn" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">Khải Hoàn Môn</a>
+                                                        <a href="location-detail.html">Khải Hoàn Môn</a>
                                                         <p class="content-show">Khải Hoàn Môn đứng chế ngự một vòng tròn lớn, mang tên Place Etoile (Rond-point), nằm ở đầu con đường đại lộ Champs Elysées thuộc quận 8 Paris.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -442,13 +455,13 @@
                                 <div class="row">
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t4.jpg" alt="" />
+                                                        <img src="assets/images/t4.jpg" alt="New York" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">New York</a>
+                                                        <a href="location-detail.html">New York</a>
                                                         <p class="content-show">New York là nơi hội tụ đa dạng nền văn hóa, nghệ thuật, kiến trúc, lịch sử và giải trí.Với biểu tượng Nữ Thần Tự Do hay tòa nhà Empire State cao vợi.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -467,13 +480,13 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t5.jpg" alt="" />
+                                                        <img src="assets/images/t5.jpg" alt="Vantican" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">Vantican</a>
+                                                        <a href="location-detail.html">Vantican</a>
                                                         <p class="content-show">Vantican là một quốc gia có chủ quyền với lãnh thổ bao gồm một vùng đất có tường bao kín nằm trong lòng thành phố Roma, Ý, vốn nổi tiếng bới tòa thánh Vantican.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -492,13 +505,13 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12 hot-location-best-item">
                                         <div class="item-content">
-                                            <a href="products.html">
+                                            <a href="location-detail.html">
                                                 <div class="td-grids top-content">
                                                     <div class="col-md-5 td-left">
-                                                        <img src="assets/images/t6.jpg" alt="" />
+                                                        <img src="assets/images/t6.jpg" alt="Mộc Châu" />
                                                     </div>
                                                     <div class="col-md-7 td-middle">
-                                                        <a href="products.html">Cao nguyên Mộc Châu</a>
+                                                        <a href="location-detail.html">Cao nguyên Mộc Châu</a>
                                                         <p class="content-show">Cao nguyên Mộc Châu thuộc huyện Mộc Châu, tỉnh Sơn La. Có độ cao trung bình 1.050 m so với mực nước biển.</p>
                                                         <div class="clearfix"> </div>
                                                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -540,21 +553,20 @@
                                 <div class="row">
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n1.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n1.jpg" alt="Đông-xuân" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Top 5 hành trình du lịch lý tưởng cho ngày giao mùa đông – xuân</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
                                                     <p class="top-content">Những ngày giao mùa đông – xuân, nhiều du khách có nhu cầu đi du lịch song lại băn khoăn không biết đi đâu là có cảnh đẹp đúng mùa.</p>
-
                                                 </div>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n2.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n2.jpg" alt="Du thuyền" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Đón xuân trên du thuyền 5 sao - Đẳng cấp mới, trải nghiệm mới</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -566,8 +578,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n10.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n10.jpg" alt="Khuyến mãi 20%" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Khuyến mãi 20% các tour du lịch trong nước</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -579,8 +591,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n4.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n4.jpg" alt="Madagascar" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Những điều kỳ diệu chỉ có ở Madagascar</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -596,8 +608,8 @@
                                 <div class="row">
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n5.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n5.jpg" alt="Mùa thu - Nga" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Thu vàng nước Nga</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -609,8 +621,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n6.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n6.jpg" alt="Úc" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Úc châu - Tím biếc mùa hoa thương nhớ</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -622,8 +634,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n7.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n7.jpg" alt="Iran" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Iran bước ra từ cổ tích “Nghìn lẻ một đêm”</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -635,8 +647,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n8.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n8.jpg" alt="Hàn Quốc" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Khám phá mùa đông thú vị tại xứ Hàn</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -652,8 +664,8 @@
                                 <div class="row">
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n9.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n9.jpg" alt="Nhật Bản" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Nhật Bản mùa lá đỏ - Chưa xa đã “nhớ”</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -665,8 +677,8 @@
                                     </div>
                                     <div class="col-md-3 col-xs-12 newsest-list-item">
                                         <div class="item-content">
-                                            <a href="products.html">
-                                                <img src="assets/images/n3.jpg" alt="" />
+                                            <a href="news-sale-detail.html">
+                                                <img src="assets/images/n3.jpg" alt="Quy Nhơn" />
                                                 <div class="item-content-detail">
                                                     <h5 class="title-content">Vì sao phải đến Quy Nhơn mùa thu này?</h5>
                                                     <p class="bot-content"><i>19/11/2016</i> | Admin</p>
@@ -701,10 +713,10 @@
                         <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
                         <hr/>
                         <div class="block social">
-                            <a href=""><img src="assets/images/icons/internet.png" alt=""></a>
+                            <a href="index.html"><img src="assets/images/icons/internet.png" alt=""></a>
                             <a href="https://www.facebook.com/cr.luonguit/"><img src="assets/images/icons/facebook.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/twitter.png" alt=""></a>
-                            <a href=""><img src="assets/images/icons/google-plus.png" alt=""></a>
+                            <a href="#twitter"><img src="assets/images/icons/twitter.png" alt=""></a>
+                            <a href="#g+"><img src="assets/images/icons/google-plus.png" alt=""></a>
                         </div>
                         <br/>
                         <p>
@@ -717,22 +729,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-2 col-xs-12 panel-item">
                         <h4>VỀ CHÚNG TÔI</h4>
                         <hr/>
                         <ul>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Dịch Vụ</a></li>
-                            <li><a href="#">Điều Khoản Sử Dụng</a></li>
-                            <li><a href="#">Liên Hệ Với Chúng Tôi</a></li>
-                            <li><a href="#">Feedback</a></li>
+                            <li><a href="about.html">Giới Thiệu</a></li>
+                            <li><a href="news.html">Tin Tức</a></li>
+                            <li><a href="#">Đặt Tour</a></li>
+                            <li><a href="tours.html">Ghép Tour Du Lịch</a></li>
+                            <li><a href="contact.html">Liên Hệ Với Chúng Tôi</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-xs-12 panel-item">
+                    <div class="col-md-4 col-xs-12 panel-item">
                         <h4>LIÊN HỆ</h4>
                         <hr/>
                         <div class="f-contac">
-                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Q. Gò Vấp, TP. HCM</p>
+                            <p class="f-address">Địa chỉ: 362/12 Phan Huy Ích, Gò Vấp, TP. HCM</p>
                             <p class="f-address">SĐT: (+84)969909893 (Anh Lương)</p>
                         </div>
                     </div>
